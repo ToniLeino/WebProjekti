@@ -112,6 +112,7 @@ html {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 50px;
 }
 
 .hero-img::before {
@@ -149,6 +150,15 @@ html {
     background-color: #e38d27;
     border-radius: 19%;
     text-align: center;
+}
+
+.quiz img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.quiz img:hover {
+    transform: scale(1.1);
 }
 
 .quiz-header {

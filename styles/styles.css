@@ -14,6 +14,9 @@ html {
     background-color: #e9a452;
 }
 
+
+/* YLÄTUNNISTE */
+
 .header {
     background-color: #e38d27;
     display: flex;
@@ -70,9 +73,8 @@ html {
     padding-left: 10px;
 }
 
-.section-hero {
-    background-color: #e9a452;
-}
+
+/* HERO */
 
 .hero {
     display: grid;
@@ -127,4 +129,27 @@ html {
 .hero-img img {
     width: 30%;
     z-index: 1;
+}
+
+
+/* QUIZZES SELECTION */
+
+.section-quizzes {
+    /*top, right, bottom, left*/
+    padding: 200px 200px 200px 200px;
+}
+
+.quizzes {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 100px;
+    justify-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #e38d27;
+    border-radius: 19%;
+}
+
+.quiz-image {
+    max-width: 30%;
 }

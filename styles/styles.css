@@ -156,8 +156,8 @@ html {
 .quiz-header {
     grid-column: 1/4;
     font-size: 4rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 2px #b6711f;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #b6711f;
 }
 
 .quiz img {

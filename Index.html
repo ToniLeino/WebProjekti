@@ -5,21 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KidsLearn</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/dividers.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <title>KidsLearn</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Etusivu</a></li>
+                <li>
+                    <a class="main-nav-link" href="#">
+                        <ion-icon name="home-outline"></ion-icon>Etusivu</a>
+                </li>
                 <li><a class="main-nav-link" href="#">Luokat</a></li>
                 <li><a class="main-nav-link" href="#">Opettajat</a></li>
-                <li><a class="main-nav-link" href="pages/about.html">Tietoja</a></li>
+                <li>
+                    <a class="main-nav-link" href="pages/about.html">
+                        <ion-icon name="information-outline"></ion-icon>Tietoja</a>
+                </li>
             </ul>
         </nav>
 
@@ -27,7 +33,9 @@
             <input type="search" id="search" />
 
             <div class="btn-search">
-                <a href="#" class="btn-search-click"> Haku </a>
+                <a href="#" class="btn-search-click">
+                    <ion-icon name="search-outline"></ion-icon>
+                </a>
             </div>
         </div>
     </header>
@@ -96,6 +104,8 @@
     </section>
 
     <script src="javascript/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

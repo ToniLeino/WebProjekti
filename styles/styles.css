@@ -144,12 +144,13 @@ html {
 .quizzes-container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    row-gap: 50px;
+    row-gap: 100px;
     column-gap: 50px;
-    padding: 150px 100px 150px 100px;
+    padding: 130px 100px 130px 100px;
     background-color: #e38d27;
-    border-radius: 19%;
+    border-radius: 10%;
     text-align: center;
+    border: 20px solid #e6983d;
 }
 
 .quiz img {

@@ -143,12 +143,17 @@ html {
 .quizzes-container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    row-gap: 100px;
+    row-gap: 50px;
     column-gap: 50px;
-    justify-items: center;
-    padding: 150px 100px 200px 100px;
+    padding: 150px 100px 150px 100px;
     background-color: #e38d27;
     border-radius: 19%;
+    text-align: center;
+}
+
+.quiz-header {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .quiz-image {

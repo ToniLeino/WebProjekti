@@ -141,15 +141,19 @@ html {
 
 .quizzes {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     row-gap: 100px;
+    column-gap: 50px;
     justify-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding: 150px 100px 200px 100px;
     background-color: #e38d27;
     border-radius: 19%;
 }
 
 .quiz-image {
-    max-width: 30%;
+    max-width: 100%;
+}
+
+p {
+    font-size: 15px;
 }

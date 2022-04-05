@@ -143,14 +143,19 @@ html {
 
 .quizzes-container {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    row-gap: 100px;
+    grid-template-columns: repeat(3, 3fr);
+    row-gap: 70px;
     column-gap: 50px;
-    padding: 130px 100px 130px 100px;
+    padding: 50px 90px 130px 90px;
     background-color: #e38d27;
     border-radius: 10%;
     text-align: center;
     border: 20px solid #e6983d;
+}
+
+.quiz-header {
+    grid-column: 1/4;
+    font-size: 4rem;
 }
 
 .quiz img {
@@ -162,7 +167,7 @@ html {
     transform: scale(1.1);
 }
 
-.quiz-header {
+.quiz-name {
     font-size: 2rem;
     font-weight: 600;
 }

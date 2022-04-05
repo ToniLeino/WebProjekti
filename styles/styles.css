@@ -176,4 +176,5 @@ html {
 
 .quiz-image {
     max-width: 50%;
+    max-height: 100%;
 }

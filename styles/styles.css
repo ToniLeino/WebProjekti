@@ -92,6 +92,7 @@ html {
 }
 
 .heading-primary {
+    padding-top: 50px;
     font-family: inherit;
     font-size: 10rem;
     letter-spacing: 0.5rem;
@@ -139,9 +140,9 @@ html {
     padding: 200px 200px 200px 200px;
 }
 
-.quizzes {
+.quizzes-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(3, 2fr);
     row-gap: 100px;
     column-gap: 50px;
     justify-items: center;
@@ -151,9 +152,5 @@ html {
 }
 
 .quiz-image {
-    max-width: 100%;
-}
-
-p {
-    font-size: 15px;
+    max-width: 50%;
 }

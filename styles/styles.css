@@ -185,7 +185,9 @@ html {
     display: grid;
     font-size: 2.4rem;
     background-color: #e38d27;
-    border: 1px solid black;
+    border: 15px solid #e6983d;
+    border-radius: 50px;
+
 }
 table, th, td {
     text-align: center;

@@ -194,9 +194,12 @@ table, th, td {
 }
 .arrow-up {
         border: solid black;
-        border-width: 0 3px 3px 0;
+        border-width: 0 4px 4px 0;
         display: inline-block;
-        padding: 3px;
+        padding: 4px;
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
+}
+.arrow-up:hover {
+    color: rgb(255, 255, 255);
 }

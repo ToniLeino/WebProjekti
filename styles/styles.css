@@ -216,3 +216,28 @@ table, th, td {
     color: rgb(255, 255, 255);
     text-decoration:underline;
 }
+
+/*About us page*/
+.about-us {
+ display: grid;
+ grid-template-columns: repeat(3, 3fr);
+ row-gap: 70px;
+ column-gap: 50px;
+ padding: 50px 90px 130px 90px;
+ background-color: #e38d27;
+ border-radius: 10%;
+ text-align: center;
+ border: 20px solid #e6983d;
+
+
+}
+.about-you {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+.working-group{
+     /*top, right, bottom, left*/
+     padding: 200px 200px 200px 200px;
+}

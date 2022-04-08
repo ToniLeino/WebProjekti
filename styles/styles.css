@@ -221,9 +221,9 @@ table, th, td {
 .about-us {
  display: grid;
  grid-template-columns: repeat(3, 3fr);
- row-gap: 70px;
- column-gap: 50px;
- padding: 50px 90px 130px 90px;
+ row-gap: 100px;
+ column-gap: 25px;
+ padding: 125px 25px 125px 25px;
  background-color: #e38d27;
  border-radius: 10%;
  text-align: center;
@@ -233,11 +233,15 @@ table, th, td {
 }
 .about-you {
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    text-align: justify;
+    text-align: center;
+    color: black;
 }
-.working-group{
-     /*top, right, bottom, left*/
-     padding: 200px 200px 200px 200px;
+
+    
+.about-us-header {
+    text-align: center;
+    font-size: 4rem;
+    
 }

@@ -26,6 +26,10 @@ html {
     padding: 60px 0px 30px 0px;
 }
 
+.shapedividers_com-8976 {
+    padding-bottom: 50px;
+}
+
 .main-nav-list {
     list-style: none;
     display: flex;
@@ -102,7 +106,8 @@ html {
 
 .hero-text {
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.15rem;
     font-weight: 600;
     text-align: justify;
 }
@@ -240,27 +245,49 @@ td {
 
 /* ABOUT US */
 
-.about-us {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    row-gap: 100px;
-    column-gap: 25px;
-    padding: 125px 25px 125px 25px;
-    background-color: #e38d27;
-    border-radius: 10%;
-    text-align: center;
-    border: 20px solid #e6983d;
+.section-about-us {
+    padding: 0px 100px 100px 100px;
 }
 
-.about-you {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+.about-us-container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    padding: 0px 50px 100px 50px;
     text-align: center;
-    color: black;
+    font-size: 2.2rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .about-us-header {
+    grid-column: 1/4;
     text-align: center;
     font-size: 4rem;
+    font-family: "Annie Use Your Telescope", cursive;
+    letter-spacing: 0.15rem;
+}
+
+.about-us-text {
+    grid-column: 1/4;
+    padding: 50px 500px 100px 500px;
+    text-align: justify;
+}
+
+.working-group img {
+    max-width: 30%;
+}
+
+.your-picture {
+    border-radius: 50%;
+    box-shadow: 15px 15px 15px #b6711f;
+}
+
+.about-you-name {
+    padding-top: 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.about-you-title {
+    padding: 20px 0px 50px 0px;
 }

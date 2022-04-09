@@ -208,10 +208,9 @@ html {
 
 .footer {
     display: grid;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     background-color: #e38d27;
-    border-top: 15px solid #e6983d;
-    padding: 15px 90px 15px 90px;
+    padding: 100px 90px 100px 90px;
 }
 
 table,
@@ -220,11 +219,11 @@ td {
     padding: 2px;
     text-align: center;
     text-align: left;
+    font-family: Roboto, sans-serif;
 }
 
 .footer-img {
-    height: 60px;
-    width: 100px;
+    max-width: 20%;
 }
 
 .footer-link {
@@ -235,10 +234,11 @@ td {
 .footer-link:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline;
+    text-decoration: none;
 }
 
 
-/*About us page*/
+/* ABOUT US */
 
 .about-us {
     display: grid;

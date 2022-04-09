@@ -1,5 +1,7 @@
-/* SHAPEDIVIDER COPIED FROM 
-https://shapedividers.com/?dividerDirection=top&longAxisValue=138&shortAxisValue=104&positionValue=50&flipped=false&animate=false&animLength=10&shapeColor=e38d27&si=111&shapeRatio=true&mobileReady=true&tabletDividerDirection=top&tabletLongAxisValue=100&tabletShortAxisValue=90&tabletPositionValue=50&tabletFlipped=false&tabletAnimate=false&tabletAnimLength=10&tabletShapeColor=fbd8c2&tsi=1&tabletShapeRatio=false&mobileDividerDirection=top&mobileLongAxisValue=100&mobileShortAxisValue=90&mobilePositionValue=50&mobileFlipped=false&mobileAnimate=false&mobileAnimLength=10&mobileShapeColor=fbd8c2&msi=1&mobileShapeRatio=false
+/* SHAPEDIVIDERS COPIED FROM 
+
+https://shapedividers.com/
+
 */
 
 .shapedividers_com-8976 {
@@ -45,5 +47,54 @@ https://shapedividers.com/?dividerDirection=top&longAxisValue=138&shortAxisValue
 @media (min-width: 2100px) {
     .shapedividers_com-8976::before {
         background-size: 138% calc(2vw + 104px);
+    }
+}
+
+
+/* FOOTER DIVIDER*/
+
+.shapedividers_com-2407 {
+    overflow: hidden;
+    position: relative;
+}
+
+.shapedividers_com-2407::before {
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+    background-position: 50% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23fbd8c2"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23fbd8c2"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23fbd8c2"/></svg>');
+}
+
+@media (min-width: 768px) {
+    .shapedividers_com-2407::before {
+        background-size: 100% 90px;
+        background-position: 50% 0%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .shapedividers_com-2407::before {
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 100% 86px;
+        background-position: 50% 100%;
+        background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.2 2000.4 84.2"><g fill="%23e38d27"><circle cx="1334.4" cy="40.4" r="14"/><circle cx="1867.7" cy="40" r="14"/><path d="M1748 30l6-11-6-11h-13l-7 11 7 11h13zM1628 23l4-6-4-7h-7l-4 7 4 6h7zM1978 18l5-8-5-8h-8l-5 8 5 8h8zM1412 23l6-9-6-10h-11l-5 10 5 9h11zM783 52a9 9 0 10-9-9 9 9 0 009 9zM1160 26l7-11-7-12h-13l-6 12 6 11h13zM1040 19l4-6-4-7h-7l-4 7 4 6h7zM825 19l5-9-5-10h-11l-6 10 6 9h11zM697 16l4-6-4-7h-7l-4 7 4 6h7z"/><path d="M83 84h1917V35c-10-8-25-12-40-10a32 32 0 00-11-3c-12-1-15 1-18 2-18 4-24 19-38 32-9 7-17 15-28 15-13 1-24-9-31-20s-11-24-20-33-24-15-34-7c-12 9-10 30-23 37a15 15 0 01-1 1c-6 2-13 1-19-1a58 58 0 01-8-5l-10-6a93 93 0 00-46-14c-6 0-13 0-19 5a12 12 0 00-4 11c1 4 4 8 6 11a11 11 0 011 9 17 17 0 01-15 12h-1c-13 1-24-9-31-20s-11-24-20-33-24-15-34-7c-11 9-10 28-21 36a16 16 0 01-2 1c-6 3-14 3-20 0a50 50 0 01-6-3l-12-8a93 93 0 00-46-14c-5 0-11 0-15 3-5 2-8 6-8 11a35 35 0 00-7 1 44 44 0 00-13 4c-19 10-19 16-35 23-12 5-27 4-40 4s-28 1-41-4c-15-7-16-13-35-23a44 44 0 00-13-4 35 35 0 00-7-1c0-5-3-9-7-11-5-3-11-3-16-3a93 93 0 00-45 14l-13 8a50 50 0 01-6 3c-6 3-14 3-20 0a16 16 0 01-2-1c-10-8-9-27-20-36-10-8-26-3-35 7s-13 22-20 33-18 21-31 20a17 17 0 01-15-12 11 11 0 011-9c2-3 5-7 5-11a12 12 0 00-4-11c-5-5-12-5-19-5a93 93 0 00-46 14l-9 6a58 58 0 01-9 5c-6 2-13 3-18 1a15 15 0 01-2-1c-13-7-11-28-22-37-11-8-26-3-35 7s-13 22-20 33-18 21-31 20a24 24 0 01-4 0c-9-3-16-9-23-15-14-12-21-28-39-32l-4-1-3 1c-18 4-25 20-39 32-7 6-14 12-23 15a24 24 0 01-4 0c-13 1-24-9-31-20s-11-24-20-33-25-15-35-7c-11 9-10 30-22 37a15 15 0 01-2 1c-6 2-13 1-19-1a58 58 0 01-8-5l-10-6a93 93 0 00-45-14c-7 0-14 0-19 5a12 12 0 00-5 11c1 4 4 8 6 11a11 11 0 011 9 17 17 0 01-15 12c-13 1-24-9-31-20s-11-24-20-33-25-15-35-7c-11 9-10 28-21 36a16 16 0 01-1 1c-6 3-14 3-21 0a50 50 0 01-5-3l-13-8a93 93 0 00-45-14c-6 0-11 0-16 3-4 2-8 6-8 11a35 35 0 00-7 1 44 44 0 00-12 4c-19 10-20 16-35 23-13 5-27 4-41 4s-28 1-40-4c-16-7-17-13-35-23a44 44 0 00-13-4 35 35 0 00-7-1c0-5-4-9-8-11-5-3-10-3-16-3H0v61z"/><circle cx="125.9" cy="40.4" r="14"/><circle cx="659.1" cy="40" r="14"/><path d="M539 30l7-11-7-11h-13l-6 11 6 11h13zM42 21l5-8-6-8h-9l-5 9 6 8 9-1zM770 18l4-8-4-8h-9l-4 8 4 8h9zM927 30l4-8-4-7h-9l-5 7 5 8h9zM204 23l5-9-5-10h-11l-6 10 6 9h11z"/></g></svg>');
+    }
+}
+
+@media (min-width: 2100px) {
+    .shapedividers_com-2407::before {
+        background-size: 100% calc(2vw + 86px);
     }
 }

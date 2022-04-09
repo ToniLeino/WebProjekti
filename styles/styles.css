@@ -190,23 +190,12 @@ html {
 
 }
 table, th, td {
+    padding: 2px;
     text-align: center;
 }
 .footer-img {
     height: 60px;
     width: 100px;
-}
-.arrow-up {
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 4px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
-.arrow-up:hover {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 4px 4px 0;
 }
 .footer-link {
     text-decoration: none;

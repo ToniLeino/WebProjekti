@@ -241,7 +241,11 @@ td {
     text-decoration: underline;
     text-decoration: none;
 }
-
+.krediitit {
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
 
 /* ABOUT US */
 

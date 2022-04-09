@@ -179,47 +179,71 @@ html {
     max-height: 100%;
 }
 
-/*footer*/
+
+/* FOOTER SECTION */
 
 .footer {
     display: grid;
     font-size: 2.4rem;
     background-color: #e38d27;
-    border: 15px solid #e6983d;
-    border-radius: 50px;
+    border-top: 15px solid #e6983d;
+    padding: 50px 90px 100px 90px;
+}
 
+table,
+th,
+td {
+    text-align: left;
 }
 table, th, td {
     padding: 2px;
     text-align: center;
 }
+
 .footer-img {
     height: 60px;
     width: 100px;
 }
+
+.arrow-up {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-up:hover {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 4px 4px 0;
+}
+
 .footer-link {
     text-decoration: none;
     color: black;
 }
+
 .footer-link:hover {
     color: rgb(255, 255, 255);
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 
 /*About us page*/
+
 .about-us {
- display: grid;
- grid-template-columns: repeat(3, 3fr);
- row-gap: 100px;
- column-gap: 25px;
- padding: 125px 25px 125px 25px;
- background-color: #e38d27;
- border-radius: 10%;
- text-align: center;
- border: 20px solid #e6983d;
-
-
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    row-gap: 100px;
+    column-gap: 25px;
+    padding: 125px 25px 125px 25px;
+    background-color: #e38d27;
+    border-radius: 10%;
+    text-align: center;
+    border: 20px solid #e6983d;
 }
+
 .about-you {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
@@ -228,9 +252,7 @@ table, th, td {
     color: black;
 }
 
-    
 .about-us-header {
     text-align: center;
     font-size: 4rem;
-    
 }

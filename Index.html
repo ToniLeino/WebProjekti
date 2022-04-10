@@ -16,11 +16,11 @@
 
     <!-- NAVIGAATIO -->
 
-    <header class="header">
+    <header id="header" class="header">
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li>
-                    <a class="main-nav-link" href="#">
+                    <a id="etusivu" class="main-nav-link" href="#">
                         <ion-icon name="home-outline"></ion-icon>Etusivu</a>
                 </li>
                 <li><a class="main-nav-link" href="#">Luokat</a></li>
@@ -124,7 +124,7 @@
         <div class="footer">
 
             <div class="footer-box">
-                <img src="images/projektilogo.png" class="footer-img">
+                <a href="#header"><img src="images/projektilogo.png" class="footer-img"></a>
                 <ul class="social-links">
                     <li>
                         <a class="footer-link" href="#">
@@ -146,26 +146,32 @@
 
             <div class="footer-box">
                 <div class="footer-header"><strong>Meistä</strong></div>
-                <p><a class="footer-link" href="../WebProjekti/pages/about.html">Tietoja</a></p>
-                <p><a class="footer-link" href="#">Saavutettavuus</a></p>
-                <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
-                <p><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></p>
+                <ul>
+                    <li><a class="footer-link" href="../WebProjekti/pages/about.html">Tietoja</a></li>
+                    <li><a class="footer-link" href="#">Saavutettavuus</a></li>
+                    <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
+                    <li><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></li>
+                </ul>
             </div>
 
             <div class="footer-box">
                 <div class="footer-header"><strong>Tili</strong></div>
-                <p><a class="footer-link" href="#">Kirjaudu sisään</a></p>
-                <p><a class="footer-link" href="#">Luo tili</a></p>
-                <p><a class="footer-link" href="#">Yksityisyys</a></p>
+                <ul>
+                    <li><a class="footer-link" href="#">Kirjaudu sisään</a></li>
+                    <li><a class="footer-link" href="#">Luo tili</a></li>
+                    <li><a class="footer-link" href="#">Yksityisyys</a></li>
+                </ul>
             </div>
 
             <div class="footer-box">
                 <div class="footer-header"><strong>Ota yhteyttä</strong></div>
                 <address class="contact-info">
-                <p class="address">Kiisselikuja, 90140 OULU</p>
-                <p class="footer-link" href="tel:045-211-5499">045 211 5499</p>
-                <p class="footer-link" href="mailto:Kidslearncom@luukku.com">Kidslearncom@luukku.com</p>
-            </address>
+                <ul>
+                    <li class="address">Kiisselikuja, 90140 OULU</>
+                    <li class="footer-link" href="tel:045-211-5499">045 211 5499</li>
+                    <li class="footer-link" href="mailto:Kidslearncom@luukku.com">Kidslearncom@luukku.com</li>
+                </ul>
+                </address>
             </div>
         </div>
 

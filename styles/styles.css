@@ -12,6 +12,7 @@ html {
     font-family: "Annie Use Your Telescope", cursive;
     letter-spacing: 0.15rem;
     background-color: #e9a452;
+    scroll-behavior: smooth;
 }
 
 
@@ -225,9 +226,8 @@ html {
     padding-bottom: 20px;
 }
 
-.footer p {
+.footer li {
     display: flex;
-    flex-direction: column;
     padding-bottom: 15px;
 }
 
@@ -284,6 +284,9 @@ td {
 .contact-info {
     font-style: normal;
 }
+
+
+/* CREDITS */
 
 .credits {
     display: flex;

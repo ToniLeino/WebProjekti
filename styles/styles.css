@@ -266,6 +266,7 @@ td {
 
 .footer-link:link,
 .footer-link:visited {
+    display: inline-block;
     text-decoration: none;
     color: black;
     transition: all 0.4s;
@@ -273,6 +274,7 @@ td {
 
 .footer-link:hover,
 .footer-link:active {
+    display: inline-block;
     text-decoration: none;
     color: white;
     cursor: pointer;

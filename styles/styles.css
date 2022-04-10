@@ -47,6 +47,7 @@ html {
 .main-nav-link:hover,
 .main-nav-link:active {
     color: rgb(255, 255, 255);
+    transition: all 0.4s;
 }
 
 .header-search {

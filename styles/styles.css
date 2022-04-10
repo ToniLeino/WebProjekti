@@ -283,10 +283,27 @@ td {
     font-style: normal;
 }
 
+.credits {
+    display: flex;
+    background-color: #e38d27;
+    padding: 0px 300px 100px 300px;
+    justify-content: center;
+}
+
 .krediitit {
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: #e7e7e7;
+    justify-items: center;
+}
+
+.krediitit a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    justify-self: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
 }
 
 

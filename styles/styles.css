@@ -258,22 +258,27 @@ td {
     font-size: 2.5rem;
 }
 
-.footer-link {
+.footer-link,
+.footer-link a {
     display: inline-block;
     flex-direction: column;
     text-decoration: none;
+    color: black;
 }
 
 .footer-link:link,
-.footer-link:visited {
+.footer-link:visited,
+.footer-link a:link,
+.footer-link a:visited {
     display: inline-block;
     text-decoration: none;
-    color: black;
     transition: all 0.4s;
 }
 
 .footer-link:hover,
-.footer-link:active {
+.footer-link:active,
+.footer-link a:hover,
+.footer-link a:active {
     display: inline-block;
     text-decoration: none;
     color: white;

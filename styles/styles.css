@@ -213,9 +213,26 @@ html {
 
 .footer {
     display: grid;
-    font-size: 2.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 2rem;
     background-color: #e38d27;
-    padding: 100px 90px 100px 90px;
+    padding: 100px 300px 100px 300px;
+    justify-items: left;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-header {
+    padding-bottom: 20px;
+}
+
+.footer p {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+}
+
+strong {
+    font-size: 2.2rem;
 }
 
 table,
@@ -228,24 +245,47 @@ td {
 }
 
 .footer-img {
-    max-width: 20%;
+    max-width: 50%;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    padding-top: 20px;
+    margin-left: 15px;
+    justify-content: left;
 }
 
 .footer-link {
+    display: inline-block;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.krediitit {
+    display: inline-block;
     text-decoration: none;
     color: black;
 }
 
-.footer-link:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    text-decoration: none;
-}
-.krediitit {
-    text-decoration: none;
-    color: black;
-    text-align: right;
-}
 
 /* ABOUT US */
 

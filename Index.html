@@ -111,66 +111,55 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
     </div>
 
-    <footer class="footer">
-        <table style="width:90%">
-            <tr>
+    <footer>
+        <div class="footer">
 
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th>Meistä</th>
-                    <th>Tili</th>
-                    <th>Ota yhteyttä</th>
-                    <th>Seuraa meitä</th>
-                </tr>
-                <tr>
-                    <td rowspan="0">
-                        <img class="footer-img" src="images/projektilogo.png">
+            <div class="footer-box">
+                <img src="images/projektilogo.png" class="footer-img">
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a class="footer-link" href="pages/about.html">Tietoja</a></td>
-                    <td><a class="footer-link" href="pages/about.html">Kirjaudu sisään</a></td>
-                    <td>Kiisselikuja, 90140 OULU</td>
-                    <td>
-                        <a class="footer-link" href="pages/about.html">
-                            <ion-icon name="logo-facebook">
-                        </a>
-                        </ion-icon>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a class="footer-link" href="#">Saavutettavuus</a></td>
-                    <td><a class="footer-link" href="pages/about.html">Luo tili</a></td>
-                    <td>Kidslearn@luukku.com</td>
-                    <td>
-                        <a class="footer-link" href="pages/about.html">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a class="footer-link" href="https://www.flaticon.com/free-icons/blackboard">Käyttöluvat</a></td>
-                    <td><a class="footer-link" href="pages/about.html">Tili</a></td>
-                    <td>045 211 5499</td>
-                    <td>
-                        <a class="footer-link" href="pages/about.html">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                     
-                    </td>
-                   
-                </tr>
-            </tr>
-        </table>
-        <a class="krediitit" href="https://www.flaticon.com/free-icons/blackboard" title="blackboard icons">Blackboard icons created by Freepik - Flaticon</a>
+            <div class="footer-box">
+                <div class="footer-header"><strong>Meistä</strong></div>
+                <p><a class="footer-link" href="../WebProjekti/pages/about.html">Tietoja</a></p>
+                <p><a class="footer-link" href="#">Saavutettavuus</a></p>
+                <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
+                <p><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></p>
+            </div>
+
+            <div class="footer-box">
+                <div class="footer-header"><strong>Tili</strong></div>
+                <p><a class="footer-link" href="#">Kirjaudu sisään</a></p>
+                <p><a class="footer-link" href="#">Luo tili</a></p>
+                <p><a class="footer-link" href="#">Yksityisyys</a></p>
+            </div>
+
+            <div class="footer-box">
+                <div class="footer-header"><strong>Ota yhteyttä</strong></div>
+                <address class="contact-info">
+                <p class="address">Kiisselikuja, 90140 OULU</p>
+                <p class="footer-link" href="tel:045-211-5499">045 211 5499</p>
+                <p class="footer-link" href="mailto:Kidslearncom@luukku.com">Kidslearncom@luukku.com</p>
+            </address>
+            </div>
+        </div>
     </footer>
-
-    <!-- Kaikki harjoitusvalikon ikonit Icon made by Freepik from www.flaticon.com LISÄÄ TÄMÄ CREDITSIIN-->
 
     <script src="javascript/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

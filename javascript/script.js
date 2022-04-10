@@ -1,1 +1,1 @@
-function HelpKidsLearn ()
+function HelpKidsLearn()

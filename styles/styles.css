@@ -228,7 +228,7 @@ html {
 .footer p {
     display: flex;
     flex-direction: column;
-    padding-bottom: 7px;
+    padding-bottom: 15px;
 }
 
 strong {
@@ -255,6 +255,7 @@ td {
     padding-top: 20px;
     margin-left: 15px;
     justify-content: left;
+    font-size: 2.5rem;
 }
 
 .footer-link {
@@ -274,6 +275,8 @@ td {
 .footer-link:active {
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    transition: all 0.4s;
 }
 
 .contact-info {

@@ -223,7 +223,14 @@ html {
 }
 
 .footer-header {
+    display: flex;
+    align-items: center;
     padding-bottom: 20px;
+}
+
+.footer-icon {
+    font-size: 2.2rem;
+    margin-right: 10px;
 }
 
 .footer li {

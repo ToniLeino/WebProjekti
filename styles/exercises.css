@@ -3,12 +3,12 @@
 }
 
 .visa-header {
-    font-family: "Roboto", sans-serif;
     font-size: 4rem;
-    color: white;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
     text-shadow: 4px 4px #b6711f;
     align-self: center;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 0;
 }
 
 .visa-questions {
@@ -24,12 +24,11 @@
 }
 
 .visa-text-box {
-    font-family: "Roboto", sans-serif;
     font-size: 2.2rem;
     letter-spacing: 0.15rem;
     display: flex;
     flex-direction: column;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 100px 0;
 }
 
 .visa-text {
@@ -41,7 +40,6 @@
     margin: 0 400px 0 400px;
     font-size: 2rem;
     letter-spacing: 0.15rem;
-    font-family: "Roboto", sans-serif;
     background-color: #c8e9a0af;
     border-radius: 50px;
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.092), 0 5px 7px rgba(0, 0, 0, 0.348);
@@ -61,7 +59,6 @@
     padding-top: 50px;
     margin: 0 400px 0 400px;
     font-size: 2rem;
-    font-family: "Roboto", sans-serif;
     line-height: 1.5rem;
     text-align: center;
 }
@@ -74,62 +71,31 @@ input {
     display: none;
 }
 
-label {
+label,
+.check-btn {
     display: inline-block;
     background-color: white;
     padding: 15px 20px 15px 20px;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.275), 0 5px 7px rgba(0, 0, 0, 0.348);
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.275), 0 5px 7px rgba(0, 0, 0, 0.348);
+    border: none;
+    font-weight: bold;
 }
 
-
-/*
-
-.container {
-    width: 800px;
-    max-width: 80%;
-    background-color: #e38d27;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.092), 0 7px 10px rgba(0, 0, 0, 0.348);
-}
-
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.btn {
-    border: 5px solid #e9a452;
-    background-color: white;
-    font-size: 2rem;
-    letter-spacing: 0.15rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 10px;
-
-
-outline: none;
-cursor: pointer;
-
-}
-.btn:hover {
+label:hover {
     background-color: #ffadad;
 }
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.check-div {
+    padding-bottom: 50px;
 }
-.start-btn,
-.next-btn {
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    cursor: pointer;
+
+.check-btn {
+    font-size: 2em;
+    font-family: inherit;
 }
-*/
+
+.check-btn:hover {
+    background-color: #e9a452;
+}

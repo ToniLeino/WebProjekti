@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/dividers.css" />
     <link rel="stylesheet" href="../styles/exercises.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,8 +54,12 @@
     <!-- VISA -->
     <section class="section-visa">
         <div class="visa-questions">
+
+            <div class="visa-header heading-secondary">
+                <h2>Englanti tietovisa</h2>
+            </div>
+
             <div class="visa-text-box">
-                <h2 class="visa-header">Englanti tietovisa</h2>
                 <p class="visa-text">
                     Tähän tulee lyhyt selitys minkälainen visa on kyseessä.
                 </p>
@@ -67,27 +72,27 @@
             <div class="visa-answer-options">
                 <div id="answer-buttons" class="btn-grid">
 
-                    <div class="radio-selection"><input type="radio" id="select1" value="vastaus 1">
-                        <label for="select1">a) vastaus 1</label>
+                    <div class="radio-selection"><input type="radio" id="select1.1" value="vastaus 1">
+                        <label for="select1.1">a) vastaus 1</label>
                     </div>
 
-                    <div class="radio-selection"><input type="radio" id="select2" value="vastaus 2">
-                        <label for="select2">b) vastaus 2</label>
+                    <div class="radio-selection"><input type="radio" id="select1.2" value="vastaus 2">
+                        <label for="select1.2">b) vastaus 2</label>
                     </div>
 
-                    <div class="radio-selection"><input type="radio" id="select3" value="vastaus 3">
-                        <label for="select3">c) vastaus 3</label>
+                    <div class="radio-selection"><input type="radio" id="select1.3" value="vastaus 3">
+                        <label for="select1.3">c) vastaus 3</label>
                     </div>
 
-                    <div class="radio-selection"><input type="radio" id="select4" value="vastaus 4">
-                        <label for="select4">d) vastaus 4</label>
+                    <div class="radio-selection"><input type="radio" id="select1.4" value="vastaus 4">
+                        <label for="select1.4">d) vastaus 4</label>
                     </div>
 
 
                 </div>
-
-                <div>
-                    <button id="check-btn" class="check-btn btn">Tarkista</button>
+                <span id="answerResult">testi</span>
+                <div class="check-div">
+                    <button id="check-btn" class="check-btn" onclick="question1()">Tarkista</button>
                 </div>
 
             </div>
@@ -95,7 +100,7 @@
 
         <div class="score">
             <span id="right-answers"></span>
-        </div>-->>
+        </div>-->
     </section>
 
     <div class="shapedividers_com-2407">
@@ -183,7 +188,7 @@
         </div>
       </div>
     </footer>
-    <script src="javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

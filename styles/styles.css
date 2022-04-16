@@ -7,13 +7,28 @@ reset browser defaults */
     box-sizing: border-box;
 }
 
+
+/* BASE SETUP2 
+Setting font size to X pixels doesn't let users to increase or decrease the font size on their browsers
+Default font size = 16px -> 1rem = 10px -> 10px / 16px = 0.625px = 62.5%
+*/
+
 html {
     font-size: 62.5%;
-    font-family: "Annie Use Your Telescope", cursive;
-    color: black;
-    letter-spacing: 0.15rem;
     background-color: #e9a452;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.15rem;
+    line-height: 1;
+    color: black;
+}
+
+.heading-primary,
+.heading-secondary {
+    font-family: "Annie Use Your Telescope", cursive;
 }
 
 
@@ -39,7 +54,6 @@ html {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-    font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -70,7 +84,6 @@ html {
 
 .btn-search-click:link,
 .btn-search-click:visited {
-    font-family: "Roboto", sans-serif;
     text-decoration: none;
     font-weight: 600;
     color: white;
@@ -101,7 +114,6 @@ html {
 
 .heading-primary {
     padding-top: 50px;
-    font-family: inherit;
     font-size: 10rem;
     letter-spacing: 0.5rem;
     color: #e7e7e7;
@@ -109,7 +121,6 @@ html {
 }
 
 .hero-text {
-    font-family: "Roboto", sans-serif;
     font-size: 2.2rem;
     letter-spacing: 0.15rem;
     font-weight: 600;

@@ -3,13 +3,13 @@ const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 
 function question1() {
-    document.getElementById("answer-result").innerHTML = "";
+    document.getElementById("answerResult").innerHTML = "";
     let oikeaVastaus = document.getElementById("select1.1").checked;
     if (oikeaVastaus) {
-        document.getElementById("answer-result").innerHTML = RIGHT_ANSWER;
+        document.getElementById("answerResult").innerHTML = RIGHT_ANSWER;
         pisteet++;
     } else {
-        document.getElementById("answer-result").innerHTML = WRONG_ANSWER;
+        document.getElementById("answerResult").innerHTML = WRONG_ANSWER;
     }
     document.getElementById("select1.1").disabled = true;
     document.getElementById("select1.2").disabled = true;

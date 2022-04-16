@@ -22,7 +22,7 @@ html {
 body {
     font-family: "Quicksand", sans-serif;
     letter-spacing: 0.15rem;
-    line-height: 1;
+    line-height: 1.5;
     color: black;
 }
 
@@ -233,7 +233,6 @@ body {
     background-color: #e38d27;
     padding: 100px 300px 100px 300px;
     justify-items: left;
-    font-family: "Roboto", sans-serif;
 }
 
 .footer-header {
@@ -333,7 +332,6 @@ td {
     color: #333;
     font-size: 1.2rem;
     justify-self: center;
-    font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
 
@@ -350,14 +348,12 @@ td {
     padding: 0px 50px 100px 50px;
     text-align: center;
     font-size: 2.2rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .about-us-header {
     grid-column: 1/4;
     text-align: center;
     font-size: 4rem;
-    font-family: "Annie Use Your Telescope", cursive;
     letter-spacing: 0.15rem;
 }
 
@@ -380,7 +376,6 @@ td {
     padding-top: 20px;
     font-size: 2.4rem;
     font-weight: 600;
-    font-family: inherit;
 }
 
 .about-you-title {

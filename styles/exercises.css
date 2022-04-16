@@ -1,4 +1,4 @@
-.a {
+.visa-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +50,4 @@
     font-weight: 600;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-.hide {
-    display: none;
 }

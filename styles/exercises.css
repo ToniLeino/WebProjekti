@@ -1,4 +1,28 @@
-.visa-container {
+.section-visa {
+    padding: 200px;
+}
+
+.visa-header {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 4px #b6711f;
+}
+
+.visa-questions {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.visa-text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* .visa-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,21 +53,20 @@
     font-weight: 600;
     border-radius: 20px;
     padding: 10px;
-    /* outline = saavutettavuus border kun painaa tabia */
-    outline: none;
-    cursor: pointer;
-}
 
+
+outline: none;
+cursor: pointer;
+
+}
 .btn:hover {
     background-color: #ffadad;
 }
-
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .start-btn,
 .next-btn {
     font-size: 2rem;
@@ -51,3 +74,4 @@
     padding: 10px 20px;
     cursor: pointer;
 }
+*/

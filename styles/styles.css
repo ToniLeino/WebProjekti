@@ -10,6 +10,7 @@ reset browser defaults */
 html {
     font-size: 62.5%;
     font-family: "Annie Use Your Telescope", cursive;
+    color: black;
     letter-spacing: 0.15rem;
     background-color: #e9a452;
     scroll-behavior: smooth;
@@ -155,7 +156,7 @@ html {
     row-gap: 10px;
     padding: 50px 90px 50px 90px;
     background-color: #e38d27;
-    border-radius: 10%;
+    border-radius: 50px;
     text-align: center;
     border: 20px solid #e6983d;
 }

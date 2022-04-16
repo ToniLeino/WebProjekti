@@ -92,11 +92,13 @@ label,
 label:hover,
 label:active {
     background-color: #ffadad;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
-.check-div {
-    padding-bottom: 200px;
+.id-answer {
+    padding: 20px 0 200px 0;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .check-btn {
@@ -107,5 +109,5 @@ label:active {
 .check-btn:hover,
 .check-btn:active {
     background-color: #e9a452;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }

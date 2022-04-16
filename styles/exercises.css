@@ -43,6 +43,20 @@
     letter-spacing: 0.15rem;
     font-family: "Roboto", sans-serif;
     background-color: #c8e9a0af;
+    border-radius: 50px;
+}
+
+.visa-answer-options {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 50px 0 50px 0;
+    font-size: 2rem;
+    line-height: 1.5rem;
 }
 
 

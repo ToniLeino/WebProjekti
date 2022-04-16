@@ -13,7 +13,7 @@
 
 .visa-questions {
     display: grid;
-    grid-template-columns: repeat(1, 3fr);
+    grid-template-columns: repeat(1, 2fr);
     flex-direction: column;
     margin: 0 auto;
     padding: 10px;
@@ -33,6 +33,12 @@
 
 .visa-text {
     padding: 0 200px 0 200px;
+}
+
+.question-title {
+    font-size: 2.2rem;
+    padding: 10px;
+    font-weight: 600;
 }
 
 .question-container {
@@ -83,12 +89,14 @@ label,
     font-weight: bold;
 }
 
-label:hover {
+label:hover,
+label:active {
     background-color: #ffadad;
+    transition: all 0.4s;
 }
 
 .check-div {
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 }
 
 .check-btn {
@@ -96,6 +104,8 @@ label:hover {
     font-family: inherit;
 }
 
-.check-btn:hover {
+.check-btn:hover,
+.check-btn:active {
     background-color: #e9a452;
+    transition: all 0.4s;
 }

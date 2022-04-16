@@ -1,11 +1,14 @@
 .section-visa {
-    padding: 200px;
+    padding: 100px 200px 200px 200px;
 }
 
 .visa-header {
+    font-family: "Roboto", sans-serif;
     font-size: 4rem;
     color: white;
     text-shadow: 4px 4px #b6711f;
+    align-self: center;
+    padding-bottom: 50px;
 }
 
 .visa-questions {
@@ -14,12 +17,34 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 10px;
+    background-color: #e38d27;
+    border-radius: 50px;
+    text-align: center;
+    border: 20px solid #e6983d;
 }
 
 .visa-text-box {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.15rem;
     display: flex;
     flex-direction: column;
+    padding: 50px 0 50px 0;
 }
+
+.visa-text {
+    padding: 0 200px 0 200px;
+}
+
+.question-container {
+    padding: 200px 10px 200px 10px;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #c8e9a0af;
+}
+
+.question {}
 
 
 /* .visa-container {

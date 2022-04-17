@@ -10,6 +10,7 @@ function question1() {
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
     let radio = document.querySelector("input[type=radio]:checked");
+    /*tämä on vain lintuvisan oikea vastaus, täytyy keksiä joku muu tapa tähän */
     let correctAnswer = document.getElementById("select1.3").checked;
     result.innerHTML = "";
     if (

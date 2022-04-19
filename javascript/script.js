@@ -4,7 +4,7 @@ const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
 
 function question1() {
-    let result = document.getElementById("answer-result");
+    let result = document.getElementById("answer-result1");
     let firstAnswer = document.getElementById("select1.1");
     let secondAnswer = document.getElementById("select1.2");
     let thirdAnswer = document.getElementById("select1.3");
@@ -29,20 +29,19 @@ function question1() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
-        radio.checked = false;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
 }
 
-/*function question2() {
-    let result = document.getElementById("teksti2");
-    let firstAnswer = document.getElementById("o2.1");
-    let secondAnswer = document.getElementById("o2.2");
-    let thirdAnswer = document.getElementById("o2.3");
-    let fourthAnswer = document.getElementById("o2.4");
-    let radio = document.querySelector("input[type=radio][name=ree]:checked");
-    let oikeaVastaus = document.getElementById("o2.2").checked;
+function question2() {
+    let result = document.getElementById("answer-result2");
+    let firstAnswer = document.getElementById("select2.1");
+    let secondAnswer = document.getElementById("select2.2");
+    let thirdAnswer = document.getElementById("select2.3");
+    let fourthAnswer = document.getElementById("select2.4");
+    let radio = document.querySelector("input[type=radio]:checked");
+    let oikeaVastaus = document.getElementById("select2.1").checked;
     result.innerHTML = "";
     if (
         firstAnswer.checked ||
@@ -60,20 +59,19 @@ function question1() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
-        radio.checked = false;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
 }
 
 function question3() {
-    let result = document.getElementById("teksti3");
-    let firstAnswer = document.getElementById("o3.1");
-    let secondAnswer = document.getElementById("o3.2");
-    let thirdAnswer = document.getElementById("o3.3");
-    let fourthAnswer = document.getElementById("o3.4");
-    let radio = document.querySelector("input[type=radio][name=ree]:checked");
-    let oikeaVastaus = document.getElementById("o3.3").checked;
+    let result = document.getElementById("answer-result3");
+    let firstAnswer = document.getElementById("select3.1");
+    let secondAnswer = document.getElementById("select3.2");
+    let thirdAnswer = document.getElementById("select3.3");
+    let fourthAnswer = document.getElementById("select3.4");
+    let radio = document.querySelector("input[type=radio]:checked");
+    let oikeaVastaus = document.getElementById("select3.4").checked;
     result.innerHTML = "";
     if (
         firstAnswer.checked ||
@@ -91,20 +89,19 @@ function question3() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
-        radio.checked = false;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
 }
 
 function question4() {
-    let result = document.getElementById("teksti4");
-    let firstAnswer = document.getElementById("o4.1");
-    let secondAnswer = document.getElementById("o4.2");
-    let thirdAnswer = document.getElementById("o4.3");
-    let fourthAnswer = document.getElementById("o4.4");
-    let radio = document.querySelector("input[type=radio][name=ree]:checked");
-    let oikeaVastaus = document.getElementById("o4.4").checked;
+    let result = document.getElementById("answer-result4");
+    let firstAnswer = document.getElementById("select4.1");
+    let secondAnswer = document.getElementById("select4.2");
+    let thirdAnswer = document.getElementById("select4.3");
+    let fourthAnswer = document.getElementById("select4.4");
+    let radio = document.querySelector("input[type=radio]:checked");
+    let oikeaVastaus = document.getElementById("select4.2").checked;
     result.innerHTML = "";
     if (
         firstAnswer.checked ||
@@ -122,20 +119,19 @@ function question4() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
-        radio.checked = false;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
 }
 
 function question5() {
-    let result = document.getElementById("teksti5");
-    let firstAnswer = document.getElementById("o5.1");
-    let secondAnswer = document.getElementById("o5.2");
-    let thirdAnswer = document.getElementById("o5.3");
-    let fourthAnswer = document.getElementById("o5.4");
-    let radio = document.querySelector("input[type=radio][name=ree]:checked");
-    let oikeaVastaus = document.getElementById("o5.5").checked;
+    let result = document.getElementById("answer-result5");
+    let firstAnswer = document.getElementById("select5.1");
+    let secondAnswer = document.getElementById("select5.2");
+    let thirdAnswer = document.getElementById("select5.3");
+    let fourthAnswer = document.getElementById("select5.4");
+    let radio = document.querySelector("input[type=radio]:checked");
+    let oikeaVastaus = document.getElementById("select5.4").checked;
     result.innerHTML = "";
     if (
         firstAnswer.checked ||
@@ -153,7 +149,6 @@ function question5() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
-        radio.checked = false;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -162,4 +157,4 @@ function question5() {
 function result() {
     let loppuTulos = pisteet + " / 5 !";
     document.getElementById("lobutulos").innerHTML = loppuTulos;
-}*/
+}

@@ -28,6 +28,7 @@ body {
 
 .heading-primary,
 .heading-secondary {
+    display: block;
     font-family: "Annie Use Your Telescope", cursive;
 }
 
@@ -91,6 +92,7 @@ body {
 }
 
 .shapedividers_com-8976 {
+    display: flex;
     padding-bottom: 50px;
 }
 
@@ -160,6 +162,7 @@ body {
 .section-quizzes {
     /*top, right, bottom, left*/
     padding: 200px;
+    display: block;
 }
 
 .quizzes-container {
@@ -174,7 +177,8 @@ body {
 }
 
 .quiz-header {
-    grid-column: 1/4;
+    display: flex;
+    grid-column: 2/4;
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px #b6711f;
@@ -216,9 +220,11 @@ body {
 .quiz-name {
     font-size: 2.4rem;
     font-weight: 600;
+    display: flex;
 }
 
 .quiz-image {
+    display: flex;
     max-width: 50%;
     max-height: 100%;
     padding-bottom: 20px;

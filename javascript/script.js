@@ -28,6 +28,7 @@ function question1() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
+        document.getElementById("check-btn1").disabled = true;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -57,6 +58,7 @@ function question2() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
+        document.getElementById("check-btn2").disabled = true;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -86,6 +88,7 @@ function question3() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
+        document.getElementById("check-btn3").disabled = true;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -115,6 +118,7 @@ function question4() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
+        document.getElementById("check-btn4").disabled = true;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -144,6 +148,7 @@ function question5() {
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
+        document.getElementById("check-btn5").disabled = true;
     } else {
         result.innerHTML = ANSWER_ERROR;
     }

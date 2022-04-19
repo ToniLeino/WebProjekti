@@ -154,7 +154,7 @@ function question5() {
     }
 }
 
-function result() {
+function checkResult() {
     let loppuTulos = pisteet + " / 5 !";
-    document.getElementById("lobutulos").innerHTML = loppuTulos;
+    document.getElementById("lopputulos").innerHTML = loppuTulos;
 }

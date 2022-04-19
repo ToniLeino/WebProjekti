@@ -35,33 +35,135 @@ document.getElementById("questionNelja").innerHTML = questionNelja
 let questionViisi = kertoJako[(Math.random() * kertoJako.length) | 0]
 document.getElementById("questionViisi").innerHTML = questionViisi
 
-let vastaus1 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
+//1.x
+
+let vastaus11 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
 kerto1Vaara = kerto1Vaara.filter(function(item) {
-    return item !== vastaus1
+    return item !== vastaus11
 })
-document.getElementById("vastaus1.1").innerHTML = vastaus1
+document.getElementById("vastaus1.1").innerHTML = vastaus11
 
-
-let vastaus2 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
+let vastaus12 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
 kerto1Vaara = kerto1Vaara.filter(function(item) {
-    return item !== vastaus2
+    return item !== vastaus12
 })
-document.getElementById("vastaus1.2").innerHTML = vastaus2
+document.getElementById("vastaus1.2").innerHTML = vastaus12
 
-
-let vastaus3 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
+let vastaus13 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
 kerto1Vaara = kerto1Vaara.filter(function(item) {
-    return item !== vastaus3
+    return item !== vastaus13
 })
-document.getElementById("vastaus1.3").innerHTML = vastaus3
+document.getElementById("vastaus1.3").innerHTML = vastaus13
 
-
-let vastaus4 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
+let vastaus14 = kerto1Vaara[(Math.random() * kerto1Vaara.length) | 0]
 kerto1Vaara = kerto1Vaara.filter(function(item) {
-    return item !== vastaus4
+    return item !== vastaus14
 })
-document.getElementById("vastaus1.4").innerHTML = vastaus4
+document.getElementById("vastaus1.4").innerHTML = vastaus14
 
+//2.x
+
+let vastaus21 = kerto2Vaara[(Math.random() * kerto2Vaara.length) | 0]
+kerto2Vaara = kerto2Vaara.filter(function(item) {
+    return item !== vastaus21
+})
+document.getElementById("vastaus2.1").innerHTML = vastaus21
+
+let vastaus22 = kerto2Vaara[(Math.random() * kerto2Vaara.length) | 0]
+kerto2Vaara = kerto2Vaara.filter(function(item) {
+    return item !== vastaus22
+})
+document.getElementById("vastaus2.2").innerHTML = vastaus22
+
+let vastaus23 = kerto2Vaara[(Math.random() * kerto2Vaara.length) | 0]
+kerto2Vaara = kerto2Vaara.filter(function(item) {
+    return item !== vastaus23
+})
+document.getElementById("vastaus2.3").innerHTML = vastaus23
+
+let vastaus24 = kerto2Vaara[(Math.random() * kerto2Vaara.length) | 0]
+kerto2Vaara = kerto2Vaara.filter(function(item) {
+    return item !== vastaus24
+})
+document.getElementById("vastaus2.4").innerHTML = vastaus24
+
+//3.x
+
+let vastaus31 =jako1Vaara[(Math.random() * jako1Vaara.length) | 0]
+jako1Vaara = jako1Vaara.filter(function(item) {
+    return item !== vastaus31
+})
+document.getElementById("vastaus3.1").innerHTML = vastaus31
+
+let vastaus32 = jako1Vaara[(Math.random() * jako1Vaara.length) | 0]
+jako1Vaara = jako1Vaara.filter(function(item) {
+    return item !== vastaus32
+})
+document.getElementById("vastaus3.2").innerHTML = vastaus32
+
+let vastaus33 = jako1Vaara[(Math.random() * jako1Vaara.length) | 0]
+jako1Vaara = jako1Vaara.filter(function(item) {
+    return item !== vastaus33
+})
+document.getElementById("vastaus3.3").innerHTML = vastaus33
+
+let vastaus34 = jako1Vaara[(Math.random() * jako1Vaara.length) | 0]
+jako1Vaara = jako1Vaara.filter(function(item) {
+    return item !== vastaus34
+})
+document.getElementById("vastaus3.4").innerHTML = vastaus34
+
+//4.x
+
+let vastaus41 = jako2Vaara[(Math.random() * jako2Vaara.length) | 0]
+jako2Vaara = jako2Vaara.filter(function(item) {
+    return item !== vastaus41
+})
+document.getElementById("vastaus4.1").innerHTML = vastaus41
+
+let vastaus42 = jako2Vaara[(Math.random() * jako2Vaara.length) | 0]
+jako2Vaara = jako2Vaara.filter(function(item) {
+    return item !== vastaus42
+})
+document.getElementById("vastaus4.2").innerHTML = vastaus42
+
+let vastaus43 = jako2Vaara[(Math.random() * jako2Vaara.length) | 0]
+jako2Vaara = jako2Vaara.filter(function(item) {
+    return item !== vastaus43
+})
+document.getElementById("vastaus4.3").innerHTML = vastaus43
+
+let vastaus44 = jako2Vaara[(Math.random() * jako2Vaara.length) | 0]
+jako2Vaara = jako2Vaara.filter(function(item) {
+    return item !== vastaus44
+})
+document.getElementById("vastaus4.4").innerHTML = vastaus44
+
+//5.x
+
+let vastaus51 = kertoJakoVaara[(Math.random() * kertoJakoVaara.length) | 0]
+kertoJakoVaara = kertoJakoVaara.filter(function(item) {
+    return item !== vastaus51
+})
+document.getElementById("vastaus5.1").innerHTML = vastaus51
+
+let vastaus52 = kertoJakoVaara[(Math.random() * kertoJakoVaara.length) | 0]
+kertoJakoVaara = kertoJakoVaara.filter(function(item) {
+    return item !== vastaus52
+})
+document.getElementById("vastaus5.2").innerHTML = vastaus22
+
+let vastaus53 = kertoJakoVaara[(Math.random() * kertoJakoVaara.length) | 0]
+kertoJakoVaara = kertoJakoVaara.filter(function(item) {
+    return item !== vastaus53
+})
+document.getElementById("vastaus5.3").innerHTML = vastaus53
+
+let vastaus54 = kertoJakoVaara[(Math.random() * kertoJakoVaara.length) | 0]
+kertoJakoVaara = kertoJakoVaara.filter(function(item) {
+    return item !== vastaus54
+})
+document.getElementById("vastaus5.4").innerHTML = vastaus54
 
 
 

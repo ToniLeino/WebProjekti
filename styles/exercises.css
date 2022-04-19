@@ -42,6 +42,7 @@
 }
 
 .question-container {
+    display: flex;
     padding: 100px 0 100px 0;
     margin: 0 400px 0 400px;
     font-size: 2rem;

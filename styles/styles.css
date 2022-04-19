@@ -167,7 +167,7 @@ body {
 
 .quizzes-container {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 6fr);
     row-gap: 10px;
     padding: 50px 90px 50px 90px;
     background-color: #e38d27;
@@ -178,7 +178,8 @@ body {
 
 .quiz-header {
     display: flex;
-    grid-column: 2/4;
+    justify-content: center;
+    grid-column: 1/4;
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px #b6711f;
@@ -207,17 +208,24 @@ body {
     /*border: solid 5px rgb(33, 33, 33);*/
 }
 
-.quiz img {
-    width: 70%;
+.quiz img,
+.quiz p,
+.quiz a {
+    width: 100%;
     transition: all 0.4s;
     z-index: 1;
 }
 
 .quiz img:hover,
-.quiz a,
-.quiz p {
+.quiz a:hover,
+.quiz p:hover {
+    display: inline-block;
     transform: scale(1.1);
-    z-index: 1;
+}
+
+a {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .quiz-name {

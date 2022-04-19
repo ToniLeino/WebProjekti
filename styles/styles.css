@@ -208,13 +208,14 @@ body {
 }
 
 .quiz img {
-    width: 65%;
+    width: 70%;
     transition: all 0.4s;
     z-index: 1;
 }
 
 .quiz img:hover,
-.quiz a {
+.quiz a,
+.quiz p {
     transform: scale(1.1);
     z-index: 1;
 }
@@ -226,12 +227,8 @@ body {
 }
 
 .quiz-image {
-    display: flex;
-    max-width: 59%;
-    max-height: 100%;
-    padding-bottom: 20px;
-    margin-top: 21%;
-    margin-left: 20%;
+    display: inline-block;
+    max-width: 50%;
 }
 
 

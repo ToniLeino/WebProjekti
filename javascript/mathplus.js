@@ -1,4 +1,5 @@
 //random generaattori
+    
     let points = 0;
     const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
     const WRONG_ANSWER = "Vastauksesi on väärin!";
@@ -9,9 +10,14 @@
     let max = 25;
     let int1 = Math.floor(Math.random() * (max - min + 1)) + min;
     let int2 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let int3 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let int4 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let int5 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let int6 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    //Tehtävä yksi
 
     document.getElementById("questionYksi").innerHTML = int1 + " " + "+" + " " + int2 + " = ";
-    
     let plusanswer = int1 + int2;
 
     function question1() {
@@ -24,3 +30,70 @@
             }
             document.getElementById("check-btn1").disabled = true;
     }
+    //tehtävä yksi loppuu
+
+    //tehtävä kaksi
+    document.getElementById("questionKaksi").innerHTML = int4  + " + " + int5 + " + " + int6 + " = ";
+    let plusanswer2 = int4 + int5 + int6;
+
+    function question2() {
+        let uanswer = document.getElementById("vastaus2").value;
+            if (uanswer == plusanswer2) {
+            tarkistus2.innerHTML = RIGHT_ANSWER;
+            points++;
+         } else {
+            tarkistus2.innerHTML = WRONG_ANSWER;   
+        }
+        document.getElementById("check-btn2").disabled = true;
+    }
+    // tehtävä kaksi loppu
+
+    //tehtävä kolme
+    document.getElementById("questionKolme").innerHTML = int2  + " - " + int3 + " = ";
+    let plusanswer3 = int2 - int3;
+
+    function question3() {
+        let uanswer = document.getElementById("vastaus3").value;
+            if (uanswer == plusanswer3) {
+                tarkistus3.innerHTML = RIGHT_ANSWER;
+                points++;
+             } else {
+
+            tarkistus3.innerHTML = WRONG_ANSWER;  
+            }
+        document.getElementById("check-btn3").disabled = true;
+          
+    }
+    //tehtävä kolme loppuu
+
+    //tehtävä neljä
+    document.getElementById("questionNelja").innerHTML = int1  + " - " + int6 + " - " + int4 + " = ";
+    let plusanswer4 = int1 - int6 - int4;
+
+    function question4() {
+        let uanswer = document.getElementById("vastaus4").value;
+            if (uanswer == plusanswer4) {
+            tarkistus4.innerHTML = RIGHT_ANSWER;
+            points++;
+         } else{
+            tarkistus4.innerHTML = WRONG_ANSWER;  
+        }
+        document.getElementById("check-btn4").disabled = true;
+    }
+    //tehtävä neljä loppuu
+
+    //tehtvä viisi
+    document.getElementById("questionViisi").innerHTML = int3  + " - " + int5 + " + " + int2 + " = ";
+    let plusanswer5 = int3 - int5 + int2;
+
+    function question5() {
+        let uanswer = document.getElementById("vastaus5").value;
+            if (uanswer == plusanswer5) {
+            tarkistus5.innerHTML = RIGHT_ANSWER;
+            points++;
+            } else {
+            tarkistus5.innerHTML = WRONG_ANSWER;
+          }
+          document.getElementById("check-btn5").disabled = true;    
+    }
+    //tehtävä viisi loppuu

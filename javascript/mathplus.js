@@ -27,6 +27,7 @@
                 points++;
             } else {
                 tarkistus1.innerHTML = WRONG_ANSWER;   
+                document.getElementById("oikeavastaus1").innerHTML = "Oikea vastaus on " + plusanswer;
             }
             document.getElementById("check-btn1").disabled = true;
     }
@@ -43,6 +44,7 @@
             points++;
          } else {
             tarkistus2.innerHTML = WRONG_ANSWER;   
+            document.getElementById("oikeavastaus2").innerHTML = "Oikea vastaus on " + plusanswer2;
         }
         document.getElementById("check-btn2").disabled = true;
     }
@@ -58,8 +60,8 @@
                 tarkistus3.innerHTML = RIGHT_ANSWER;
                 points++;
              } else {
-
-            tarkistus3.innerHTML = WRONG_ANSWER;  
+                tarkistus3.innerHTML = WRONG_ANSWER;  
+                document.getElementById("oikeavastaus3").innerHTML = "Oikea vastaus on " + plusanswer3;
             }
         document.getElementById("check-btn3").disabled = true;
           
@@ -77,6 +79,7 @@
             points++;
          } else{
             tarkistus4.innerHTML = WRONG_ANSWER;  
+            document.getElementById("oikeavastaus4").innerHTML = "Oikea vastaus on " + plusanswer4;
         }
         document.getElementById("check-btn4").disabled = true;
     }
@@ -93,7 +96,17 @@
             points++;
             } else {
             tarkistus5.innerHTML = WRONG_ANSWER;
+            document.getElementById("oikeavastaus5").innerHTML = "Oikea vastaus on " + plusanswer5;
           }
           document.getElementById("check-btn5").disabled = true;    
     }
     //tehtävä viisi loppuu
+
+    //tarkista tulokset 
+
+    function checkResult() {
+        let finalResult = points + " / 5 !";
+        document.getElementById("printFinalResult").innerHTML = finalResult;
+    }
+
+    //tarkista tulokset loppuu

@@ -3,6 +3,17 @@
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+let vastKent1 = document.getElementById("vastaus1.1")
+let vastKent2 = document.getElementById("vastaus1.2")
+let vastKent3 = document.getElementById("vastaus1.3")
+let vastKent4 = document.getElementById("vastaus1.4")
+
+let vastKentat = [vastKent1, vastKent2, vastKent3, vastKent4]
+
+let kysymys = document.getElementById("questionYksi")
+
+
 //Matematiikan tehtävä vaihtoehtoja arrayssä
 let kerto1 = ["3 * 5 = ?", "6 * 7 = ?", "9 * 4 = ?", "6 * 6 = ?"];
 let kerto2 = ["6 * 3 * 2 = ?", "3 * 3 * 3 = ?", "3 * 4 * 3 = ?", "7 * 2 * 2 = ?"];
@@ -16,6 +27,8 @@ let kerto2Oikea = ["36", "27", "36", "28"];
 let jako1Oikea = ["8", "9", "6", "10"];
 let jako2Oikea = ["3", "2", "2", "1"];
 let kertoJakoOikea = ["14", "64", "12", "30"]
+
+
 
 //matematiikan tehtävien väärät vaihtoehdot
 let kerto1Vaara = ["68", "54", "13", "17", "16", "20", "74", "60"];
@@ -164,6 +177,16 @@ kertoJakoVaara = kertoJakoVaara.filter(function(item) {
     return item !== vastaus54
 })
 document.getElementById("vastaus5.4").innerHTML = vastaus54
+
+//kysymykset ja oikeat vastaukset
+
+if (kysymys = "3 * 5 = ?") {
+    document.getElementById("vastaus1.1").innerHTML = "15"
+
+}
+
+
+
 
 
 

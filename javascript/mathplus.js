@@ -86,8 +86,8 @@
     //tehtävä neljä loppuu
 
     //tehtvä viisi
-    document.getElementById("questionViisi").innerHTML = int3  + " - " + int5 + " + " + int2 + " = ";
-    let plusanswer5 = int3 - int5 + int2;
+    document.getElementById("questionViisi").innerHTML = int3  + " + " + int5 + " - " + int2 + " = ";
+    let plusanswer5 = int3 + int5 - int2;
 
     function question5() {
         let uanswer = document.getElementById("vastaus5").value;

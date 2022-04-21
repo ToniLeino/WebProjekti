@@ -153,6 +153,13 @@ function question55() {
         document.getElementById("check-btn15").disabled = true;
 }
 
+//lopputulos
+
+function checkResult2() {
+    let finalResult = points + " / 5 !";
+    document.getElementById("FinalResult").innerHTML = finalResult;
+}
+
 
 
 

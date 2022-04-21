@@ -1,4 +1,4 @@
-.section-visa {
+.math-container {
     padding: 100px 200px 200px 200px;
 }
 
@@ -11,7 +11,7 @@
     padding: 50px 0 50px 0;
 }
 
-.visa-questions {
+.math-questions {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     flex-direction: column;

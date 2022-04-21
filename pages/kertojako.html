@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kerto- ja jakolasku</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/dividers.css" />
-    <link rel="stylesheet" href="../styles/exercises.css" />
+    <title>KertoJako</title>
+    <link rel="stylesheet" href="/WebProjekti/styles/styles.css" />
+    <link rel="stylesheet" href="/WebProjekti/styles/dividers.css" />
+    <link rel="stylesheet" href="/WebProjekti/styles/math.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
@@ -51,11 +51,12 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
     </div>
 
-    <!-- VISA -->
-    <section class="section-visa">
-        <div class="visa-questions">
+    <!-- Math container -->
+    <section class="math-container">
+        <!--Section header-->
+        <div class="math-questions">
             <div class="visa-header heading-secondary">
-                <h2>Matematiikan kerto ja jakolaskut.</h2>
+                <h2>Matematiikan kerto- ja jakolaskuja.</h2>
             </div>
 
             <div class="visa-text-box">
@@ -64,195 +65,104 @@
                 </p>
             </div>
 
+            <!--//Section header-->
+
+            <!--Kymysys 1 container-->
+
             <div class="question-title">
                 Kysymys 1
             </div>
 
             <div class="question-container">
-                <div class="question" id="questionYksi"></div>
+                <div id="kysymysYksi"></div>
+                    <input type="text" id="vastaus11" value="">
             </div>
 
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="btn-grid">
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.1" value="vastaus 1" />
-                        <label for="select1.1" id = "vastaus1.1"></label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.2" value="vastaus 2" />
-                        <label for="select1.2" id = "vastaus1.2"></label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.3" value="vastaus 3" />
-                        <label for="select1.3" id = "vastaus1.3"></label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.4" value="vastaus 4" />
-                        <label for="select1.4" id = "vastaus1.4"></label>
-                    </div>
+            <div class="answer-result" style="margin-top: 10px;">
+                <div class="check-div">
+                    <button id="check-btn" class="check-btn" onclick="question11()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus11"></div>
                 </div>
+            </div>
 
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn" class="check-btn" onclick="question1()"> Tarkista </button>
-                        <div class="id-answer" id="answer-result"></div>
-                    </div>
+            <!--//Kysymys 1 container-->
+
+            <!--Kymysys 2 container-->
+            <div class="question-title">
+                Kysymys 2
+            </div>
+
+            <div class="question-container">
+                <div id="kysymysKaksi"></div>
+                    <input type="text" id="vastaus12" value="">
+            </div>
+
+            <div class="answer-result" style="margin-top: 10px;">
+                <div class="check-div">
+                    <button id="check-btn1" class="check-btn" onclick="question22()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus22"></div>
                 </div>
+            </div>
 
-                <div class="question-title">
-                    Kysymys 2
+            <!--//kysymys 2 container-->
+
+            <!--Kysymys 3 container-->
+
+            <div class="question-title">
+                Kysymys 3
+            </div>
+
+            <div class="question-container">
+                <div id="kysymysKolme"></div>
+                <input type="text" id="vastaus13" value="">
+            </div>
+            <div class="answer-result" style="margin-top: 10px;">
+                <div class="check-div">
+                    <button id="check-btn" class="check-btn" onclick="question3()"> Tarkista </button>
+                    <div class="id-answer" id="answer3"></div>
                 </div>
+            </div>
 
-                <div class="question-container">
-                    <div class="question" id="questionKaksi"></div>
+            <!--//kysymys 3 container-->
+
+            <!--Kysymys 4 container-->
+
+            <div class="question-title">
+                Kysymys 4
+            </div>
+
+            <div class="question-container">
+                <div id="kysymysNelja"></div>
+                <input type="text" id="vastaus14" value="">
+            </div>
+            <div class="answer-result" style="margin-top: 10px;">
+                <div class="check-div">
+                    <button id="check-btn" class="check-btn" onclick="question4()"> Tarkista </button>
+                    <div class="id-answer" id="answer4"></div>
                 </div>
+            </div>
 
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.1" value="vastaus 1" />
-                            <label for="select2.1" id = "vastaus2.1"></label>
-                        </div>
+            <!--//kysymys 4 container-->
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.2" value="vastaus 2" />
-                            <label for="select2.2" id = "vastaus2.2"></label>
-                        </div>
+            <!--Kysymys 5 container-->
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.3" value="vastaus 3" />
-                            <label for="select2.3" id = "vastaus2.3"></label>
-                        </div>
+            <div class="question-title">
+                Kysymys 5
+            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.4" value="vastaus 4" />
-                            <label for="select2.4" id = "vastaus2.4"></label>
-                        </div>
-
-                    </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn" class="check-btn" onclick="question1()"> Tarkista </button>
-                        </div>
-                    </div>
+            <div class="question-container">
+                <div id="kysymysViisi"></div>
+                    <input type="text" id="vastaus15" value="">
+            </div>
+            <div class="answer-result" style="margin-top: 10px;">
+                <div class="check-div">
+                    <button id="check-btn" class="check-btn" onclick="question5()"> Tarkista </button>
+                    <div class="id-answer" id="answer5"></div>
                 </div>
+            </div>
 
-                <div class="question-title">
-                    Kysymys 3
-                </div>
-
-                <div class="question-container">
-                    <div class="question" id="questionKolme"></div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.1" value="vastaus 1" />
-                            <label for="select3.1" id = "vastaus3.1"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.2" value="vastaus 2" />
-                            <label for="select3.2" id = "vastaus3.2"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.3" value="vastaus 3" />
-                            <label for="select3.3" id = "vastaus3.3"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.4" value="vastaus 4" />
-                            <label for="select3.4" id = "vastaus3.4"></label>
-                        </div>
-
-                    </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn" class="check-btn" onclick="question1()"> Tarkista </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="question-title">
-                    Kysymys 4
-                </div>
-
-                <div class="question-container">
-                    <div class="question" id="questionNelja"></div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.1" value="vastaus 1" />
-                            <label for="select4.1" id = "vastaus4.1"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.2" value="vastaus 2" />
-                            <label for="select4.2" id = "vastaus4.2"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.3" value="vastaus 3" />
-                            <label for="select4.3" id = "vastaus4.3"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.4" value="vastaus 4" />
-                            <label for="select4.4" id = "vastaus4.4"></label>
-                        </div>
-
-                    </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn" class="check-btn" onclick="question1()"> Tarkista </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="question-title">
-                    Kysymys 5
-                </div>
-
-                <div class="question-container">
-                    <div class="question" id="questionViisi"></div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.1" value="vastaus 1" />
-                            <label for="select5.1" id = "vastaus5.1"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.2" value="vastaus 2" />
-                            <label for="select5.2" id = "vastaus5.2"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.3" value="vastaus 3" />
-                            <label for="select5.3" id = "vastaus5.3"></label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.4" value="vastaus 4" />
-                            <label for="select5.4" id = "vastaus5.4"></label>
-                        </div>
-
-                    </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn" class="check-btn" onclick="question1()"> Tarkista </button>
-                        </div>
-                    </div>
-                </div>
+            <!--//kysymys 5 container-->
+    </div>    
     </section>
 
     <div class="shapedividers_com-2407">
@@ -340,15 +250,8 @@
         </div>
       </div>
     </footer>
-    <script src="../javascript/script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="/WebProjekti/javascript/kertojako.js"></script>
   </body>
 </html>

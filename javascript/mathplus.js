@@ -6,6 +6,7 @@
     const WRONG_ANSWER = "Vastauksesi on väärin!";
 
     //Satunnais lukuja
+
     let min = 1;
     let max = 25;
     let int1 = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -32,8 +33,6 @@
         document.getElementById("check-btn1").disabled = true;
     }
 
-    //tehtävä yksi loppuu
-
     //tehtävä kaksi
 
     document.getElementById("questionKaksi").innerHTML = int4  + " + " + int5 + " + " + int6 + " = ";
@@ -50,8 +49,6 @@
         }
         document.getElementById("check-btn2").disabled = true;
     }
-
-    // tehtävä kaksi loppu
 
     //tehtävä kolme
 
@@ -70,8 +67,6 @@
         document.getElementById("check-btn3").disabled = true;  
     }
 
-    //tehtävä kolme loppuu
-
     //tehtävä neljä
 
     document.getElementById("questionNelja").innerHTML = int1  + " - " + int6 + " - " + int4 + " = ";
@@ -88,8 +83,6 @@
         }
         document.getElementById("check-btn4").disabled = true;
     }
-
-    //tehtävä neljä loppuu
 
     //tehtvä viisi
 
@@ -108,13 +101,9 @@
         document.getElementById("check-btn5").disabled = true;    
     }
 
-    //tehtävä viisi loppuu
-
     //tarkista tulokset 
 
     function checkResult() {
         let finalResult = points + " / 5 !";
         document.getElementById("printFinalResult").innerHTML = finalResult;
     }
-
-    //tarkista tulokset loppuu

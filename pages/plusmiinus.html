@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="Eetu Huttula"/>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,10 +52,15 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
     </div>
 
-    <!-- Math container -->
-    <section class="section-visa">
-        <!--Section header-->
-    <div class="visa-questions">
+            <!-- Math container -->
+
+    <section class="math-container">
+
+        <div class="math-questions">
+
+            <!--Section header-->
+
+    
             <div class="visa-header heading-secondary">
                 <h2>Matematiikan plus ja miinus.</h2>
             </div>
@@ -82,24 +88,28 @@
                 <div class="check-div">
                     <button id="check-btn1" class="check-btn" onclick="question1()"> Tarkista </button>
                     <div class="id-answer" id="tarkistus1"></div>
+                    <div class="id-answer" id="oikeavastaus1"></div>
                 </div>
             </div>
 
             <!--//Kysymys 1 container-->
 
             <!--Kymysys 2 container-->
+
             <div class="question-title">
                 Kysymys 2
             </div>
 
             <div class="question-container">
                 <div id="questionKaksi"></div>
+                <input type="text" id="vastaus2" value="">
             </div>
 
             <div class="answer-result" style="margin-top: 10px;">
                 <div class="check-div">
-                    <button id="check-btn" class="check-btn" onclick="question2()"> Tarkista </button>
-                    <div class="id-answer" id="answer2"></div>
+                    <button id="check-btn2" class="check-btn" onclick="question2()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus2"></div>
+                    <div class="id-answer" id="oikeavastaus2"></div>
                 </div>
             </div>
 
@@ -113,11 +123,13 @@
 
             <div class="question-container">
                 <div id="questionKolme"></div>
+                <input type="text" id="vastaus3" value="">
             </div>
             <div class="answer-result" style="margin-top: 10px;">
                 <div class="check-div">
-                    <button id="check-btn" class="check-btn" onclick="question3()"> Tarkista </button>
-                    <div class="id-answer" id="answer3"></div>
+                    <button id="check-btn3" class="check-btn" onclick="question3()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus3"></div>
+                    <div class="id-answer" id="oikeavastaus3"></div>
                 </div>
             </div>
 
@@ -131,11 +143,13 @@
 
             <div class="question-container">
                 <div id="questionNelja"></div>
+                <input type="text" id="vastaus4" value="">
             </div>
             <div class="answer-result" style="margin-top: 10px;">
                 <div class="check-div">
-                    <button id="check-btn" class="check-btn" onclick="question4()"> Tarkista </button>
-                    <div class="id-answer" id="answer4"></div>
+                    <button id="check-btn4" class="check-btn" onclick="question4()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus4"></div>
+                    <div class="id-answer" id="oikeavastaus4"></div>
                 </div>
             </div>
 
@@ -149,16 +163,32 @@
 
             <div class="question-container">
                 <div id="questionViisi"></div>
+                <input type="text" id="vastaus5" value="">
             </div>
             <div class="answer-result" style="margin-top: 10px;">
                 <div class="check-div">
-                    <button id="check-btn" class="check-btn" onclick="question5()"> Tarkista </button>
-                    <div class="id-answer" id="answer5"></div>
+                    <button id="check-btn5" class="check-btn" onclick="question5()"> Tarkista </button>
+                    <div class="id-answer" id="tarkistus5"></div>
+                    <div class="id-answer" id="oikeavastaus5"></div>
                 </div>
             </div>
 
             <!--//kysymys 5 container-->
-    </div>    
+
+            <!--Tarkista tulokset-->
+
+            <div class="final-result">
+                <div class="check-result">
+                    <button id="" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
+                </div>
+                <div class="print-result">
+                    <div class="id-answer" id="printFinalResult"></div>
+                </div>
+            </div>
+
+            <!--//tarkista tulokset-->
+
+        </div>    
     </section>
 
     <div class="shapedividers_com-2407">

@@ -9,7 +9,7 @@ function question1() {
     let secondAnswer = document.getElementById("select1.2");
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
-    /*tämä on vain lippuvisan oikea vastaus, täytyy keksiä joku muu tapa tähän */
+    /*tämä on vain lippuvisan oikeat vastaukset!*/
     let correctAnswer = document.getElementById("select1.2").checked;
     result.innerHTML = "";
     if (

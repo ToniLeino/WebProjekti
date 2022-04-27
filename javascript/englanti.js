@@ -10,7 +10,7 @@ function question1() {
     let secondAnswer = document.getElementById("select1.2");
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
-    let correctAnswer = document.getElementById("select1.3").checked;
+    let correctAnswer = document.getElementById("select1.1").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -44,7 +44,7 @@ function question2() {
     let secondAnswer = document.getElementById("select2.2");
     let thirdAnswer = document.getElementById("select2.3");
     let fourthAnswer = document.getElementById("select2.4");
-    let correctAnswer = document.getElementById("select2.1").checked;
+    let correctAnswer = document.getElementById("select2.2").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -74,11 +74,11 @@ function question2() {
 function question3() {
     // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result3");
-    let firstAnswer = document.getElementById("select3.1");
+    let firstAnswer = document.getElementById("select1.1");
     let secondAnswer = document.getElementById("select3.2");
     let thirdAnswer = document.getElementById("select3.3");
     let fourthAnswer = document.getElementById("select3.4");
-    let correctAnswer = document.getElementById("select3.4").checked;
+    let correctAnswer = document.getElementById("select3.3").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -112,7 +112,7 @@ function question4() {
     let secondAnswer = document.getElementById("select4.2");
     let thirdAnswer = document.getElementById("select4.3");
     let fourthAnswer = document.getElementById("select4.4");
-    let correctAnswer = document.getElementById("select4.2").checked;
+    let correctAnswer = document.getElementById("select4.1").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -146,7 +146,7 @@ function question5() {
     let secondAnswer = document.getElementById("select5.2");
     let thirdAnswer = document.getElementById("select5.3");
     let fourthAnswer = document.getElementById("select5.4");
-    let correctAnswer = document.getElementById("select5.4").checked;
+    let correctAnswer = document.getElementById("select5.1").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
     if (

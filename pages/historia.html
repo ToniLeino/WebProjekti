@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="../styles/dividers.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/exercises.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVIGAATIO -->
+
+    <header id="header" class="header">
+        <nav class="main-nav">
+            <div class="main-nav-title">
+                <a class="main-nav-link" href="../Index.html">
+                    Etusivu</a>
+            </div>
+
+            <div class="main-nav-title">
+                <a class="main-nav-link" href="#">Luokat</a>
+            </div>
+
+            <div class="main-nav-title">
+                <a class="main-nav-link" href="#">Opettajat</a>
+            </div>
+
+            <div class="main-nav-title">
+                <a class="main-nav-link" href="../pages/about.html">
+                    Tietoja</a>
+            </div>
+
+        </nav>
+
+        <div class="header-search">
+            <input type="search" id="search" />
+
+            <div class="btn-search">
+                <a href="#" class="btn-search-click">
+                    <ion-icon name="search-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="shapedividers_com-8976">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
+    </div>
+
+    <!--Historiavisa-->
+
+    <section class="section-visa">
+        <div class="visa-questions">
+            <div class="visa-header heading-secondary">
+                <h2>Historia</h2>
+            </div>
+
+            <div class="visa-text-box">
+                <p class="visa-text">
+                    Näiden kysymysten avulla voit kerrata Suomen historian pääkohtia Ruotsin vallan ajalta Suomen itsenäistymiseen asti.
+                </p>
+            </div>
+
+            <div class="question-title">
+
+            <!--Kysymys 1 -->   
+                Kysymys 1
+            </div>
+
+            <div class="question-container">
+                <div class="question"><img src="">Kysymys?</div>
+            </div>
+
+            <div class="visa-answer-options">
+                <div id="answer-buttons" class="btn-grid">
+                    <div class="radio-selection">
+                        <input type="radio" id="select1.1" value="vastaus 1" />
+                        <label for="select1.1">a) </label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select1.2" value="vastaus 2" />
+                        <label for="select1.2">b) </label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select1.3" value="vastaus 3" />
+                        <label for="select1.3">c)</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select1.4" value="vastaus 4" />
+                        <label for="select1.4">d) </label>
+                    </div>
+                </div>
+
+                <div class="answer-result">
+                    <div class="check-div">
+                        <button id="check-btn1" class="check-btn" onclick="question1()"> Tarkista </button>
+                        <div class="id-answer" id="answer-result1"></div>
+                    </div>
+                </div>
+
+                <!--Kysymys 2-->
+
+                <div class="question-title">
+                    Kysymys 2
+                </div>
+
+                <div class="question-container">
+                    <div class="question"> <img src="">Kysymys 2?</div>
+                </div>
+
+                <div class="visa-answer-options">
+                    <div id="answer-buttons" class="btn-grid">
+                        <div class="radio-selection">
+                            <input type="radio" id="select2.1" value="vastaus 1" />
+                            <label for="select2.1">a) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select2.2" value="vastaus 2" />
+                            <label for="select2.2">b) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select2.3" value="vastaus 3" />
+                            <label for="select2.3">c) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select2.4" value="vastaus 4" />
+                            <label for="select2.4">d) </label>
+                        </div>
+
+                    </div>
+                    <div class="answer-result">
+                        <div class="check-div">
+                            <button id="check-btn2" class="check-btn" onclick="question2()"> Tarkista </button>
+                            <div class="id-answer" id="answer-result2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Kysymys 3-->
+
+                <div class="question-title">
+                    Kysymys 3
+                </div>
+
+                <div class="question-container">
+                    <div class="question"><img src="">Kysymys 3?</div>
+                </div>
+
+                <div class="visa-answer-options">
+                    <div id="answer-buttons" class="btn-grid">
+                        <div class="radio-selection">
+                            <input type="radio" id="select3.1" value="vastaus 1" />
+                            <label for="select3.1">a) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select3.2" value="vastaus 2" />
+                            <label for="select3.2">b) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select3.3" value="vastaus 3" />
+                            <label for="select3.3">c) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select3.4" value="vastaus 4" />
+                            <label for="select3.4">d) </label>
+                        </div>
+
+                    </div>
+
+                    <div class="answer-result">
+                        <div class="check-div">
+                            <button id="check-btn3" class="check-btn" onclick="question3()"> Tarkista </button>
+                            <div class="id-answer" id="answer-result3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Kysymys 4-->
+
+                <div class="question-title">
+                    Kysymys 4
+                </div>
+
+                <div class="question-container">
+                    <div class="question"><img src="">Milloin Suomesta tuli Venäjän autonominen suuriruhtinaskunta?</div>
+                </div>
+
+                <div class="visa-answer-options">
+                    <div id="answer-buttons" class="btn-grid">
+                        <div class="radio-selection">
+                            <input type="radio" id="select4.1" value="vastaus 1" />
+                            <label for="select4.1">a) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select4.2" value="vastaus 2" />
+                            <label for="select4.2">b)</label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select4.3" value="vastaus 3" />
+                            <label for="select4.3">c) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select4.4" value="vastaus 4" />
+                            <label for="select4.4">d) </label>
+                        </div>
+
+                    </div>
+
+                    <div class="answer-result">
+                        <div class="check-div">
+                            <button id="check-btn4" class="check-btn" onclick="question4()"> Tarkista </button>
+                            <div class="id-answer" id="answer-result4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Kysymys 5-->
+
+                <div class="question-title">
+                    Kysymys 5
+                </div>
+
+                <div class="question-container">
+                    <div class="question"><img src="">Kuka oli Suomen ensimmäinen presidentti?</div>
+                </div>
+
+                <div class="visa-answer-options">
+                    <div id="answer-buttons" class="btn-grid">
+                        <div class="radio-selection">
+                            <input type="radio" id="select5.1" value="vastaus 1" />
+                            <label for="select5.1">a) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select5.2" value="vastaus 2" />
+                            <label for="select5.2">b) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select5.3" value="vastaus 3" />
+                            <label for="select5.3">c) </label>
+                        </div>
+
+                        <div class="radio-selection">
+                            <input type="radio" id="select5.4" value="vastaus 4" />
+                            <label for="select5.4">d) </label>
+                        </div>
+
+                    </div>
+                    <div class="answer-result">
+                        <div class="check-div">
+                            <button id="check-btn5" class="check-btn" onclick="question5()"> Tarkista </button>
+                            <div class="id-answer" id="answer-result5"></div>
+                        </div>
+                    </div>
+                    
+                    <!--Tarkista lopputulos!-->
+
+                    <div class="final-result">
+                        <div class="check-result">
+                            <button id="" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
+                        </div>
+                        <div class="print-result">
+                            <div class="id-answer" id="printFinalResult"></div>
+                        </div>
+                    </div>
+    </section>
+
+    <div class="shapedividers_com-2407">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer-box">
+                <a href="#header"><img src="../images/projektilogo.png" class="footer-img"></a>
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <div class="footer-header">
+                    <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon><strong>Meistä</strong>
+                </div>
+                <ul>
+                    <li><a class="footer-link" href="../WebProjekti/pages/about.html">Tietoja</a></li>
+                    <li><a class="footer-link" href="#">Saavutettavuus</a></li>
+                    <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
+                    <li><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <div class="footer-header">
+                    <ion-icon class="footer-icon" name="person-outline"></ion-icon><strong>Tili</strong>
+                </div>
+                <ul>
+                    <li><a class="footer-link" href="#">Kirjaudu sisään</a></li>
+                    <li><a class="footer-link" href="#">Luo tili</a></li>
+                    <li><a class="footer-link" href="#">Yksityisyys</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <div class="footer-header">
+                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon><strong>Ota yhteyttä</strong>
+                </div>
+                <address class="contact-info">
+                    <ul>
+                        <li class="address">Kiisselikuja, 90140 OULU</li>
+                        <li class="footer-link"> <a href="tel:040-123-4567">040 123 4567</a></li>
+                        <li class="footer-link"> <a href="mailto:Kidslearncom@luukku.com">Kidslearncom@luukku.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+
+        <div class="credits">
+            <div class="krediitit">
+                <p><a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

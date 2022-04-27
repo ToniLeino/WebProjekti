@@ -191,10 +191,15 @@ function checkResult() {
     ) {
         if (points < 3) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä! Parempi onni ensi kerralla!";
+                "Sait " +
+                points +
+                " / 5 pistettä" +
+                "<br>" +
+                "Parempi onni ensi kerralla!";
             finalInput.innerHTML = finalResult;
         } else {
-            let finalResult = "Sait " + points + " / 5 pistettä! Erinomaista työtä!";
+            let finalResult =
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
         }
     } else {

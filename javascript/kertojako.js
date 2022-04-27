@@ -232,15 +232,26 @@ function question55() {
 
 //lopputulos
 
-function checkResult2() {
+function checkResult2 (){
     let finalResult = points + " / 5 ";
+    let check1 = document.getElementById("check-btn11");
+    let check2 = document.getElementById("check-btn12");
+    let check3 = document.getElementById("check-btn13");
+    let check4 = document.getElementById("check-btn14");
+    let check5 = document.getElementById("check-btn15");
+    if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
+        if(points < 3){
+            document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+        }
+        else{
+            document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+        }
+    }
+    else {
+        document.getElementById("finalResult").innerHTML =
+            "Vastaa ensin kaikkiin kysymyksiin!";
+    }
 
-    if(points < 3){
-        document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
-    }
-    else{
-        document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
-    }
 }
 
 

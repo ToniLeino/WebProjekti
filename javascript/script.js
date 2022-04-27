@@ -167,8 +167,14 @@ function checkResult() {
         check4.disabled &&
         check5.disabled
     ) {
-        let finalResult = points + " / 5 !";
-        document.getElementById("printFinalResult").innerHTML = finalResult;
+        if (points < 3) {
+            let finalResult =
+                "Sait " + points + " / 5 pistettä! Parempi onni ensi kerralla!";
+            document.getElementById("printFinalResult").innerHTML = finalResult;
+        } else {
+            let finalResult = "Sait " + points + " / 5 pistettä! Erinomaista työtä!";
+            document.getElementById("printFinalResult").innerHTML = finalResult;
+        }
     } else {
         document.getElementById("printFinalResult").innerHTML =
             "Vastaa ensin kaikkiin kysymyksiin!";

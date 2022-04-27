@@ -2,8 +2,9 @@ let points = 0;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
-/*Kysymys Yksi*/
+
 function question1() {
+    /*Kysymys Yksi vaihtoehdot ja vastaus*/
     let result = document.getElementById("answer-result1");
     let firstAnswer = document.getElementById("select1.1");
     let secondAnswer = document.getElementById("select1.2");
@@ -33,8 +34,9 @@ function question1() {
         result.innerHTML = ANSWER_ERROR;
     }
 }
-/*Kysymys kaksi*/
+
 function question2() {
+    /*Kysymys kaksi vaihtoehdot ja vastaus*/
     let result = document.getElementById("answer-result2");
     let firstAnswer = document.getElementById("select2.1");
     let secondAnswer = document.getElementById("select2.2");
@@ -43,17 +45,20 @@ function question2() {
     let correctAnswer = document.getElementById("select2.3").checked;
     result.innerHTML = "";
     if (
+      //Tarkistetaan onko jokin vastaus valittu
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+      //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -63,8 +68,9 @@ function question2() {
         result.innerHTML = ANSWER_ERROR;
     }
 }
-/*Kysymys kolme*/
+
 function question3() {
+   /*Kysymys kolme vaihtoehdot ja vastaus*/
     let result = document.getElementById("answer-result3");
     let firstAnswer = document.getElementById("select3.1");
     let secondAnswer = document.getElementById("select3.2");
@@ -72,18 +78,21 @@ function question3() {
     let fourthAnswer = document.getElementById("select3.4");
     let correctAnswer = document.getElementById("select3.1").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+       //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -93,8 +102,9 @@ function question3() {
         result.innerHTML = ANSWER_ERROR;
     }
 }
-/*Kysymys neljä*/
+
 function question4() {
+    /*Kysymys neljä vaihtoehdot ja vastaus */
     let result = document.getElementById("answer-result4");
     let firstAnswer = document.getElementById("select4.1");
     let secondAnswer = document.getElementById("select4.2");
@@ -102,18 +112,21 @@ function question4() {
     let fourthAnswer = document.getElementById("select4.4");
     let correctAnswer = document.getElementById("select4.4").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -123,8 +136,9 @@ function question4() {
         result.innerHTML = ANSWER_ERROR;
     }
 }
-/*Kysymys viisi*/
+
 function question5() {
+    /*Kysymys viisi vaihtoehdot ja vastaus */
     let result = document.getElementById("answer-result5");
     let firstAnswer = document.getElementById("select5.1");
     let secondAnswer = document.getElementById("select5.2");
@@ -132,18 +146,21 @@ function question5() {
     let fourthAnswer = document.getElementById("select5.4");
     let correctAnswer = document.getElementById("select5.2").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        // Tarkistaa onko valinta oikein ja lisätään sen mukainen teksti sekä mahdollinen piste
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+       //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -155,6 +172,65 @@ function question5() {
 }
 
 function checkResult() {
-    let finalResult = points + " / 5 !";
-    document.getElementById("printFinalResult").innerHTML = finalResult;
+    //Määritetään kysymysten tarkistus painikkeet sekä lopputuloksen tulostuskenttä
+    let check1 = document.getElementById("check-btn1");
+    let check2 = document.getElementById("check-btn2");
+    let check3 = document.getElementById("check-btn3");
+    let check4 = document.getElementById("check-btn4");
+    let check5 = document.getElementById("check-btn5");
+    let finalInput = document.getElementById("printFinalResult");
+    //Tarkistetaan onko kaikki kysymykset tarkistettu, mikäli on, annetaan lopullinen palaute, muuten virheviesti
+    if (
+        check1.disabled &&
+        check2.disabled &&
+        check3.disabled &&
+        check4.disabled &&
+        check5.disabled
+    ) {
+        if (points < 3) {
+            let finalResult =
+                "Sait " +
+                points +
+                " / 5 pistettä" +
+                "<br>" +
+                "Parempi onni ensi kerralla!";
+            finalInput.innerHTML = finalResult;
+        }
+        if (points > 2) {
+            let finalResult =
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            finalInput.innerHTML = finalResult;
+        }
+        //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
+        if (points == 5) {
+            let finalResult =
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            finalInput.innerHTML = finalResult;
+            // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+            // for starting the confetti
+            const start = () => {
+                setTimeout(function() {
+                    confetti.start();
+                }, 1000);
+                // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            //  for stopping the confetti
+
+            const stop = () => {
+                setTimeout(function() {
+                    confetti.stop();
+                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+
+            // if you dont want to make it stop and make it infinite you can just remove the stop function
+        }
+
+        document.getElementById("final-check-btn").disabled = true;
+    } else {
+        finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
+    }
 }

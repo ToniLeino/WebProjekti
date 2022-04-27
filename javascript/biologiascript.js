@@ -208,6 +208,7 @@ function checkResult() {
             let finalResult =
                 "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
+
             // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
             // for starting the confetti
             const start = () => {

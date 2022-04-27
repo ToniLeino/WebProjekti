@@ -74,7 +74,7 @@ function question2() {
 function question3() {
     // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result3");
-    let firstAnswer = document.getElementById("select1.1");
+    let firstAnswer = document.getElementById("select3.1");
     let secondAnswer = document.getElementById("select3.2");
     let thirdAnswer = document.getElementById("select3.3");
     let fourthAnswer = document.getElementById("select3.4");
@@ -112,7 +112,7 @@ function question4() {
     let secondAnswer = document.getElementById("select4.2");
     let thirdAnswer = document.getElementById("select4.3");
     let fourthAnswer = document.getElementById("select4.4");
-    let correctAnswer = document.getElementById("select4.1").checked;
+    let correctAnswer = document.getElementById("select4.4").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -146,7 +146,7 @@ function question5() {
     let secondAnswer = document.getElementById("select5.2");
     let thirdAnswer = document.getElementById("select5.3");
     let fourthAnswer = document.getElementById("select5.4");
-    let correctAnswer = document.getElementById("select5.1").checked;
+    let correctAnswer = document.getElementById("select5.2").checked;
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
     if (
@@ -202,6 +202,36 @@ function checkResult() {
                 "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
         }
+
+        if (points == 5) {
+            let finalResult =
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            finalInput.innerHTML = finalResult;
+
+            // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+            // for starting the confetti
+            const start = () => {
+                setTimeout(function() {
+                    confetti.start();
+                }, 1000);
+                // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            //  for stopping the confetti
+
+            const stop = () => {
+                setTimeout(function() {
+                    confetti.stop();
+                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+
+            // if you dont want to make it stop and make it infinite you can just remove the stop function
+        }
+
+        document.getElementById("final-check-btn").disabled = true;
     } else {
         finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
     }

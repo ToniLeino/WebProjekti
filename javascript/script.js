@@ -155,6 +155,22 @@ function question5() {
 }
 
 function checkResult() {
-    let finalResult = points + " / 5 !";
-    document.getElementById("printFinalResult").innerHTML = finalResult;
+    let check1 = document.getElementById("check-btn1");
+    let check2 = document.getElementById("check-btn2");
+    let check3 = document.getElementById("check-btn3");
+    let check4 = document.getElementById("check-btn4");
+    let check5 = document.getElementById("check-btn5");
+    if (
+        check1.disabled &&
+        check2.disabled &&
+        check3.disabled &&
+        check4.disabled &&
+        check5.disabled
+    ) {
+        let finalResult = points + " / 5 !";
+        document.getElementById("printFinalResult").innerHTML = finalResult;
+    } else {
+        document.getElementById("printFinalResult").innerHTML =
+            "Vastaa ensin kaikkiin kysymyksiin!";
+    }
 }

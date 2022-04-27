@@ -378,6 +378,31 @@ strong {
 .your-picture {
     border-radius: 50%;
     box-shadow: 15px 15px 15px #b6711f;
+    border: solid 5px;
+}
+
+.first {
+    border-color: #fdffb6;
+}
+
+.second {
+    border-color: #caffbf;
+}
+
+.third {
+    border-color: #fdffb6;
+}
+
+.fourth {
+    border-color: #bdb2ff;
+}
+
+.fifth {
+    border-color: #9bf6ff;
+}
+
+.sixth {
+    border-color: #ffadad;
 }
 
 .about-you-name {
@@ -387,5 +412,10 @@ strong {
 }
 
 .about-you-title {
-    padding: 20px 0px 50px 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.about-you-title2 {
+    padding-bottom: 50px;
 }

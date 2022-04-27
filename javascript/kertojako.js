@@ -1,7 +1,7 @@
 let points = 0;
-const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
-const WRONG_ANSWER = "Vastauksesi on väärin!";
-const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
+const RIGHT_ANSWER = "Vastauksesi on oikein. Hyvää työtä.";
+const WRONG_ANSWER = "Vastauksesi on väärin,";
+const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta.";
 const pisteet1_2 = "Ensi kerralla paremmin!"
 const pisteet3_5 = "Hienoa työtä"
 
@@ -47,20 +47,16 @@ function question11() {
         }
         else {
             if(questionYksi == "3 * 5 = " && vastauskentta != 15){
-                tarkistus11.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus11").innerHTML = "Oikea vastaus on " + 15;   
+                tarkistus11.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "15.";
             }
             else if(questionYksi == "6 * 7 = " && vastauskentta != 42){
-                tarkistus11.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus11").innerHTML = "Oikea vastaus on " + 42;  
+                tarkistus11.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "42.";  
             }
             else if (questionYksi == "9 * 4 = " && vastauskentta != 36){
-                tarkistus11.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus11").innerHTML = "Oikea vastaus on " + 36;  
+                tarkistus11.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "36.";  
             }
             else if (questionYksi == "8 * 6 = " && vastauskentta != 48){
-                tarkistus11.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus11").innerHTML = "Oikea vastaus on " + 48;
+                tarkistus11.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "48.";
             }
         }
         document.getElementById("check-btn11").disabled = true;
@@ -88,20 +84,16 @@ function question22() {
         }
         else {
             if (questionKaksi == "6 * 3 * 2 = " && vastauskentta2 != 36){
-                tarkistus22.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus12").innerHTML = "Oikea vastaus on " + 36;  
+                tarkistus22.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "36.";  
             } 
             else if (questionKaksi == "3 * 3 * 3 = " && vastauskentta2 != 27){
-                tarkistus22.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus12").innerHTML = "Oikea vastaus on " + 27; 
+                tarkistus22.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "27."; 
             }
             else if (questionKaksi == "3 * 4 * 4 = " && vastauskentta2 != 48){
-                tarkistus22.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus12").innerHTML = "Oikea vastaus on " + 48;
+                tarkistus22.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "48.";
             }
             else if (questionKaksi == "7 * 2 * 2 = " && vastauskentta2 != 28){
-                tarkistus22.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus12").innerHTML = "Oikea vastaus on " + 28;
+                tarkistus22.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "28.";
             }
         }    
         document.getElementById("check-btn12").disabled = true;
@@ -129,20 +121,16 @@ function question33() {
         }
         else {
             if (questionKolme == "64 / 8 = " && vastauskentta3 != 8){
-                tarkistus33.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus13").innerHTML = "Oikea vastaus on " + 8;
+                tarkistus33.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "8.";
             }
             else if (questionKolme == "81 / 9 = " && vastauskentta3 != 9){
-                tarkistus33.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus13").innerHTML = "Oikea vastaus on " + 9;
+                tarkistus33.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "9.";
             }
             else if (questionKolme == "36 / 6 = " && vastauskentta3 != 6){
-                tarkistus33.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus13").innerHTML = "Oikea vastaus on " + 6;
+                tarkistus33.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "6.";
             }
             else if (questionKolme == "50 / 5 = " && vastauskentta3 != 10){
-                tarkistus33.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus13").innerHTML = "Oikea vastaus on " + 10;
+                tarkistus33.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "10.";
             }      
         }
         document.getElementById("check-btn13").disabled = true;
@@ -170,20 +158,16 @@ function question44() {
         }
         else {
             if (questionNelja == "45 / 5 / 3 = " && vastauskentta4 != 3){
-                tarkistus44.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus14").innerHTML = "Oikea vastaus on " + 3; 
+                tarkistus44.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "3."; 
             }
             else if (questionNelja == "72 / 9 / 4 = " && vastauskentta4 != 2){
-                tarkistus44.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus14").innerHTML = "Oikea vastaus on " + 2; 
+                tarkistus44.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "2."; 
             }
             else if (questionNelja == "100 / 10 / 5 = " && vastauskentta4 != 2){
-                tarkistus44.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus14").innerHTML = "Oikea vastaus on " + 2; 
+                tarkistus44.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "2."; 
             }
             else if (questionNelja == "27 / 9 / 3 = " && vastauskentta4 != 1){
-                tarkistus44.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus14").innerHTML = "Oikea vastaus on " + 1; 
+                tarkistus44.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "1."; 
             }     
         }
         document.getElementById("check-btn14").disabled = true;
@@ -211,20 +195,16 @@ function question55() {
         }
         else {
             if (questionViisi == "4 * 7 / 2 = " && vastauskentta5 != 14){
-                tarkistus55.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus15").innerHTML = "Oikea vastaus on " + 14;
+                tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "14.";
             }
             else if (questionViisi == "56 / 7 * 9 = " && vastauskentta5 != 64){
-                tarkistus55.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus15").innerHTML = "Oikea vastaus on " + 64;
+                tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "64.";
             }
             else if (questionViisi == "8 * 6 / 4 = " && vastauskentta5 != 12){
-                tarkistus55.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus15").innerHTML = "Oikea vastaus on " + 12;
+                tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "12.";
             }
             else if (questionViisi == "36 / 6 * 5 = " && vastauskentta5 != 30){
-                tarkistus55.innerHTML = WRONG_ANSWER;
-                document.getElementById("oikeavastaus15").innerHTML = "Oikea vastaus on " + 30;
+                tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "30.";
             }     
         }
         document.getElementById("check-btn15").disabled = true;

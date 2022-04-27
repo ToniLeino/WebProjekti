@@ -4,6 +4,8 @@
     let points = 0;
     const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
     const WRONG_ANSWER = "Vastauksesi on väärin!";
+    const pisteet1_2 = "Ensi kerralla paremmin!"
+    const pisteet3_5 = "Hienoa työtä"
 
     //Satunnais lukuja
 
@@ -104,6 +106,13 @@
     //tarkista tulokset 
 
     function checkResult() {
+
         let finalResult = points + " / 5 !";
-        document.getElementById("printFinalResult").innerHTML = finalResult;
+        
+        if(points < 3){
+            document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+        }
+        else{
+            document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+        };
     }

@@ -251,7 +251,6 @@ function checkResult2 (){
         document.getElementById("finalResult").innerHTML =
             "Vastaa ensin kaikkiin kysymyksiin!";
     }
-
 }
 
 

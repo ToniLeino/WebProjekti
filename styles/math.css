@@ -37,14 +37,14 @@
 
 .question-title {
     font-size: 2.2rem;
-    padding: 10px;
+    padding-bottom: 50px;
     font-weight: 600;
 }
 
 .question-container {
     display: flex;
-    padding: 100px 0 100px 0;
-    margin: 0 250px 0 250px;
+    padding: 50px 0 50px 0;
+    margin: 0 600px 0 600px;
     font-size: 3rem;
     letter-spacing: 0.15rem;
     background-color: #c8e9a0af;
@@ -65,8 +65,19 @@ input {
     text-align: center;
 }
 
-label,
+.check-div {
+    padding-top: 10px;
+}
+
+.id-answer {
+    padding: 50px 0px 30px 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
 .check-btn {
+    font-size: 2em;
+    font-family: inherit;
     display: inline-block;
     background-color: white;
     padding: 15px 20px 15px 20px;
@@ -75,23 +86,6 @@ label,
     box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.275), 0 5px 7px rgba(0, 0, 0, 0.348);
     border: none;
     font-weight: bold;
-}
-
-label:hover,
-label:active {
-    background-color: #ffadad;
-    transition: all 0.2s;
-}
-
-.id-answer {
-    padding: 20px;
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.check-btn {
-    font-size: 2em;
-    font-family: inherit;
 }
 
 .check-btn:hover,

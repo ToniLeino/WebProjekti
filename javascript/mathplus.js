@@ -110,9 +110,9 @@
         let finalResult = points + " / 5 !";
         
         if(points < 3){
-            document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+            document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
         }
         else{
-            document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+            document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
         };
     }

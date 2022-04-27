@@ -2,6 +2,8 @@ let points = 0;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
+const pisteet1_2 = "Ensi kerralla paremmin!"
+const pisteet3_5 = "Hienoa työtä"
 
 //Matematiikan tehtävä vaihtoehtoja arrayssä
 let kerto1 = ["3 * 5 = ", "6 * 7 = ", "9 * 4 = ", "8 * 6 = "];
@@ -231,8 +233,14 @@ function question55() {
 //lopputulos
 
 function checkResult2() {
-    let finalResult = points + " / 5 !";
-    document.getElementById("FinalResult").innerHTML = finalResult;
+    let finalResult = points + " / 5 ";
+
+    if(points < 3){
+        document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+    }
+    else{
+        document.getElementById("FinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+    }
 }
 
 

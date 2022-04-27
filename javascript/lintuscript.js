@@ -4,26 +4,29 @@ const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
 
 function question1() {
+    // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result1");
     let firstAnswer = document.getElementById("select1.1");
     let secondAnswer = document.getElementById("select1.2");
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
-    /*tämä on vain lintuvisan oikea vastaus, täytyy keksiä joku muu tapa tähän */
     let correctAnswer = document.getElementById("select1.3").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -35,6 +38,7 @@ function question1() {
 }
 
 function question2() {
+    // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result2");
     let firstAnswer = document.getElementById("select2.1");
     let secondAnswer = document.getElementById("select2.2");
@@ -42,18 +46,21 @@ function question2() {
     let fourthAnswer = document.getElementById("select2.4");
     let correctAnswer = document.getElementById("select2.1").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -65,6 +72,7 @@ function question2() {
 }
 
 function question3() {
+    // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result3");
     let firstAnswer = document.getElementById("select3.1");
     let secondAnswer = document.getElementById("select3.2");
@@ -72,18 +80,21 @@ function question3() {
     let fourthAnswer = document.getElementById("select3.4");
     let correctAnswer = document.getElementById("select3.4").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -95,6 +106,7 @@ function question3() {
 }
 
 function question4() {
+    // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result4");
     let firstAnswer = document.getElementById("select4.1");
     let secondAnswer = document.getElementById("select4.2");
@@ -102,18 +114,21 @@ function question4() {
     let fourthAnswer = document.getElementById("select4.4");
     let correctAnswer = document.getElementById("select4.2").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -125,6 +140,7 @@ function question4() {
 }
 
 function question5() {
+    // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result5");
     let firstAnswer = document.getElementById("select5.1");
     let secondAnswer = document.getElementById("select5.2");
@@ -132,18 +148,21 @@ function question5() {
     let fourthAnswer = document.getElementById("select5.4");
     let correctAnswer = document.getElementById("select5.4").checked;
     result.innerHTML = "";
+    //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
     if (
         firstAnswer.checked ||
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
     ) {
+        // Tarkistaa onko valinta oikein ja lisätään sen mukainen teksti sekä mahdollinen piste
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
@@ -155,11 +174,14 @@ function question5() {
 }
 
 function checkResult() {
+    //Määritetään kysymysten tarkistus painikkeet sekä lopputuloksen tulostuskenttä
     let check1 = document.getElementById("check-btn1");
     let check2 = document.getElementById("check-btn2");
     let check3 = document.getElementById("check-btn3");
     let check4 = document.getElementById("check-btn4");
     let check5 = document.getElementById("check-btn5");
+    let finalInput = document.getElementById("printFinalResult");
+    //Tarkistetaan onko kaikki kysymykset tarkistettu, mikäli on, annetaan lopullinen palaute, muuten virheviesti
     if (
         check1.disabled &&
         check2.disabled &&
@@ -170,13 +192,12 @@ function checkResult() {
         if (points < 3) {
             let finalResult =
                 "Sait " + points + " / 5 pistettä! Parempi onni ensi kerralla!";
-            document.getElementById("printFinalResult").innerHTML = finalResult;
+            finalInput.innerHTML = finalResult;
         } else {
             let finalResult = "Sait " + points + " / 5 pistettä! Erinomaista työtä!";
-            document.getElementById("printFinalResult").innerHTML = finalResult;
+            finalInput.innerHTML = finalResult;
         }
     } else {
-        document.getElementById("printFinalResult").innerHTML =
-            "Vastaa ensin kaikkiin kysymyksiin!";
+        finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
     }
 }

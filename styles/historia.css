@@ -102,7 +102,7 @@ label,
 
 label:hover,
 label:active {
-    background-color:#9bf6ff;
+    background-color:#bdb2ff;
     transition: all 0.2s;
 }
 
@@ -119,6 +119,6 @@ label:active {
 
 .check-btn:hover,
 .check-btn:active {
-    background-color: #9bf6ff;
+    background-color: #bdb2ff;
     transition: all 0.2s;
 }

@@ -41,7 +41,7 @@ body {
     display: grid;
     align-items: center;
     /*top, right, bottom, left*/
-    padding: 60px 300px 30px 300px;
+    padding: 6rem 30rem 3rem 30rem;
     position: relative;
 }
 
@@ -89,12 +89,12 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: white;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
 
 .shapedividers_com-8976 {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
 }
 
 
@@ -104,7 +104,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    padding: 10px;
+    padding: 1rem;
     align-items: right;
 }
 
@@ -112,15 +112,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 150px;
+    margin-left: 15rem;
 }
 
 .heading-primary {
-    padding-top: 50px;
+    padding-top: 5rem;
     font-size: 10rem;
     letter-spacing: 0.5rem;
     color: #e7e7e7;
-    text-shadow: 5px 5px #c07921;
+    text-shadow: 0.5rem 0.5rem #c07921;
 }
 
 .hero-text {
@@ -128,7 +128,7 @@ body {
     letter-spacing: 0.15rem;
     font-weight: 600;
     text-align: justify;
-    padding-top: 100px;
+    padding-top: 10rem;
 }
 
 .hero-img {
@@ -136,7 +136,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 .hero-img::before {
@@ -162,19 +162,19 @@ body {
 
 .section-quizzes {
     /*top, right, bottom, left*/
-    padding: 200px;
+    padding: 20rem;
     display: block;
 }
 
 .quizzes-container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    row-gap: 10px;
-    padding: 50px 90px 50px 90px;
+    row-gap: 1rem;
+    padding: 5rem 9rem 5rem 9rem;
     background-color: #e38d27;
-    border-radius: 50px;
+    border-radius: 5rem;
     text-align: center;
-    border: 20px solid #e6983d;
+    border: 2rem solid #e6983d;
 }
 
 .quiz-header {
@@ -183,7 +183,7 @@ body {
     grid-column: 1/4;
     font-size: 4rem;
     color: rgb(255, 255, 255);
-    text-shadow: 4px 4px #b6711f;
+    text-shadow: 0.4rem 0.4rem #b6711f;
 }
 
 .quiz {
@@ -192,7 +192,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 .quiz::before {
@@ -228,14 +228,14 @@ body {
     font-size: 2.4rem;
     font-weight: 600;
     display: flex;
-    padding-top: 2px;
+    padding-top: 0.2rem;
 }
 
 .quiz-image {
     display: inline-block;
     max-width: 50%;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 
@@ -246,24 +246,24 @@ body {
     grid-template-columns: repeat(4, 1fr);
     font-size: 2rem;
     background-color: #e38d27;
-    padding: 100px 300px 100px 300px;
+    padding: 10rem 30rem 10rem 30rem;
     justify-items: left;
 }
 
 .footer-header {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 .footer-icon {
     font-size: 2.2rem;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .footer li {
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
 }
 
 strong {
@@ -278,8 +278,8 @@ strong {
     list-style: none;
     display: flex;
     gap: 2.4rem;
-    padding-top: 20px;
-    margin-left: 15px;
+    padding-top: 2rem;
+    margin-left: 2.5rem;
     justify-content: left;
     font-size: 2.5rem;
 }
@@ -322,7 +322,7 @@ strong {
 .credits {
     display: flex;
     background-color: #e38d27;
-    padding: 0px 300px 100px 300px;
+    padding: 0 30rem 10rem 30rem;
     justify-content: center;
 }
 
@@ -345,13 +345,13 @@ strong {
 /* ABOUT US */
 
 .section-about-us {
-    padding: 0px 100px 100px 100px;
+    padding: 0 10rem 10rem 10rem;
 }
 
 .about-us-container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    padding: 0px 50px 100px 50px;
+    padding: 0 5rem 10rem 5rem;
     text-align: center;
     font-size: 2.2rem;
 }
@@ -365,7 +365,7 @@ strong {
 
 .about-us-text {
     grid-column: 1/4;
-    padding: 50px 500px 100px 500px;
+    padding: 5rem 50rem 10rem 50rem;
     text-align: justify;
 }
 
@@ -375,8 +375,8 @@ strong {
 
 .your-picture {
     border-radius: 50%;
-    box-shadow: 15px 15px 15px #b6711f;
-    border: solid 5px;
+    box-shadow: 1.5rem 1.5rem 1.5rem #b6711f;
+    border: solid 0.5rem;
 }
 
 .first {
@@ -404,16 +404,16 @@ strong {
 }
 
 .about-you-name {
-    padding-top: 20px;
+    padding-top: 2rem;
     font-size: 2.4rem;
     font-weight: 600;
 }
 
 .about-you-title {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .about-you-title2 {
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
 }

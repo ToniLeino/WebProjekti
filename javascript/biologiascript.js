@@ -197,11 +197,41 @@ function checkResult() {
                 "<br>" +
                 "Parempi onni ensi kerralla!";
             finalInput.innerHTML = finalResult;
-        } else {
+        }
+        if (points > 2) {
             let finalResult =
                 "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
         }
+        //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
+        if (points == 5) {
+            let finalResult =
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            finalInput.innerHTML = finalResult;
+            // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+            // for starting the confetti
+            const start = () => {
+                setTimeout(function() {
+                    confetti.start();
+                }, 1000);
+                // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            //  for stopping the confetti
+
+            const stop = () => {
+                setTimeout(function() {
+                    confetti.stop();
+                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+
+            // if you dont want to make it stop and make it infinite you can just remove the stop function
+        }
+
+        document.getElementById("final-check-btn").disabled = true;
     } else {
         finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
     }

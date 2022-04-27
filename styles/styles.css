@@ -23,7 +23,7 @@ body {
     font-family: "Quicksand", sans-serif;
     letter-spacing: 0.15rem;
     line-height: 1.5;
-    color: #333;
+    color: black;
 }
 
 .heading-primary,
@@ -270,15 +270,6 @@ body {
 
 strong {
     font-size: 2.2rem;
-}
-
-table,
-th,
-td {
-    padding: 2px;
-    text-align: center;
-    text-align: left;
-    font-family: Roboto, sans-serif;
 }
 
 .footer-img {

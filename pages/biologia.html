@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="Leevi Helttunen" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,12 +21,17 @@
     <header id="header" class="header">
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="../Index.html">Etusivu</a></li>
                 <li>
-                    <a class="main-nav-link" href="../Index.html#harjoitukset">Harjoitukset</a>
+                    <a class="main-nav-link" href="../Index.html">Etusivu</a>
                 </li>
-                <li><a class="main-nav-link" href="#">Opettajat</a></li>
-                <li><a class="main-nav-link" href="../pages/about.html">Tietoja</a></li>
+                <li>
+                    <a class="main-nav-link" href="../Index.html#harjoitukset">Harjoitukset</a
+            >
+          </li>
+          <li><a class="main-nav-link" href="#">Opettajat</a></li>
+                <li>
+                    <a class="main-nav-link" href="../pages/about.html">Tietoja</a>
+                </li>
             </ul>
         </nav>
 
@@ -39,219 +45,262 @@
     </div>
 
     <!-- VISA -->
-    <section class="section-visa">
-        <div class="visa-questions">
-            <div class="visa-header heading-secondary">
-                <h2>Tietovisa linnuista</h2>
-            </div>
+    <!-- container -->
+    <section class="section-visa container">
+        <div class="header-container">
+            <h1 class="visa-header heading-primary">Tietovisa linnuista</h1>
+            <p>Tässä harjoituksessa sinun tulee tunnistaa kuvassa oleva lintu.</p>
+        </div>
 
-            <div class="visa-text-box">
-                <p class="visa-text">
-                    Tähän tulee lyhyt selitys minkälainen visa on kyseessä.
-                </p>
-            </div>
-
-            <div class="question-title">
-                Kysymys 1
-            </div>
-
-            <div class="question-container">
-                <div class="question"><img src="../images/visaMetso.jpg">Mikä lintu on kyseisessä kuvassa?</div>
+        <div class="visa-grid">
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 1</u>
+                    </div>
+                    <div class="question-img-container">
+                        <img src="../images/visaMetso.jpg" />
+                    </div>
+                    <div>
+                        <strong>Mikä lintu kuvassa on?</strong>
+                    </div>
+                </div>
             </div>
 
             <div class="visa-answer-options">
-                <div id="answer-buttons" class="btn-grid">
+                <div id="answer-buttons" class="button-grid">
                     <div class="radio-selection">
-                        <input type="radio" id="select1.1" name="kysymysyksi" value="vastaus 1" />
+                        <input type="radio" id="select1.1" name="first-select" value="vastaus-1" />
                         <label for="select1.1">a) Teeri</label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.2" name="kysymysyksi" value="vastaus 2" />
+                        <input type="radio" id="select1.2" name="first-select" value="vastaus-2" />
                         <label for="select1.2">b) Kukko</label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.3" name="kysymysyksi" value="vastaus 3" />
+                        <input type="radio" id="select1.3" name="first-select" value="vastaus-3" />
                         <label for="select1.3">c) Metso</label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.4" name="kysymysyksi" value="vastaus 4" />
+                        <input type="radio" id="select1.4" name="first-select" value="vastaus-4" />
                         <label for="select1.4">d) Fasaani</label>
                     </div>
                 </div>
 
                 <div class="answer-result">
                     <div class="check-div">
-                        <button id="check-btn1" class="check-btn" onclick="question1()"> Tarkista </button>
+                        <button id="check-btn1" class="check-btn" onclick="question1()">
+                Tarkista
+              </button>
                         <div class="id-answer" id="answer-result1"></div>
                     </div>
                 </div>
+            </div>
 
-                <div class="question-title">
-                    Kysymys 2
-                </div>
-
-                <div class="question-container">
-                    <div class="question"> <img src="../images/visaLapinpöllö.jpg">Mikä lintu on kyseisessä kuvassa?</div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.1" name="kysymyskaksi" value="vastaus 1" />
-                            <label for="select2.1">a) Lapinpöllö</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.2" name="kysymyskaksi" value="vastaus 2" />
-                            <label for="select2.2">b) Huuhkaja</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.3" name="kysymyskaksi" value="vastaus 3" />
-                            <label for="select2.3">c) Hiirihaukka</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.4" name="kysymyskaksi" value="vastaus 4" />
-                            <label for="select2.4">d) Strutsi</label>
-                        </div>
-
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 2</u>
                     </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn2" class="check-btn" onclick="question2()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result2"></div>
-                        </div>
+                    <div class="question-img-container">
+                        <img src="../images/visaLapinpöllö.jpg" />
+                    </div>
+                    <div>
+                        <strong>Mikä lintu kuvassa on?</strong>
                     </div>
                 </div>
+            </div>
 
-                <div class="question-title">
-                    Kysymys 3
-                </div>
-
-                <div class="question-container">
-                    <div class="question"><img src="../images/visaJoutsen.jpg">Mikä lintu on kyseisessä kuvassa?</div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.1" name="kysymyskolme" value="vastaus 1" />
-                            <label for="select3.1">a) Sorsa</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.2" name="kysymyskolme" value="vastaus 2" />
-                            <label for="select3.2">b) Hanhi</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.3" name="kysymyskolme" value="vastaus 3" />
-                            <label for="select3.3">c) Flamingo</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.4" name="kysymyskolme" value="vastaus 4" />
-                            <label for="select3.4">d) Joutsen</label>
-                        </div>
-
+            <div class="visa-answer-options">
+                <div id="answer-buttons" class="button-grid">
+                    <div class="radio-selection">
+                        <input type="radio" id="select2.1" name="second-select" value="vastaus-1" />
+                        <label for="select2.1">a) Lapinpöllö</label>
                     </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn3" class="check-btn" onclick="question3()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result3"></div>
-                        </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select2.2" name="second-select" value="vastaus-2" />
+                        <label for="select2.2">b) Huuhkaja</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select2.3" name="second-select" value="vastaus-3" />
+                        <label for="select2.3">c) Hiirihaukka</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select2.4" name="second-select" value="vastaus-4" />
+                        <label for="select2.4">d) Strutsi</label>
                     </div>
                 </div>
 
-                <div class="question-title">
-                    Kysymys 4
-                </div>
-
-                <div class="question-container">
-                    <div class="question"><img src="../images/visaVaris.jpg">Mikä lintu on kyseisessä kuvassa?</div>
-                </div>
-
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.1" name="kysymysneljä" value="vastaus 1" />
-                            <label for="select4.1">a) Harakka</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.2" name="kysymysneljä" value="vastaus 2" />
-                            <label for="select4.2">b) Varis</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.3" name="kysymysneljä" value="vastaus 3" />
-                            <label for="select4.3">c) Kanahaukka
-                            </label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.4" name="kysymysneljä" value="vastaus 4" />
-                            <label for="select4.4">d) Naakka</label>
-                        </div>
-
-                    </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn4" class="check-btn" onclick="question4()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result4"></div>
-                        </div>
+                <div class="answer-result">
+                    <div class="check-div">
+                        <button id="check-btn2" class="check-btn" onclick="question2()">
+                Tarkista
+              </button>
+                        <div class="id-answer" id="answer-result2"></div>
                     </div>
                 </div>
+            </div>
 
-                <div class="question-title">
-                    Kysymys 5
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 3</u>
+                    </div>
+                    <div class="question-img-container">
+                        <img src="../images/visaJoutsen.jpg" />
+                    </div>
+                    <div>
+                        <strong>Mikä lintu kuvassa on?</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visa-answer-options">
+                <div id="answer-buttons" class="button-grid">
+                    <div class="radio-selection">
+                        <input type="radio" id="select3.1" name="third-select" value="vastaus-1" />
+                        <label for="select3.1">a) Sorsa</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select3.2" name="third-select" value="vastaus-2" />
+                        <label for="select3.2">b) Hanhi</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select3.3" name="third-select" value="vastaus-3" />
+                        <label for="select3.3">c) Flamingo</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select3.4" name="third-select" value="vastaus-4" />
+                        <label for="select3.4">d) Joutsen</label>
+                    </div>
                 </div>
 
-                <div class="question-container">
-                    <div class="question"><img src="../images/visaLokki.jpg">Mikä lintu on kyseisessä kuvassa?</div>
+                <div class="answer-result">
+                    <div class="check-div">
+                        <button id="check-btn3" class="check-btn" onclick="question3()">
+                Tarkista
+              </button>
+                        <div class="id-answer" id="answer-result3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 4</u>
+                    </div>
+                    <div class="question-img-container">
+                        <img src="../images/visaVaris.jpg" />
+                    </div>
+                    <div>
+                        <strong>Mikä lintu kuvassa on?</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visa-answer-options">
+                <div id="answer-buttons" class="button-grid">
+                    <div class="radio-selection">
+                        <input type="radio" id="select4.1" name="third-select" value="vastaus-1" />
+                        <label for="select4.1">a) Harakka</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select4.2" name="third-select" value="vastaus-2" />
+                        <label for="select4.2">b) Varis</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select4.3" name="third-select" value="vastaus-3" />
+                        <label for="select4.3">c) Kanahaukka</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select4.4" name="third-select" value="vastaus-4" />
+                        <label for="select4.4">d) Naakka</label>
+                    </div>
                 </div>
 
-                <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.1" name="kysymysviisi" value="vastaus 1" />
-                            <label for="select5.1">a) Västäräkki</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.2" name="kysymysviisi" value="vastaus 2" />
-                            <label for="select5.2">b) Käki</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.3" name="kysymysviisi" value="vastaus 3" />
-                            <label for="select5.3">c) Merikotka</label>
-                        </div>
-
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.4" name="kysymysviisi" value="vastaus 4" />
-                            <label for="select5.4">d) Naurulokki</label>
-                        </div>
-
+                <div class="answer-result">
+                    <div class="check-div">
+                        <button id="check-btn4" class="check-btn" onclick="question4()">
+                Tarkista
+              </button>
+                        <div class="id-answer" id="answer-result4"></div>
                     </div>
-                    <div class="answer-result">
-                        <div class="check-div">
-                            <button id="check-btn5" class="check-btn" onclick="question5()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result5"></div>
-                        </div>
+                </div>
+            </div>
+
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 5</u>
                     </div>
-                    <div class="final-result">
-                        <div class="check-result">
-                            <button id="final-check-btn" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
-                        </div>
-                        <div class="print-result">
-                            <div class="id-answer" id="printFinalResult"></div>
-                        </div>
+
+                    <div class="question-img-container">
+                        <img src="../images/visaLokki.jpg" />
                     </div>
+                    <div class="question">
+                        <strong>Mikä lintu kuvassa on?</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visa-answer-options">
+                <div id="answer-buttons" class="button-grid">
+                    <div class="radio-selection">
+                        <input type="radio" id="select5.1" name="fifth-select" value="vastaus-1" />
+                        <label for="select5.1">a) Västäräkki</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select5.2" name="fifth-select" value="vastaus-2" />
+                        <label for="select5.2">b) Käki</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select5.3" name="fifth-select" value="vastaus-3" />
+                        <label for="select5.3">c) Merikotka</label>
+                    </div>
+
+                    <div class="radio-selection">
+                        <input type="radio" id="select5.4" name="fifth-select" value="vastaus-4" />
+                        <label for="select5.4">d) Naurulokki</label>
+                    </div>
+                </div>
+
+                <div class="answer-result">
+                    <div class="check-div">
+                        <button id="check-btn5" class="check-btn" onclick="question5()">
+                Tarkista
+              </button>
+                        <div class="id-answer" id="answer-result5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-result">
+                <div class="check-result">
+                    <button id="final-check-btn" class="check-btn" onclick="checkResult()">
+              Tarkista lopputulos!
+            </button>
+                </div>
+
+                <div class="print-result">
+                    <div class="id-answer" id="printFinalResult"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="shapedividers_com-2407">
@@ -288,7 +337,9 @@
                     <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon><strong>Meistä</strong>
                 </div>
                 <ul>
-                    <li><a class="footer-link" href="../pages/about.html">Tietoja</a></li>
+                    <li>
+                        <a class="footer-link" href="../pages/about.html">Tietoja</a>
+                    </li>
                     <li><a class="footer-link" href="#">Saavutettavuus</a></li>
                     <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
                     <li>

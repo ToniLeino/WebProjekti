@@ -11,6 +11,8 @@ function question1() {
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
     let correctAnswer = document.getElementById("select1.3").checked;
+    let wrongLabels = document.getElementsByClassName("first-labels");
+    let correctLabel = document.getElementById("correct-first-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -26,6 +28,11 @@ function question1() {
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        for (let i = 0; i < wrongLabels.length; i++) {
+            wrongLabels[i].style.backgroundColor = "red";
+        }
+        correctLabel.style.backgroundColor = "lightgreen";
+        //correctLabel.style.border = "solid 2px yellow";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -45,6 +52,8 @@ function question2() {
     let thirdAnswer = document.getElementById("select2.3");
     let fourthAnswer = document.getElementById("select2.4");
     let correctAnswer = document.getElementById("select2.1").checked;
+    let wrongLabels = document.getElementsByClassName("second-labels");
+    let correctLabel = document.getElementById("correct-second-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -60,6 +69,10 @@ function question2() {
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        for (let i = 0; i < wrongLabels.length; i++) {
+            wrongLabels[i].style.backgroundColor = "red";
+        }
+        correctLabel.style.backgroundColor = "lightgreen";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -79,6 +92,8 @@ function question3() {
     let thirdAnswer = document.getElementById("select3.3");
     let fourthAnswer = document.getElementById("select3.4");
     let correctAnswer = document.getElementById("select3.4").checked;
+    let wrongLabels = document.getElementsByClassName("third-labels");
+    let correctLabel = document.getElementById("correct-third-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -94,6 +109,10 @@ function question3() {
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        for (let i = 0; i < wrongLabels.length; i++) {
+            wrongLabels[i].style.backgroundColor = "red";
+        }
+        correctLabel.style.backgroundColor = "lightgreen";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -113,6 +132,8 @@ function question4() {
     let thirdAnswer = document.getElementById("select4.3");
     let fourthAnswer = document.getElementById("select4.4");
     let correctAnswer = document.getElementById("select4.2").checked;
+    let wrongLabels = document.getElementsByClassName("fourth-labels");
+    let correctLabel = document.getElementById("correct-fourth-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
@@ -128,6 +149,10 @@ function question4() {
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        for (let i = 0; i < wrongLabels.length; i++) {
+            wrongLabels[i].style.backgroundColor = "red";
+        }
+        correctLabel.style.backgroundColor = "lightgreen";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -147,6 +172,8 @@ function question5() {
     let thirdAnswer = document.getElementById("select5.3");
     let fourthAnswer = document.getElementById("select5.4");
     let correctAnswer = document.getElementById("select5.4").checked;
+    let wrongLabels = document.getElementsByClassName("fifth-labels");
+    let correctLabel = document.getElementById("correct-fifth-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
     if (
@@ -162,6 +189,10 @@ function question5() {
         } else {
             result.innerHTML = WRONG_ANSWER;
         }
+        for (let i = 0; i < wrongLabels.length; i++) {
+            wrongLabels[i].style.backgroundColor = "red";
+        }
+        correctLabel.style.backgroundColor = "lightgreen";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;

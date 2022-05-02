@@ -175,7 +175,7 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
 .quiz-grid {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    padding-top: 5rem;
+    padding: 5rem 0;
     background-color: #e38d27;
     border-radius: 50px;
     text-align: center;
@@ -234,7 +234,6 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
     font-size: 2.4rem;
     font-weight: 600;
     display: flex;
-    padding-top: 0.2rem;
 }
 
 .quiz-image {

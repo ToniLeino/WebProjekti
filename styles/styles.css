@@ -168,7 +168,7 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
 
 .container {
     max-width: 120rem;
-    padding: 0 3.2rem;
+    padding: 9.6rem 3.2rem;
     margin: 0 auto;
 }
 
@@ -182,48 +182,26 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
     border: 20px solid #e6983d;
 }
 
-.quiz-content {
-    display: flex;
-    justify-content: center;
-}
-
-
-/*.section-quizzes {
-    /*top, right, bottom, left
-    padding: 20rem;
-    display: block;
-}
-
-.quizzes-container {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    row-gap: 1rem;
-    padding: 5rem 9rem 5rem 9rem;
-    background-color: #e38d27;
-    border-radius: 5rem;
-    text-align: center;
-    border: 2rem solid #e6983d;
-}*/
-
 .quiz-header {
     display: flex;
     justify-content: center;
     grid-column: 1/4;
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: bold;
     color: rgb(255, 255, 255);
     text-shadow: 0.4rem 0.4rem #b6711f;
 }
 
-.quiz {
+.quiz-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding-top: 5rem;
+    position: relative;
 }
 
-.quiz::before {
+.quiz-content::before {
     content: "";
     display: block;
     width: 50%;
@@ -237,17 +215,17 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
     /*border: solid 5px rgb(33, 33, 33);*/
 }
 
-.quiz img,
-.quiz p,
-.quiz a {
+.quiz-content img,
+.quiz-content p,
+.quiz-content a {
     width: 100%;
     transition: all 0.4s;
     z-index: 1;
 }
 
-.quiz img:hover,
-.quiz a:hover,
-.quiz p:hover {
+.quiz-content img:hover,
+.quiz-content a:hover,
+.quiz-content p:hover {
     display: inline-block;
     transform: scale(1.1);
 }

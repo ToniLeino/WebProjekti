@@ -17,6 +17,7 @@ html {
     font-size: 62.5%;
     background-color: #e9a452;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -246,79 +247,88 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
 
 /* FOOTER SECTION */
 
+footer {
+    padding: 9.6rem 3.2rem;
+    background-color: #e38d27;
+}
+
 .footer {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-size: 2rem;
-    background-color: #e38d27;
-    padding: 10rem 30rem 10rem 30rem;
-    justify-items: left;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
 }
 
-.footer-header {
+.logo-col {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
-.footer-icon {
-    font-size: 2.2rem;
-    margin-right: 1rem;
-}
-
-.footer li {
-    display: flex;
-    padding-bottom: 1.5rem;
-}
-
-strong {
-    font-size: 2.2rem;
-}
-
-.footer-img {
-    max-width: 50%;
+.footer-logo {
+    display: block;
+    margin-bottom: 2rem;
+    width: 90%;
 }
 
 .social-links {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 2.4rem;
-    padding-top: 2rem;
-    margin-left: 2.5rem;
-    justify-content: left;
-    font-size: 2.5rem;
+    margin-bottom: 3.2rem;
 }
 
-.footer-link,
-.footer-link a {
-    display: inline-block;
+.social-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.footer-heading {
+    display: flex;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+ion-icon {
+    padding-right: 1rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
     flex-direction: column;
-    text-decoration: none;
-    color: black;
+    gap: 1rem;
 }
 
 .footer-link:link,
-.footer-link:visited,
-.footer-link a:link,
-.footer-link a:visited {
-    display: inline-block;
+.footer-link:visited {
     text-decoration: none;
+    font-size: 2rem;
+    color: black;
     transition: all 0.4s;
 }
 
 .footer-link:hover,
-.footer-link:active,
-.footer-link a:hover,
-.footer-link a:active {
-    display: inline-block;
+.footer-link:active {
     text-decoration: none;
+    font-size: 2rem;
     color: white;
-    cursor: pointer;
-    transition: all 0.4s;
 }
 
-.contact-info {
+.address,
+address p {
+    padding-bottom: 1rem;
+}
+
+.contacts {
     font-style: normal;
+    font-size: 2rem;
+    line-height: 1.6;
 }
 
 
@@ -327,7 +337,7 @@ strong {
 .credits {
     display: flex;
     background-color: #e38d27;
-    padding: 0 30rem 10rem 30rem;
+    padding: 10rem 30rem;
     justify-content: center;
 }
 

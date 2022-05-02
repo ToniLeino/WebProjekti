@@ -1,87 +1,112 @@
 .section-visa {
-    padding: 100px 200px 200px 200px;
+    padding: 4.8rem 0;
+}
+
+.container {
+    /*standard width 1200px / 1140px*/
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    /*"centering" the container*/
+    margin: 0 auto;
+}
+
+.header-container {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 5rem;
 }
 
 .visa-header {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px #b6711f;
     align-self: center;
-    padding: 50px 0 50px 0;
+    padding-bottom: 3.6rem;
+    padding-top: 0;
 }
 
-.visa-questions {
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 10px;
+.header-container p {
+    padding-bottom: 4.8rem;
+    font-size: 2.2rem;
+}
+
+.visa-grid {
+    /* tyhjä tila pois ilman gridi displayta*/
+    display: 0;
+    column-gap: 6.4rem;
+    row-gap: 3.2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    padding-top: 5rem;
     background-color: #e38d27;
     border-radius: 50px;
     text-align: center;
     border: 20px solid #e6983d;
 }
 
-.visa-text-box {
-    font-size: 2.2rem;
-    letter-spacing: 0.15rem;
+.visa-content {
     display: flex;
-    flex-direction: column;
-    padding: 50px 0 100px 0;
+    justify-content: center;
 }
 
-.visa-text {
-    padding: 0 200px 0 200px;
+.visa-question {
+    margin: 0 auto;
+    padding: 6.1rem 9.6rem;
+    border-radius: 10px;
+    background-color: #c8e9a0af;
+    max-height: 45rem;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.092), 0 5px 7px rgba(0, 0, 0, 0.348);
 }
 
 .question-title {
     font-size: 2.2rem;
-    padding: 10px;
     font-weight: 600;
+    padding-bottom: 4.8rem;
 }
 
-.question-container {
-    display: flex;
-    padding: 100px 0 100px 0;
-    margin: 0 250px 0 250px;
-    font-size: 2rem;
-    letter-spacing: 0.15rem;
-    background-color: #c8e9a0af;
-    border-radius: 50px;
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.092), 0 5px 7px rgba(0, 0, 0, 0.348);
-    justify-content: center; 
-}
-
-.visa-answer-options {
-    display: grid;
-    grid-template-columns: 1fr;
-    flex-direction: column;
+.question-img-container {
     justify-content: center;
-    align-items: center;
+    display: inline-block;
+    width: 50rem;
 }
 
-.btn-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-    margin: 0 400px 0 400px;
-    font-size: 2rem;
-    line-height: 1.5rem;
-    text-align: center;
+.question {
+    padding-top: 1rem;
 }
-
-.radio-selection {
-    padding-bottom: 50px;
-    
-}
-
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 40rem;
+    max-height: 24rem;
+}
+
+.visa-answer-options {
+    justify-content: center;
+    align-self: center;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.id-answer {
+    padding-top: 3rem;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3.6rem 3.6rem 0 3.6rem;
+    line-height: 1.5rem;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.radio-selection {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 input {
@@ -91,9 +116,9 @@ input {
 label,
 .check-btn {
     display: inline-block;
+    padding: 2rem;
     background-color: white;
-    padding: 15px 20px 15px 20px;
-    border-radius: 20px;
+    border-radius: 2rem;
     cursor: pointer;
     box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.275), 0 5px 7px rgba(0, 0, 0, 0.348);
     border: none;
@@ -102,23 +127,23 @@ label,
 
 label:hover,
 label:active {
-    background-color:#9bf6ff;
+    background-color: #9bf6ff;
     transition: all 0.2s;
 }
 
 .id-answer {
-    padding: 20px 0 200px 0;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
+    padding-bottom: 3rem;
 }
 
 .check-btn {
-    font-size: 2em;
+    font-size: 1.6rem;
     font-family: inherit;
 }
 
 .check-btn:hover,
 .check-btn:active {
-    background-color: white;
+    background-color: #e9a452;
     transition: all 0.2s;
 }

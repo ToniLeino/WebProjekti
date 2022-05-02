@@ -337,7 +337,7 @@ address p {
 .credits {
     display: flex;
     background-color: #e38d27;
-    padding: 10rem 30rem;
+    padding: 10rem;
     justify-content: center;
 }
 

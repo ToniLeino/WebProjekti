@@ -11,30 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- NAVIGAATIO -->
 
-    <header id="header" class="header">
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="../Index.html">Etusivu</a></li>
-                <li>
-                    <a class="main-nav-link" href="../Index.html#harjoitukset">Harjoitukset</a>
-                </li>
-                <li><a class="main-nav-link" href="#">Opettajat</a></li>
-                <li>
-                    <a class="main-nav-link" href="../pages/about.html">Tietoja</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="main-header">
-            <a href="#footer"><img src="../images/projektilogo.png" class="header-img" /></a>
-        </div>
-    </header>
+    <nav class="navbar">
+        <img src="../images/projektilogo.png" alt="headerimg" />
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+     <div class="navbar-links">
+        <ul>
+            <li><a href="../index.html">etusivu</a></li>
+            <li><a href="#harjoitukset">harjoitukset</a></li>
+            <li><a href="#">opettajat</a></li>
+            <li><a href="../pages/about.html">tietoja</a></li>
+        </ul>
+     </div>
+    </nav>
 
     <div class="shapedividers_com-8551">
         <svg></svg>
@@ -202,7 +201,7 @@
         </div>
     </footer>
 
-    <script src="javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

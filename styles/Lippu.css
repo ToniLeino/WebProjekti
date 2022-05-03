@@ -152,11 +152,21 @@ label:active {
     transition: all 0.2s;
     border: 6px solid #e9a452;
 }
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 800px;
     }
-}
+    .navbar {
+        display: block;
+        padding: 7rem;
+    }
+    .navbar img {
+        float: right;
+         
+    }
+    
+}   
 
 
 /*tabletin koko*/

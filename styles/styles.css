@@ -453,7 +453,7 @@ address p {
     padding-bottom: 5rem;
 } 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .toggle-icon {
         color: white;
     }

@@ -483,6 +483,8 @@ address p {
     .navbar-links.active {
         display: flex;
     }
+<<<<<<< HEAD
+=======
     .hero {
         display: flex;
     }
@@ -492,6 +494,7 @@ address p {
 }
 
 @media (max-width: 425px) {
+>>>>>>> 49b57a5c1c02b97bf612ffd322410dcd9560dbc7
     .footer-logo {
         display: none;
     }

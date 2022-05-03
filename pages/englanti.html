@@ -2,40 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Mia Vesa" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Englanti</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/dividers.css" />
-    <link rel="stylesheet" href="../styles/englanti.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/dividers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>KidsLearn</title>
 </head>
 
 <body>
-    <!-- NAVIGAATIO -->
+
+    <!-- HEADER &  NAVIGAATIO -->
 
     <header>
 
         <nav class="navbar">
-
-            <img src="../images/projektilogo.png" alt="headerimg" />
-
+            <img src="images/projektilogo.png" alt="headerimg" />
             <a href="#" class="toggle-button">
-                <ion-icon class="toggle-icon" name="menu-outline"></ion-icon>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="../Index.html">Etusivu</a></li>
-                    <li><a href="../Index.html#harjoitukset">Harjoitukset</a></li>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#harjoitukset">Harjoitukset</a></li>
                     <li><a href="#">Opettajat</a></li>
-                    <li><a href="../pages/about.html">Tietoja</a></li>
+                    <li><a href="pages/about.html">Tietoja</a></li>
                 </ul>
             </div>
-
         </nav>
 
     </header>
@@ -44,289 +42,88 @@
         <svg></svg>
     </div>
 
-    <!-- VISA -->
-    <!-- container -->
-    <section class="section-visa container">
+    <!-- HERO -->
 
-        <div class="header-container">
-            <h1 class="visa-header heading-primary">Englannin kielioppi</h1>
-            <p>Tässä harjoituksessa sinun tulee valita sopiva puuttuva sana.</p>
+    <main>
+
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">KidsLearn.com</h1>
+                    <p class="hero-text">
+                        KidsLearn on uusi ja moderni tehtäväalusta luotu erityisesti nuorimpia oppilaita ajatellen. Yksinkertaiset ja hauskat tehtävät yhdistettynä värikkääseen teemaan ovat tutkitusti tuottanut positiivia tuloksia lasten oppimiseen. Oppimisen tukena sivustolta
+                        löytyy myös kuvia helpottamaan hahmottamista. Sivuston on tuottanut kuusi lapsenmielistä opiskelijaa, lapsia varten.
+                    </p>
+                </div>
+                <div class="hero-img">
+                    <!-- https://pixabay.com/fi/vectors/tytt%c3%b6-kirjoja-pino-lukea-160172/ -->
+                    <img src="images/frontpage-img.png" alt="Cartoon girl sitting on a pile of books and smiling" />
+                </div>
+            </div>
+        </section>
+
+        <!-- HARJOITUSVALIKKO -->
+
+        <section class="section-quizzes container">
+
+
+            <div class="quiz-grid">
+                <div class="quiz-header heading-primary" id="harjoitukset">Harjoitusvalikko</div>
+
+                <div class="quiz-content">
+                    <a href="pages/plusmiinus.html">
+                        <!-- https://www.flaticon.com/free-icon/blackboard_546743 -->
+                        <img src="images/blackboard.png" class="quiz-image" alt="Liitutaulu-ikoni" />
+                    </a>
+                    <div class="quiz-name">1-2 lk Matematiikka</div>
+                </div>
+
+                <div class="quiz-content">
+                    <a href="pages/englanti.html">
+                        <!-- https://www.flaticon.com/free-icon/united-kingdom_2777685?related_id=2777678&origin=search -->
+                        <img src="images/united-kingdom.png" class="quiz-image" alt="Englanninlippu-ikoni" />
+                    </a>
+                    <div class="quiz-name">Englanti</div>
+                </div>
+
+                <div class="quiz-content">
+                    <a href="pages/historia.html">
+                        <!-- https://www.flaticon.com/free-icon/museum_1825856?term=museum&page=1&position=26&page=1&position=26&related_id=1825856&origin=search -->
+                        <img src="images/museum.png" class="quiz-image" alt="Temppeli-ikoni" />
+                    </a>
+                    <div class="quiz-name">Historia</div>
+                </div>
+
+                <div class="quiz-content">
+                    <a href="pages/kertojako.html">
+                        <!-- https://www.flaticon.com/premium-icon/abacus_732450?term=maths&page=1&position=44&page=1&position=44&related_id=732450&origin=search -->
+                        <img src="images/abacus.png" class="quiz-image" alt="Helmitaulu-ikoni" />
+                    </a>
+                    <div class="quiz-name">3-6 lk Matematiikka</div>
+                </div>
+
+                <div class="quiz-content">
+                    <a href="pages/biologia.html">
+                        <!-- https://www.flaticon.com/premium-icon/biology_1373879?term=biology&related_id=1373879 -->
+                        <img src="images/biology.png" class="quiz-image" alt="Kirja-ikoni" />
+                    </a>
+                    <div class="quiz-name">Biologia</div>
+                </div>
+
+                <div class="quiz-content">
+                    <a href="pages/maantieto.html">
+                        <!-- https://www.flaticon.com/free-icon/globe_3557759?related_id=3557759&origin=search -->
+                        <img src="images/globe.png" class="quiz-image" alt="Maapallo-ikoni" />
+                    </a>
+                    <div class="quiz-name">Maantieto</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="shapedividers_com-109">
+            <svg></svg>
         </div>
-
-        <div class="visa-grid">
-            <div class="visa-content">
-                <div class="visa-question">
-
-                    <div class="question-title">
-                        <u>Kysymys 1</u>
-                    </div>
-
-                    <div>
-                        <strong>Päätin tehdä pihvin illalliseksi.</strong>
-                    </div>
-
-                    <br/>
-
-                    <div style="font-size: 2.2rem">
-                        I <span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span> to cook steak for dinner.
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.1" name="first-select" value="vastaus 1" />
-                        <label for="select1.1">a) chose</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.2" name="first-select" value="vastaus 2" />
-                        <label for="select1.2">b) choose</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.3" name="first-select" value="vastaus 3" />
-                        <label for="select1.3">c) chosen</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.4" name="first-select" value="vastaus 4" />
-                        <label for="select1.4">d) choosed</label>
-                    </div>
-
-                </div>
-
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn1" class="check-btn" onclick="question1()">Tarkista</button>
-                        <div class="id-answer" id="answer-result1"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 2</u>
-                    </div>
-
-                    <div>
-                        <strong>Valitettavasti elokuva alkoi myöhässä.</strong>
-                    </div>
-
-                    <br />
-
-                    <div style="font-size: 2.2rem">
-                        Unfortunately the film <span style="border-bottom: 1px solid black; padding-left: 50px"></span>&nbsp;late.
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select2.1" name="second-select" value="vastaus 1" />
-                        <label for="select2.1">a) begin</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select2.2" name="second-select" value="vastaus 2" />
-                        <label for="select2.2">b) began</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select2.3" name="second-select" value="vastaus 3" />
-                        <label for="select2.3">c) begun</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select2.4" name="second-select" value="vastaus 4" />
-                        <label for="select2.4">d) begone</label>
-                    </div>
-
-                </div>
-
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn2" class="check-btn" onclick="question2()">Tarkista</button>
-                        <div class="id-answer" id="answer-result2"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 3</u>
-                    </div>
-
-                    <div>
-                        <strong>Linnut ovat lentäneet etelään talveksi.</strong>
-                    </div>
-
-                    <br/>
-
-                    <div style="font-size: 2.2rem">
-                        The birds have
-                        <span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span>South for the winter.
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select3.1" name="third-select" value="vastaus 1" />
-                        <label for="select3.1">a) flew</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select3.2" name="third-select" value="vastaus 2" />
-                        <label for="select3.2">b) fly</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select3.3" name="third-select" value="vastaus 3" />
-                        <label for="select3.3">c) flown</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select3.4" name="third-select" value="vastaus 4" />
-                        <label for="select3.4">d) fled</label>
-                    </div>
-
-                </div>
-
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn3" class="check-btn" onclick="question3()">Tarkista</button>
-                        <div class="id-answer" id="answer-result3"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-
-                    <div class="question-title">
-                        <u>Kysymys 4</u>
-                    </div>
-                    <div>
-                        <strong>Pelaat sulkapalloa tänä iltana.</strong>
-                    </div>
-
-                    <br />
-
-                    <div style="font-size: 2.2rem"> You<span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span>playing badminton tonight.
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select4.1" name="third-select" value="vastaus 1" />
-                        <label for="select4.1">a) am</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select4.2" name="third-select" value="vastaus 2" />
-                        <label for="select4.2">b) is</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select4.3" name="third-select" value="vastaus 3" />
-                        <label for="select4.3">c) were</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select4.4" name="third-select" value="vastaus 4" />
-                        <label for="select4.4">d) are</label>
-                    </div>
-
-                </div>
-
-                <div class="answer-result">
-
-                    <div class="check-div">
-                        <button id="check-btn4" class="check-btn" onclick="question4()">Tarkista</button>
-                        <div class="id-answer" id="answer-result4"></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 5</u>
-                    </div>
-
-                    <div>
-                        <strong>Kuinka hän kantaa niin raskasta laukkua?</strong>
-                    </div>
-
-                    <br/>
-
-                    <div style="font-size: 2.2rem">How<span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span>he carry such a heavy bag?
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select5.1" name="fifth-select" value="vastaus 1" />
-                        <label for="select5.1">a) make</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select5.2" name="fifth-select" value="vastaus 2" />
-                        <label for="select5.2">b) does</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select5.3" name="fifth-select" value="vastaus 3" />
-                        <label for="select5.3">c) do</label>
-                    </div>
-
-                    <div class="radio-selection">
-                        <input type="radio" id="select5.4" name="fifth-select" value="vastaus 4" />
-                        <label for="select5.4">d) don't</label>
-                    </div>
-
-                </div>
-
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn5" class="check-btn" onclick="question5()">Tarkista</button>
-                        <div class="id-answer" id="answer-result5"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="final-result">
-
-                <div class="check-result">
-                    <button id="final-check-btn" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
-                </div>
-
-                <div class="print-result">
-                    <div class="id-answer" id="printFinalResult"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="shapedividers_com-109">
-        <svg></svg>
-    </div>
+    </main>
 
     <!-- FOOTER -->
 
@@ -335,7 +132,7 @@
         <div class="footer">
             <div class="logo-col">
                 <a href="#header" class="footer-logo">
-                    <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png">
+                    <img class="footer-logo" alt="KidsLearn.com logo" src="images/projektilogo.png">
                 </a>
 
                 <ul class="social-links">
@@ -365,7 +162,7 @@
                 </div>
                 <ul class="footer-nav">
                     <li>
-                        <a class="footer-link" href="../pages/about.html">Tietoja</a>
+                        <a class="footer-link" href="pages/about.html">Tietoja</a>
                     </li>
                     <li>
                         <a class="footer-link" href="#">Saavutettavuus</a>
@@ -412,11 +209,216 @@
         </div>
     </footer>
 
-    <script src="../javascript/script.js"></script>
-    <script src="../javascript/englanti.js"></script>
-    <script src="../javascript/confetti.js"></script>
+
+
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+</div>
+
+<br />
+
+<div style="font-size: 2.2rem"> You<span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span>playing badminton tonight.
+</div>
+</div>
+</div>
+
+<div class="visa-answer-options">
+    <div id="answer-buttons" class="button-grid">
+
+        <div class="radio-selection">
+            <input type="radio" id="select4.1" name="third-select" value="vastaus 1" />
+            <label for="select4.1">a) am</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select4.2" name="third-select" value="vastaus 2" />
+            <label for="select4.2">b) is</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select4.3" name="third-select" value="vastaus 3" />
+            <label for="select4.3">c) were</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select4.4" name="third-select" value="vastaus 4" />
+            <label for="select4.4">d) are</label>
+        </div>
+
+    </div>
+
+    <div class="answer-result">
+
+        <div class="check-div">
+            <button id="check-btn4" class="check-btn" onclick="question4()">Tarkista</button>
+            <div class="id-answer" id="answer-result4"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="visa-content">
+    <div class="visa-question">
+        <div class="question-title">
+            <u>Kysymys 5</u>
+        </div>
+
+        <div>
+            <strong>Kuinka hän kantaa niin raskasta laukkua?</strong>
+        </div>
+
+        <br/>
+
+        <div style="font-size: 2.2rem">How<span style="border-bottom: 1px solid black; padding-left: 50px">&nbsp;</span>he carry such a heavy bag?
+        </div>
+    </div>
+</div>
+
+<div class="visa-answer-options">
+    <div id="answer-buttons" class="button-grid">
+
+        <div class="radio-selection">
+            <input type="radio" id="select5.1" name="fifth-select" value="vastaus 1" />
+            <label for="select5.1">a) make</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select5.2" name="fifth-select" value="vastaus 2" />
+            <label for="select5.2">b) does</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select5.3" name="fifth-select" value="vastaus 3" />
+            <label for="select5.3">c) do</label>
+        </div>
+
+        <div class="radio-selection">
+            <input type="radio" id="select5.4" name="fifth-select" value="vastaus 4" />
+            <label for="select5.4">d) don't</label>
+        </div>
+
+    </div>
+
+    <div class="answer-result">
+        <div class="check-div">
+            <button id="check-btn5" class="check-btn" onclick="question5()">Tarkista</button>
+            <div class="id-answer" id="answer-result5"></div>
+        </div>
+    </div>
+</div>
+
+<div class="final-result">
+
+    <div class="check-result">
+        <button id="final-check-btn" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
+    </div>
+
+    <div class="print-result">
+        <div class="id-answer" id="printFinalResult"></div>
+    </div>
+</div>
+</div>
+</section>
+
+<div class="shapedividers_com-109">
+    <svg></svg>
+</div>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+    <div class="footer">
+        <div class="logo-col">
+            <a href="#header" class="footer-logo">
+                <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png">
+            </a>
+
+            <ul class="social-links">
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="nav-col">
+            <div class="footer-heading">
+                <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon> Meistä
+            </div>
+            <ul class="footer-nav">
+                <li>
+                    <a class="footer-link" href="../pages/about.html">Tietoja</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">Saavutettavuus</a>
+                </li>
+                <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
+                <li><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-col">
+            <p class="footer-heading">
+                <ion-icon class="footer-icon" name="person-outline"></ion-icon> Tili</p>
+            <ul class="footer-nav">
+                <li>
+                    <a class="footer-link" href="#">Kirjaudu sisään</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">Luo tili</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">Yksityisyydensuoja</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="address-col">
+            <p class="footer-heading">
+                <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä</p>
+            <address class="contacts">
+                    <p class="address">Kiisselikuja, 90140 OULU</p>
+                    <p>
+                        <a class="footer-link" href="tel:123-456-7890">040-123-4567</a>
+                    </p>
+                    <p> 
+                        <a class="footer-link" href="mailto:kidslearncom@gmail.com">Kidslearncom@gmail.com</a>
+                    </p>
+                </address>
+        </div>
+    </div>
+    <div class="credits">
+        <div class="krediitit">
+            <p><a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="../javascript/script.js"></script>
+<script src="../javascript/englanti.js"></script>
+<script src="../javascript/confetti.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

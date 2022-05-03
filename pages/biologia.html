@@ -20,26 +20,26 @@
 <body>
     <!-- NAVIGAATIO -->
 
-    <header id="header" class="header">
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li>
-                    <a class="main-nav-link" href="../Index.html">Etusivu</a>
-                </li>
-                <li>
-                    <a class="main-nav-link" href="../Index.html#harjoitukset">Harjoitukset</a>
-                </li>
-                <li><a class="main-nav-link" href="#">Opettajat</a></li>
-                <li>
-                    <a class="main-nav-link" href="../pages/about.html">Tietoja</a>
-                </li>
+    <nav class="navbar">
+        <img src="../images/projektilogo.png" alt="headerimg" />
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">etusivu</a></li>
+                <li><a href="../index.html">harjoitukset</a></li>
+                <li><a href="#">opettajat</a></li>
+                <li><a href="../pages/about.html">tietoja</a></li>
             </ul>
-        </nav>
-
-        <div class="main-header">
-            <a href="#footer"><img src="../images/projektilogo.png" class="header-img" /></a>
         </div>
-    </header>
+    </nav>
+
+    <div class="shapedividers_com-8551">
+        <svg></svg>
+    </div>
 
     <div class="shapedividers_com-8976">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
@@ -60,7 +60,7 @@
                         <u>Kysymys 1</u>
                     </div>
                     <div class="question-img-container">
-                        <img src="../images/visaMetso.jpg" />
+                        <img src="../images/visaMetso.jpg" alt="1. lintu" />
                     </div>
                     <div>
                         <strong>Mikä lintu kuvassa on?</strong>
@@ -108,7 +108,7 @@
                         <u>Kysymys 2</u>
                     </div>
                     <div class="question-img-container">
-                        <img src="../images/visaLapinpöllö.jpg" />
+                        <img src="../images/visaLapinpöllö.jpg" alt="2. lintu" />
                     </div>
                     <div>
                         <strong>Mikä lintu kuvassa on?</strong>
@@ -155,7 +155,7 @@
                         <u>Kysymys 3</u>
                     </div>
                     <div class="question-img-container">
-                        <img src="../images/visaJoutsen.jpg" />
+                        <img src="../images/visaJoutsen.jpg" alt="3. lintu" />
                     </div>
                     <div>
                         <strong>Mikä lintu kuvassa on?</strong>
@@ -202,7 +202,7 @@
                         <u>Kysymys 4</u>
                     </div>
                     <div class="question-img-container">
-                        <img src="../images/visaVaris.jpg" />
+                        <img src="../images/visaVaris.jpg" alt="4. lintu" />
                     </div>
                     <div>
                         <strong>Mikä lintu kuvassa on?</strong>
@@ -250,7 +250,7 @@
                     </div>
 
                     <div class="question-img-container">
-                        <img src="../images/visaLokki.jpg" />
+                        <img src="../images/visaLokki.jpg" alt="5. lintu" />
                     </div>
                     <div class="question">
                         <strong>Mikä lintu kuvassa on?</strong>
@@ -391,6 +391,7 @@
     </footer>
     <script src="../javascript/biologiascript.js"></script>
     <script src="../javascript/confetti.js"></script>
+    <script src="../javascript/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

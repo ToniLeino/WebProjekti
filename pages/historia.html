@@ -7,8 +7,7 @@
     <title>Historia</title>
     <link rel="stylesheet" href="../styles/styles.css"/>
     <link rel="stylesheet" href="../styles/historia.css"/>
-    <link rel="stylesheet" href="../styles/dividers.css"/>
-    
+    <link rel="stylesheet" href="../styles/dividers.css"/>   
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"/>
@@ -32,144 +31,161 @@
             <li><a href="../pages/about.html">tietoja</a></li>
         </ul>
      </div>
-</nav>
+    </nav>
+    <div class="shapedividers_com-8551">
+        <svg></svg>
+    </div>
 
     <div class="shapedividers_com-8976">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
     </div>
-
     <!--Historiavisa-->
 
-    <section class="section-visa">
-        <div class="visa-questions">
-            <div class="visa-header heading-secondary">
-                <h2>Historia</h2>
-            </div>
+    <section class="section-visa container">
+        <div class="header-container">
+            <h1 class="visa-header heading-primary">Historia</h1>
+            <p>Täällä voit testata tietojasi Suomen historiasta.</p>
+        </div>
 
-            <div class="visa-text-box">
-                <p class="visa-text">
-                    Näiden kysymysten avulla voit kerrata Suomen historian pääkohtia Ruotsin vallan ajalta Suomen itsenäistymiseen asti.
-                </p>
+        <div class="visa-grid">
+            <!--Kysymys 1 -->
+            <div class="visa-content">
+                <div class="visa-question">
+                    <div class="question-title">
+                        <u>Kysymys 1</u>
+                    </div>
+                    <div class="question-img-container">
+                        <img src="../images/Mikael Agricola.jpg">
+                    </div>
+                    <div>
+                    <strong>Kuka oli suomen kielen isä?</strong>
+                    </div>
             </div>
-
-            <div class="question-title">
-
-            <!--Kysymys 1 -->   
-                Kysymys 1
-            </div>
-
-            <div class="question-container">
-                <div class="question"><img src="../images/Mikael Agricola.jpg">Kuka oli suomen kielen isä?</div>
-            </div>
+        </div>
 
             <div class="visa-answer-options">
-                <div id="answer-buttons" class="btn-grid">
+                <div id="answer-buttons" class="button-grid">
                     <div class="radio-selection">
-                        <input type="radio" id="select1.1" value="vastaus 1"/>
-                        <label for="select1.1">a) Martti Luther  </label>
+                        <input type="radio" id="select1.1" name="first-select" value="vastaus 1"/>
+                        <label class="first-labels" for="select1.1">a) Martti Luther  </label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.2" value="vastaus 2"/>
-                        <label for="select1.2">b) Mikael Agricola </label>
+                        <input type="radio" id="select1.2" name="first-select" value="vastaus 2"/>
+                        <label id="correct-first-label" for="select1.2">b) Mikael Agricola </label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.3" value="vastaus 3"/>
-                        <label for="select1.3">c) Aleksis Kivi</label>
+                        <input type="radio" id="select1.3" name="first-select" value="vastaus 3"/>
+                        <label class="first-labels"for="select1.3">c) Aleksis Kivi</label>
                     </div>
 
                     <div class="radio-selection">
-                        <input type="radio" id="select1.4" value="vastaus 4"/>
-                        <label for="select1.4">d) Martti Skytte</label>
+                        <input type="radio" id="select1.4" name="first-select" value="vastaus 4"/>
+                        <label class="first-labels" for="select1.4">d) Martti Skytte</label>
                     </div>
                 </div>
 
                 <div class="answer-result">
                     <div class="check-div">
-                        <button id="check-btn1" class="check-btn" onclick="question1()"> Tarkista </button>
+                        <button id="check-btn1" class="check-btn" onclick="question1()">
+                Tarkista
+              </button>
                         <div class="id-answer" id="answer-result1"></div>
                     </div>
                 </div>
+            </div>
 
                 <!--Kysymys 2-->
 
-                <div class="question-title">
-                    Kysymys 2
-                </div>
-
-                <div class="question-container">
-                    <div class="question"> <img src="../images/Helsinki.jpg">Milloin Kustaa Vaasa perusti Helsingin?</div>
+                <div class="visa-content">
+                    <div class="visa-question">
+                        <div class="question-title">
+                            <u>Kysymys 2</u>
+                        </div>
+                        <div class="question-img-container"><img src="../images/Helsinki.jpg">
+                            <strong>Milloin Kustaa Vaasa perusti Helsingin?</strong>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
+                    <div id="answer-buttons" class="button-grid">
                         <div class="radio-selection">
-                            <input type="radio" id="select2.1" value="vastaus 1"/>
-                            <label for="select2.1">a) 1500</label>
+                            <input type="radio" id="select2.1" name="second-select" value="vastaus 1"/>
+                            <label class="second-labels" for="select2.1">a) 1500</label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select2.2" value="vastaus 2"/>
-                            <label for="select2.2">b) 1570 </label>
+                            <input type="radio" id="select2.2" name="second-select" value="vastaus 2"/>
+                            <label class="second-labels" for="select2.2">b) 1570 </label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select2.3" value="vastaus 3"/>
-                            <label for="select2.3">c) 1520 </label>
+                            <input type="radio" id="select2.3" name="second-select" value="vastaus 3"/>
+                            <label class="second-labels" for="select2.3">c) 1520 </label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select2.4" value="vastaus 4"/>
-                            <label for="select2.4">d) 1550</label>
+                            <input type="radio" id="select2.4" name="second-select" value="vastaus 4"/>
+                            <label id="correct-second-label" for="select2.4">d) 1550</label>
                         </div>
-
                     </div>
+
                     <div class="answer-result">
                         <div class="check-div">
-                            <button id="check-btn2" class="check-btn" onclick="question2()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result2"></div>
-                        </div>
+                            <button id="check-btn2" class="check-btn" onclick="question2()">
+                    Tarkista
+                    </button>
+                        <div class="id-answer" id="answer-result2"></div>
                     </div>
                 </div>
+            </div>
 
                 <!--Kysymys 3-->
 
-                <div class="question-title">
-                    Kysymys 3
-                </div>
-
-                <div class="question-container">
-                    <div class="question"><img src="../images/Suuriruhtinaskunta.jpg">Milloin Suomesta tuli Venäjän autonominen suuriruhtinaskunta?</div>
+                <div class="visa-content">
+                    <div class="visa-question">
+                        <div class="question-title">
+                            <u>Kysymys 3</u>
+                        </div>
+                        <div class="question-img-container">
+                            <img src="../images/Suuriruhtinaskunta.jpg">
+                        </div>
+                        <div>
+                            <strong>Milloin Suomesta tuli Venäjän suuriruhtinaskunta?</strong>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
+                    <div id="answer-buttons" class="button-grid">
                         <div class="radio-selection">
-                            <input type="radio" id="select3.1" value="vastaus 1"/>
-                            <label for="select3.1">a) 1809</label>
+                            <input type="radio" id="select3.1" name="third-select" value="vastaus 1"/>
+                            <label id="correct-third-label" for="select3.1">a) 1809</label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select3.2" value="vastaus 2"/>
-                            <label for="select3.2">b) 1789 </label>
+                            <input type="radio" id="select3.2" name="third-select" value="vastaus 2"/>
+                            <label class="third-labels" for="select3.2">b) 1789 </label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select3.3" value="vastaus 3"/>
-                            <label for="select3.3">c) 1818</label>
+                            <input type="radio" id="select3.3" name="third-select" value="vastaus 3"/>
+                            <label class="third-labels" for="select3.3">c) 1818</label>
                         </div>
 
                         <div class="radio-selection">
-                            <input type="radio" id="select3.4" value="vastaus 4"/>
-                            <label for="select3.4">d) 1801</label>
+                            <input type="radio" id="select3.4" name="third-select" value="vastaus 4"/>
+                            <label class="third-labels" for="select3.4">d) 1801</label>
                         </div>
-
                     </div>
 
                     <div class="answer-result">
                         <div class="check-div">
-                            <button id="check-btn3" class="check-btn" onclick="question3()"> Tarkista </button>
+                            <button id="check-btn3" class="check-btn" onclick="question3()">
+                    Tarkista
+                  </button>
                             <div class="id-answer" id="answer-result3"></div>
                         </div>
                     </div>
@@ -177,41 +193,47 @@
 
                 <!--Kysymys 4-->
 
-                <div class="question-title">
-                    Kysymys 4
-                </div>
-
-                <div class="question-container">
-                    <div class="question"><img src="../images/Valtioneuvoston linna.jpg">Mikä oli merkittävin muutos Ruotsin vallan aikakauteen?</div>
+                <div class="visa-content">
+                    <div class="visa-question">
+                        <div class="question-title">
+                            <u>Kysymys 4</u>
+                        </div>
+                        <div class="question-img-container">
+                            <img src="../images/Valtioneuvoston linna.jpg">
+                            <strong>Mikä oli merkittävin muutos Ruotsin vallan aikakauteen?</strong> 
+                        </div>
+                    </div>
                 </div>
 
                 <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
+                    <div id="answer-buttons" class="button-grid">
                         <div class="radio-selection">
                             <input type="radio" id="select4.1" value="vastaus 1"/>
-                            <label for="select4.1">a) Sananvapaus </label>
+                            <label class="fourth-labels" for="select4.1">a) Sananvapaus </label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select4.2" value="vastaus 2"/>
-                            <label for="select4.2">b) Suomen senaatti perustettiin</label>
+                            <label id="correct-fourth-label" for="select4.2">b) Suomen senaatti perustettiin</label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select4.3" value="vastaus 3"/>
-                            <label for="select4.3">c) Vapaa lehdistö kehittyi</label>
+                            <label class="fourth-labels" for="select4.3">c) Vapaa lehdistö kehittyi</label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select4.4" value="vastaus 4"/>
-                            <label for="select4.4">d) Demokratia muodostui </label>
+                            <label class="fourth-labels" for="select4.4">d) Demokratia muodostui </label>
                         </div>
 
                     </div>
 
                     <div class="answer-result">
                         <div class="check-div">
-                            <button id="check-btn4" class="check-btn" onclick="question4()"> Tarkista </button>
+                            <button id="check-btn4" class="check-btn" onclick="question4()">
+                    Tarkista
+                  </button>
                             <div class="id-answer" id="answer-result4"></div>
                         </div>
                     </div>
@@ -219,55 +241,64 @@
 
                 <!--Kysymys 5-->
 
-                <div class="question-title">
-                    Kysymys 5
-                </div>
-
-                <div class="question-container">
-                    <div class="question"><img src="../images/Ensimmäinen presidentti.jpg">Kuka oli Suomen ensimmäinen presidentti?</div>
+                <div class="visa-content">
+                    <div class="visa-question">
+                        <div class="question-title">
+                            <u>Kysymys 5</u>
+                        </div>
+    
+                        <div class="question-img-container">
+                            <img src="../images/Ensimmäinen presidentti.jpg">
+                            <strong>Kuka oli Suomen ensimmäinen presidentti?</strong>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="visa-answer-options">
-                    <div id="answer-buttons" class="btn-grid">
+                    <div id="answer-buttons" class="button-grid">
                         <div class="radio-selection">
                             <input type="radio" id="select5.1" value="vastaus 1"/>
-                            <label for="select5.1">a) Lauri Relander </label>
+                            <label class="fifth-labels" for="select5.1">a) Lauri Relander </label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select5.2" value="vastaus 2"/>
-                            <label for="select5.2">b) Kyösti Kallio</label>
+                            <label class="fifth-labels" for="select5.2">b) Kyösti Kallio</label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select5.3" value="vastaus 3"/>
-                            <label for="select5.3">c) K. J. Ståhlberg</label>
+                            <label id="correct-fifth-label" for="select5.3">c) K. J. Ståhlberg</label>
                         </div>
 
                         <div class="radio-selection">
                             <input type="radio" id="select5.4" value="vastaus 4"/>
-                            <label for="select5.4">d) P. E. Svinhufvud </label>
+                            <label class="fifth-labels" for="select5.4">d) P. E. Svinhufvud </label>
                         </div>
-
                     </div>
                     <div class="answer-result">
                         <div class="check-div">
-                            <button id="check-btn5" class="check-btn" onclick="question5()"> Tarkista </button>
-                            <div class="id-answer" id="answer-result5"></div>
+                          <button id="check-btn5" class="check-btn" onclick="question5()">
+                            Tarkista
+                          </button>
+                          <div class="id-answer" id="answer-result5"></div>
                         </div>
+                      </div>
                     </div>
                     
-                    <!--Tarkista lopputulos!-->
-
                     <div class="final-result">
                         <div class="check-result">
-                            <button id="" class="check-btn" onclick="checkResult()">Tarkista lopputulos!</button>
+                            <button id="final-check-btn" class="check-btn" onclick="checkResult()">
+                      Tarkista lopputulos!
+                    </button>
                         </div>
+        
                         <div class="print-result">
                             <div class="id-answer" id="printFinalResult"></div>
                         </div>
                     </div>
-    </section>
+                </div>
+            </section>
 
     <div class="shapedividers_com-2407">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
@@ -347,6 +378,7 @@
     </footer>
     <scirpt src="../javascript/script.js"></scirpt>
     <script src="../javascript/historia.js"></script>
+    <script src="../javascript/confetti.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

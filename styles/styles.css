@@ -494,3 +494,17 @@ address p {
         margin-top: 25px;
     }
 }
+@media ( max-width: 1060px ) {
+    .footer-logo {
+        display: none;
+    }
+    .footer {
+        display: inline;
+    }
+    .nav-col {
+        margin-top: 25px;
+    }
+    .address-col {
+        margin-top: 25px;
+    }
+}

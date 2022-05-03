@@ -78,17 +78,16 @@ img[alt*="headerimg"] {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    right: 4rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 40px;
+    height: 31px;
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: white;
     border-radius: 10px;

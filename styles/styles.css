@@ -484,9 +484,6 @@ address p {
     .navbar-links.active {
         display: flex;
     }
-}
-
-@media (max-width: 425px) {
     .footer-logo {
         display: none;
     }

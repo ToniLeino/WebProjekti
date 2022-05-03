@@ -39,8 +39,9 @@ body {
 .navbar {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 50rem;
     background-color: #e38d27;
     height: 100%;
     padding: 45px;
@@ -97,28 +98,6 @@ img[alt*="headerimg"] {
 .shapedividers_com-8976 {
     display: flex;
 }
-
-
-/* rem and em do NOT depend on html font-size in media queries
-Instead, 1rem = 1em = 16px 
-rem might have bugs in some browsers so we use em instead of rem, since they work the same */
-
-
-/*
-@media (max-width: 90em) {
-    .header {
-        padding: 10rem 18rem;
-    }
-}
-
-@media (max-width: 48em) {
-    .main-nav-list {
-        display: none;
-    }
-    .header-img {
-        padding-left: 50rem;
-    }
-} */
 
 
 /* HERO */

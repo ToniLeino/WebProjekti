@@ -36,42 +36,62 @@ body {
 
 /* YLÄTUNNISTE */
 
-.header {
+.navbar {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    height: 9.6rem;
-    padding: 10rem 35rem;
     background-color: #e38d27;
+    height: 100%;
+    padding: 45px;
+    font-size: 2rem;
 }
 
-.main-nav-list {
+img[alt*="headerimg"] {
+    width: 150px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
     display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
     list-style: none;
-    align-items: center;
-    gap: 4.8rem;
 }
 
-.header-img {
-    height: 10rem;
+.navbar-links li a {
     display: block;
-    padding-left: 9.6rem;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-    display: inline-block;
     text-decoration: none;
     color: black;
-    font-weight: 600;
-    font-size: 2.4rem;
-    transition: all 0.4s;
+    padding: 1rem;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-    color: rgb(255, 255, 255);
-    transition: all 0.4s;
+.navbar-links li:hover {
+    background-color: rgb(233 164 82);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .shapedividers_com-8976 {
@@ -431,4 +451,37 @@ address p {
 
 .about-you-title2 {
     padding-bottom: 5rem;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }

@@ -27,6 +27,15 @@ body {
     color: black;
 }
 
+
+/*DEFAULT SELECTOR BORDER*/
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem #b6711f;
+    border-radius: 10%;
+}
+
 .heading-primary,
 .heading-secondary {
     display: block;
@@ -39,8 +48,9 @@ body {
 .navbar {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 60rem;
     background-color: #e38d27;
     height: 100%;
     padding: 45px;
@@ -63,17 +73,19 @@ img[alt*="headerimg"] {
 
 .navbar-links li {
     list-style: none;
+    padding-right: 2rem;
 }
 
 .navbar-links li a {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    font-weight: bold;
 }
 
-.navbar-links li:hover {
-    background-color: rgb(233 164 82);
+.navbar-links a:hover {
+    color: white;
+    gap: 5rem;
 }
 
 .toggle-button {
@@ -101,23 +113,6 @@ img[alt*="headerimg"] {
 /* rem and em do NOT depend on html font-size in media queries
 Instead, 1rem = 1em = 16px 
 rem might have bugs in some browsers so we use em instead of rem, since they work the same */
-
-
-/*
-@media (max-width: 90em) {
-    .header {
-        padding: 10rem 18rem;
-    }
-}
-
-@media (max-width: 48em) {
-    .main-nav-list {
-        display: none;
-    }
-    .header-img {
-        padding-left: 50rem;
-    }
-} */
 
 
 /* HERO */
@@ -450,7 +445,7 @@ address p {
 
 .about-you-title2 {
     padding-bottom: 5rem;
-} 
+}
 
 @media (max-width: 900px) {
     .toggle-icon {
@@ -495,14 +490,13 @@ address p {
     .hero {
         display: block;
         position: left;
-        
     }
     .hero-text {
         font-size: 1.8em;
         padding: auto;
         position: left;
     }
-    .hero-text-box{
+    .hero-text-box {
         display: inline;
     }
     .heading-primary {
@@ -512,7 +506,8 @@ address p {
         display: none;
     }
 }
-@media ( max-width: 1060px ) {
+
+@media ( max-width: 1060px) {
     .footer-logo {
         display: none;
     }
@@ -529,10 +524,8 @@ address p {
         grid-column: 2/2;
         display: flex;
     }
-    
     .quiz-header {
         display: flex;
         font-size: 2.9em;
     }
-        
 }

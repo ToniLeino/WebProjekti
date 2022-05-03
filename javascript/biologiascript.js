@@ -2,13 +2,16 @@ let points = 0;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
-let testiAnswer = document.getElementById("select1.1");
+/*let testiAnswer = document.getElementById("select1.1");
 testiAnswer.addEventListener("click", doSome);
 
 function doSome() {
     testiAnswer.classList.toggle("testi");
 }
-
+if (document.getElementById("select1.3").checked) {
+    document.getElementById("correct-first-label").style.backgroundColor = "black";
+}
+*/
 function question1() {
     // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result1");

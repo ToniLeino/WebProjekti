@@ -163,7 +163,7 @@ label:active {
     }
     .navbar img {
         float: right;
-         
+        
     }
     
 }   
@@ -185,6 +185,11 @@ label:active {
     }
     .visa-answer-options {
         font-size: 2rem;
+    }
+    .navbar img {
+        max-width: 17%;
+        float: left; 
+        margin-bottom: 0,5rem;
     }
 }
 

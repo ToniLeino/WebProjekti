@@ -40,13 +40,10 @@ body {
 }
 
 .visa-grid {
-    /*tyhjä tila pois ilman gridi displayta*/
     text-align: center;
     display: grid;
     column-gap: 6.4rem;
     row-gap: 3.2rem;
-    /*grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 1fr);*/
     padding-top: 5rem;
     background-color: #e38d27;
     border-radius: 50px;
@@ -64,6 +61,7 @@ body {
     background-color: #c8e9a0af;
     max-height: 45rem;
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.092), 0 5px 7px rgba(0, 0, 0, 0.348);
+    
 }
 
 strong {
@@ -80,10 +78,6 @@ strong {
     justify-content: center;
     display: inline-block;
     max-width: 50rem;
-}
-
-.question {
-    padding-top: 1rem;
 }
 
 img {
@@ -148,7 +142,8 @@ label:active {
 .id-answer {
     font-size: 2rem;
     font-weight: 600;
-    padding-bottom: 1.5rem;
+    padding: 3rem 0;
+
 }
 
 .check-btn:hover,
@@ -157,6 +152,87 @@ label:active {
     transition: all 0.2s;
     border: 6px solid #e9a452;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 800px;
+    }
+    .navbar {
+        display: block;
+        padding: 7rem;
+    }
+    .navbar img {
+        float: right;
+        
+    }
+    
+}   
+
+
+/*tabletin koko*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    label {
+        padding: 4rem;
+        width: 20rem;
+    }
+    .check-btn {
+        padding: 4rem;
+        width: 20rem;
+    }
+    .visa-answer-options {
+        font-size: 2rem;
+    }
+    .navbar img {
+        max-width: 17%;
+        float: left; 
+        margin-bottom: 0,5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 60%;
+    }
+    .question-title {
+        padding-bottom: 2rem;
+    }
+    .question-img-container img {
+        padding: 1rem;
+        max-width: 30rem;
+        max-height: 20rem;
+    }
+    .visa-header {
+        font-weight: 600;
+        font-size: 4rem;
+    }
+    .visa-question {
+        width: 35rem;
+        height: 35rem;
+        padding: 2.5rem;
+    }
+    .container {
+        width: 450px;
+    }
+    .visa-grid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .button-grid {
+        padding-top: 1rem;
+    }
+    .visa-answer-options {
+        font-size: 1.5rem;
+    }
+    label {
+        padding: 3rem;
+        width: 15rem;
+    }
+}
+
 @media screen and (max-width: 375px) {
     html {
         font-size: 50%;
@@ -212,9 +288,6 @@ label:active {
     .footer img {
         display: none;
     }
-    .header img {
-        display: none;
-    }
     .visa-header {
         font-weight: 600;
         font-size: 4rem;
@@ -230,7 +303,6 @@ label:active {
     .visa-grid {
         padding-left: 1rem;
         padding-right: 1rem;
-        
     }
     .button-grid {
         padding-top: 1rem;
@@ -249,6 +321,4 @@ label:active {
         max-height: 20rem;
         font-size: 2.2rem;
     }
-    
-    
 }

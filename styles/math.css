@@ -101,3 +101,31 @@ input {
     background-color: #e9a452;
     transition: all 0.2s;
 }
+
+@media (max-width: 616px) {
+    .visa-text {
+        padding: 0px;
+    }
+    .math-questions {
+       border: 0px; 
+       padding: 0px;
+    }
+    .math-container {
+        padding: 0px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .visa-text {
+        padding: 0px;
+    }
+    .math-questions {
+       border: 0px; 
+       padding: 0px;
+    }
+    .math-container {
+        padding: 0px;
+    }
+    
+}

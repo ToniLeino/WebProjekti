@@ -268,8 +268,9 @@ function checkResult() {
         finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
     }
 }   
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+//header toggle buttoni
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')

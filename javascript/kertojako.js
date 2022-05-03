@@ -60,6 +60,7 @@ function question11() {
             }
         }
         document.getElementById("check-btn11").disabled = true;
+        
 }
 
 //tehtävä 2
@@ -181,7 +182,7 @@ function question55() {
             tarkistus55.innerHTML = RIGHT_ANSWER;
             points++;
         } 
-        else if (questionViisi == "56 / 7 * 9 = " && vastauskentta5 == 64){
+        else if (questionViisi == "56 / 7 * 9 = " && vastauskentta5 == 72){
             tarkistus55.innerHTML = RIGHT_ANSWER;
             points++;
         }
@@ -197,7 +198,7 @@ function question55() {
             if (questionViisi == "4 * 7 / 2 = " && vastauskentta5 != 14){
                 tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "14.";
             }
-            else if (questionViisi == "56 / 7 * 9 = " && vastauskentta5 != 64){
+            else if (questionViisi == "56 / 7 * 9 = " && vastauskentta5 != 72){
                 tarkistus55.innerHTML = WRONG_ANSWER + " oikea vastaus on " + "64.";
             }
             else if (questionViisi == "8 * 6 / 4 = " && vastauskentta5 != 12){
@@ -212,28 +213,49 @@ function question55() {
 
 //lopputulos
 
-function checkResult2 (){
-    let finalResult = points + " / 5 ";
-    let check1 = document.getElementById("check-btn11");
-    let check2 = document.getElementById("check-btn12");
-    let check3 = document.getElementById("check-btn13");
-    let check4 = document.getElementById("check-btn14");
-    let check5 = document.getElementById("check-btn15");
-    if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
-        if(points < 3){
-            document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet1_2
-        }
-        else{
-            document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet3_5
-        }
+//tarkista tulokset 
+
+function checkResult2() {
+
+let finalResult = points + " / 5 ";
+let check1 = document.getElementById("check-btn11");
+let check2 = document.getElementById("check-btn12");
+let check3 = document.getElementById("check-btn13");
+let check4 = document.getElementById("check-btn14");
+let check5 = document.getElementById("check-btn15");
+if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
+    if(points < 3){
+        document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet1_2
     }
-    else {
-        document.getElementById("finalResult").innerHTML =
-            "Vastaa ensin kaikkiin kysymyksiin!";
+    else{
+        document.getElementById("finalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+        
+        // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+        // for starting the confetti
+        const start = () => {
+            setTimeout(function() {
+                confetti.start();
+            }, 1000);
+            // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop();
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        // after this here we are calling both the function so it works
+        start();
+        stop();
     }
 }
-
-
+else {
+    document.getElementById("printFinalResult").innerHTML =
+        "Vastaa ensin kaikkiin kysymyksiin!";
+}
+}
 
 
 

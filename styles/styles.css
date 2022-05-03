@@ -451,37 +451,69 @@ address p {
 
 .about-you-title2 {
     padding-bottom: 5rem;
-}
+} 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+    .toggle-icon {
+        color: white;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .toggle-button {
         display: flex;
     }
-
     .navbar-links {
         display: none;
         width: 100%;
     }
-
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
-
     .navbar-links ul li {
         text-align: center;
     }
-
     .navbar-links ul li a {
         padding: .5rem 1rem;
     }
-
     .navbar-links.active {
         display: flex;
     }
+    .footer-logo {
+        display: none;
+    }
+    .footer {
+        display: inline;
+    }
+    .nav-col {
+        margin-top: 25px;
+    }
+    .address-col {
+        margin-top: 25px;
+    }
+}
+@media ( max-width: 1060px ) {
+    .footer-logo {
+        display: none;
+    }
+    .footer {
+        display: inline;
+    }
+    .nav-col {
+        margin-top: 25px;
+    }
+    .address-col {
+        margin-top: 25px;
+    }
+    .quiz-content {
+        grid-column: 1/3;
+    }
+    .quiz-header {
+        display: flex;
+        grid-column: 2/3;
+        font-size: 2.9em;
+    }
+        
 }

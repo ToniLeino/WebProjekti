@@ -488,3 +488,18 @@ address p {
         display: none;
     }
 }
+
+@media (max-width: 425px) {
+    .footer-logo {
+        display: none;
+    }
+    .footer {
+        display: inline;
+    }
+    .nav-col {
+        margin-top: 25px;
+    }
+    .address-col {
+        margin-top: 25px;
+    }
+}

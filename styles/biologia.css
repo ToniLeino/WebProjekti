@@ -2,10 +2,6 @@ body {
     background-color: #e9a452;
 }
 
-.section-visa {
-    padding: 4.8rem 0;
-}
-
 .container-fluid {
     width: 100%;
 }
@@ -40,13 +36,10 @@ body {
 }
 
 .visa-grid {
-    /*tyhjä tila pois ilman gridi displayta*/
     text-align: center;
     display: grid;
     column-gap: 6.4rem;
     row-gap: 3.2rem;
-    /*grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, 1fr);*/
     padding-top: 5rem;
     background-color: #e38d27;
     border-radius: 50px;
@@ -82,10 +75,6 @@ strong {
     max-width: 50rem;
 }
 
-.question {
-    padding-top: 1rem;
-}
-
 img {
     display: block;
     margin-left: auto;
@@ -96,10 +85,6 @@ img {
 
 .visa-answer-options {
     font-size: 1.6rem;
-}
-
-.id-answer {
-    padding-top: 3rem;
 }
 
 .button-grid {
@@ -123,7 +108,7 @@ label,
 .check-btn {
     display: inline-block;
     padding: 3rem;
-    width: 15rem;
+    width: 18rem;
     background-color: white;
     border-radius: 2rem;
     cursor: pointer;
@@ -148,7 +133,7 @@ label:active {
 .id-answer {
     font-size: 2rem;
     font-weight: 600;
-    padding-bottom: 1.5rem;
+    padding: 3rem 0;
 }
 
 .check-btn:hover,
@@ -161,6 +146,13 @@ label:active {
 @media screen and (max-width: 1024px) {
     .container {
         width: 800px;
+    }
+    .navbar {
+        display: block;
+        padding: 7rem;
+    }
+    .navbar img {
+        float: right;
     }
 }
 
@@ -181,6 +173,11 @@ label:active {
     }
     .visa-answer-options {
         font-size: 2rem;
+    }
+    .navbar img {
+        float: left;
+        max-width: 17%;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -222,6 +219,11 @@ label:active {
         padding: 3rem;
         width: 15rem;
     }
+    .navbar img {
+        float: left;
+        max-width: 20%;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -262,6 +264,11 @@ label:active {
         padding: 2.8rem;
         width: 15rem;
     }
+    .navbar img {
+        float: left;
+        max-width: 20%;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -279,8 +286,8 @@ label:active {
     .footer img {
         display: none;
     }
-    .header img {
-        display: none;
+    .navbar img {
+        float: left;
     }
     .visa-header {
         font-weight: 600;
@@ -314,5 +321,10 @@ label:active {
         max-width: 20rem;
         max-height: 20rem;
         font-size: 2.2rem;
+    }
+    .navbar img {
+        float: left;
+        max-width: 20%;
+        margin-left: 2rem;
     }
 }

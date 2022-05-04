@@ -58,7 +58,8 @@ body {
 }
 
 img[alt*="headerimg"] {
-    width: 150px;
+    padding-left: 5rem;
+    width: 22rem;
 }
 
 .navbar-links {
@@ -119,7 +120,7 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
 /* HERO */
 
 .hero {
-    max-width: 160rem;
+    max-width: 140rem;
     margin: 0 auto;
     padding: 0 3.2rem;
     display: grid;
@@ -396,8 +397,13 @@ address p {
 
 .about-us-text {
     grid-column: 1/4;
-    padding: 5rem 50rem 10rem 50rem;
+    padding: 5rem 25rem 25rem 25rem;
     text-align: justify;
+}
+
+.section-about-us {
+    display: inline-block;
+    text-align: center;
 }
 
 .working-group img {
@@ -443,24 +449,69 @@ address p {
 .about-you-title {
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .about-you-title2 {
     padding-bottom: 5rem;
+    font-size: 2rem;
 }
 
-@media (max-width: 1082px) {
+@media (max-width: 1440px) {
+    .about-us-text {
+        grid-column: 1/4;
+        padding: 0;
+        text-align: justify;
+    }
+    .section-about-us {
+        display: inline-block;
+        text-align: center;
+    }
+    .about-you-name {
+        padding-top: 2rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .about-you-title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    .about-you-title2 {
+        padding-bottom: 5rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
     .navbar {
         gap: 10rem;
     }
     .footer {
         grid-template-columns: repeat(3, 1fr);
     }
-    .about-us-text{
-        padding: 0 0 60px 0;
+    .about-us-text {
+        grid-column: 1/4;
+        text-align: justify;
+        padding: 0
     }
-    .about-us-header h2 {
-        padding-bottom: 20px;
+    .section-about-us {
+        display: inline-block;
+        text-align: center;
+    }
+    .about-you-name {
+        padding-top: 2rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .about-you-title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .about-you-title2 {
+        padding-bottom: 5rem;
+        font-size: 2rem;
     }
 }
 
@@ -516,16 +567,17 @@ address p {
         display: inline;
     }
     .heading-primary {
-        font-size: 6rem;
+        font-size: 4rem;
+        text-shadow: 0.2rem 0.4rem #c07921;
     }
     .hero-img {
         display: none;
-        
     }
-    .about-us-text{
-        font-size: 1.2em;
-        padding: 0 0 40px 0;
-        margin-bottom:0px;
+    .about-us-text {
+        grid-column: 1/4;
+        text-align: justify;
+        padding: 0;
+        font-size: 2.5rem;
     }
     .about-us-container {
         margin-bottom: 20px;
@@ -533,16 +585,16 @@ address p {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
         align-items: justify;
-        
-        
     }
-    .about-you-title{
-        font-size: 1em;
+    .about-you-title {
+        font-size: 2em;
     }
-    .about-you-title2{
-        font-size: 1em;
+    .about-you-title2 {
+        font-size: 2em;
     }
-
+    .working-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 432px) {
@@ -564,7 +616,7 @@ address p {
     }
     .quiz-header {
         display: flex;
-        font-size: 2.9em;
+        font-size: 2.5rem;
     }
     .logo-col {
         flex-direction: row;
@@ -593,21 +645,22 @@ address p {
     .about-you-title2 {
         font-size: 2em;
     }
+    img[alt*="headerimg"] {
+        padding-left: 0;
+        width: 15rem;
+    }
 }
 
-@media (max-width: 1440px){
-    .about-us-text{
+@media (max-width: 1440px) {
+    .about-us-text {
         padding-bottom: 40px;
         justify-content: center;
-
     }
-    .about-us-container{
+    .about-us-container {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
-    .about-us-header h2{
+    .about-us-header h2 {
         padding-bottom: 20px;
     }
-    
 }
-

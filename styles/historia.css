@@ -135,7 +135,9 @@ label:active {
 .id-answer {
     font-size: 2rem;
     font-weight: 600;
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    line-height: normal;
 }
 
 .check-btn {

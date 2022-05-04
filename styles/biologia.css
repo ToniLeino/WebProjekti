@@ -139,21 +139,17 @@ label:active {
     border: 6px solid #e9a452;
 }
 
+
+/* laptop*/
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 800px;
     }
-    .navbar {
-        display: block;
-        padding: 7rem;
-    }
-    .navbar img {
-        float: right;
-    }
 }
 
 
-/*tabletin koko*/
+/*tablet*/
 
 @media screen and (max-width: 768px) {
     .container {
@@ -170,12 +166,10 @@ label:active {
     .visa-answer-options {
         font-size: 2rem;
     }
-    .navbar img {
-        float: left;
-        max-width: 17%;
-        margin-bottom: 0.5rem;
-    }
 }
+
+
+/* mobile L */
 
 @media screen and (max-width: 425px) {
     html {
@@ -215,12 +209,10 @@ label:active {
         padding: 3rem;
         width: 15rem;
     }
-    .navbar img {
-        float: left;
-        max-width: 20%;
-        margin-bottom: 2rem;
-    }
 }
+
+
+/* mobile M*/
 
 @media screen and (max-width: 375px) {
     html {
@@ -260,16 +252,17 @@ label:active {
         padding: 2.8rem;
         width: 15rem;
     }
-    .navbar img {
-        float: left;
-        max-width: 20%;
-        margin-bottom: 2rem;
-    }
 }
+
+
+/* mobile S */
 
 @media screen and (max-width: 320px) {
     html {
         font-size: 40%;
+    }
+    .container {
+        padding: 9.6rem 0;
     }
     .question-title {
         padding-bottom: 2rem;
@@ -317,10 +310,5 @@ label:active {
         max-width: 20rem;
         max-height: 20rem;
         font-size: 2.2rem;
-    }
-    .navbar img {
-        float: left;
-        max-width: 20%;
-        margin-left: 2rem;
     }
 }

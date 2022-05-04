@@ -184,11 +184,6 @@ label:active {
     .visa-answer-options {
         font-size: 2rem;
     }
-    .navbar img {
-        max-width: 19%; 
-        float: left;
-        margin-bottom: 0,5rem;
-    }
 }
 
 /* mobile-phone L */
@@ -197,10 +192,6 @@ label:active {
     html {
         font-size: 60%;
     }
-    .navbar img {
-        max-width: 30%;
-        float: left;
-    }    
     .container {
         width: 425px;
     }

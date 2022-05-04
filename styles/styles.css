@@ -50,7 +50,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    gap: 60rem;
+    gap: 50rem;
     background-color: #e38d27;
     height: 100%;
     padding: 45px;
@@ -73,7 +73,7 @@ img[alt*="headerimg"] {
 
 .navbar-links li {
     list-style: none;
-    padding-right: 2rem;
+    padding-right: 5rem;
 }
 
 .navbar-links li a {

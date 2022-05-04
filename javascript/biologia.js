@@ -1,17 +1,9 @@
 let points = 0;
+let answered = 5;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
-/*let testiAnswer = document.getElementById("select1.1");
-testiAnswer.addEventListener("click", doSome);
 
-function doSome() {
-    testiAnswer.classList.toggle("testi");
-}
-if (document.getElementById("select1.3").checked) {
-    document.getElementById("correct-first-label").style.backgroundColor = "black";
-}
-*/
 function question1() {
     // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result1");
@@ -32,7 +24,7 @@ function question1() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on metso.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -44,6 +36,7 @@ function question1() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn1").disabled = true;
+        answered--;
         document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -69,7 +62,7 @@ function question2() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on lapinpöllö.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -81,6 +74,7 @@ function question2() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
+        answered--;
         document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -106,7 +100,7 @@ function question3() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on joutsen.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -118,6 +112,7 @@ function question3() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
+        answered--;
         document.getElementById("check-btn3").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -143,7 +138,7 @@ function question4() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on varis.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -156,6 +151,7 @@ function question4() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
+        answered--;
         document.getElementById("check-btn4").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -181,7 +177,7 @@ function question5() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on naurulokki.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -193,6 +189,7 @@ function question5() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
+        answered--;
         document.getElementById("check-btn5").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -214,7 +211,7 @@ function checkResult() {
             finalInput.innerHTML = finalResult;
         }
         if (points > 2) {
-            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Hyvää työtä!";
             finalInput.innerHTML = finalResult;
         }
         //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
@@ -248,6 +245,10 @@ function checkResult() {
         document.getElementById("final-check-btn").disabled = true;
         document.getElementById("final-check-btn").style.backgroundColor = "#e9a452";
     } else {
-        finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
+        finalInput.innerHTML =
+            "Vastaa ensin kaikkiin kysymyksiin!" +
+            " Sinulla on vielä " +
+            answered +
+            " kysymystä jäljellä.";
     }
 }

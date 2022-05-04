@@ -50,7 +50,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    gap: 50rem;
+    gap: 45rem;
     background-color: #e38d27;
     height: 100%;
     padding: 45px;
@@ -91,6 +91,7 @@ img[alt*="headerimg"] {
 .toggle-button {
     position: absolute;
     right: 4rem;
+    top: 6rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -446,12 +447,20 @@ address p {
 .about-you-title2 {
     padding-bottom: 5rem;
 }
-
+@media (max-width: 1082px) {
+    .navbar {
+        gap: 10rem
+    }
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 @media (max-width: 900px) {
     .toggle-icon {
         color: white;
     }
     .navbar {
+        gap: 0rem;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -465,6 +474,7 @@ address p {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+        padding-left: 29rem;
     }
     .navbar-links ul li {
         text-align: center;
@@ -475,11 +485,8 @@ address p {
     .navbar-links.active {
         display: flex;
     }
-    .footer-logo {
-        display: none;
-    }
     .footer {
-        display: inline;
+        grid-template-columns: repeat(2, 1fr);
     }
     .nav-col {
         margin-top: 25px;
@@ -507,7 +514,8 @@ address p {
     }
 }
 
-@media ( max-width: 1060px) {
+@media (max-width:432px) {
+    
     .footer-logo {
         display: none;
     }
@@ -519,6 +527,7 @@ address p {
     }
     .address-col {
         margin-top: 25px;
+        
     }
     .quiz-content {
         grid-column: 2/2;
@@ -527,5 +536,13 @@ address p {
     .quiz-header {
         display: flex;
         font-size: 2.9em;
+    }
+    .logo-col {
+        flex-direction: row;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 1rem;
     }
 }

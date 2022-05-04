@@ -1,7 +1,7 @@
     //header toggle buttoni
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    const TOGGLE_BUTTON = document.getElementsByClassName('toggle-button')[0]
+const NAVBAR_LINK = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+TOGGLE_BUTTON.addEventListener('click', () => {
+  NAVBAR_LINK.classList.toggle('active')
 })

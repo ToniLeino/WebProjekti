@@ -505,6 +505,21 @@ address p {
     .hero-img {
         display: none;
     }
+    .about-us-text{
+        font-size: 1.8em;
+        padding: 0;
+        position: left;
+        margin-bottom:0px;
+    }
+    .about-us-container{
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .section-about-us{
+        grid-template-columns: repeat(2, 2fr);
+        
+    }
+    
 }
 
 @media ( max-width: 1060px) {
@@ -528,4 +543,10 @@ address p {
         display: flex;
         font-size: 2.9em;
     }
+    .about-us-text{
+        
+    }
+
+
 }
+

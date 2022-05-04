@@ -10,14 +10,6 @@ body {
     width: 100%;
 }
 
-.container {
-    /*standard width 1200px / 1140px*/
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    /*"centering" the container*/
-    margin: 0 auto;
-}
-
 .header-container {
     font-size: 2.2rem;
     text-align: center;
@@ -75,8 +67,17 @@ strong {
     font-size: 2.2rem;
 }
 
+.check-div {
+    padding-top: 2rem;
+}
+
 .visa-answer-options {
     font-size: 1.6rem;
+}
+
+.visa-answer-options input[type="radio"]:checked+label {
+    background-color: #e69c9c;
+    text-decoration: underline;
 }
 
 .button-grid {
@@ -107,6 +108,7 @@ label,
     box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.275), 0 5px 7px rgba(0, 0, 0, 0.348);
     border: none;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 label:hover,
@@ -142,19 +144,21 @@ label:active {
     padding-bottom: 5rem;
 }
 
-@media screen and (max-width: 1024px) {
+
+/* rem and em do NOT depend on html font-size in media queries
+Instead, 1rem = 1em = 16px 
+rem might have bugs in some browsers so we use em instead of rem, since they work the same */
+
+@media screen and (max-width: 64em) {
     .container {
-        width: 800px;
+        width: 100%;
     }
 }
 
 
 /*tabletin koko*/
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 768px;
-    }
+@media screen and (max-width: 48em) {
     label {
         padding: 3rem;
         width: 20rem;
@@ -171,9 +175,19 @@ label:active {
     }
 }
 
-@media screen and (max-width: 425px) {
+
+/* mobile L */
+
+@media screen and (max-width: 27em) {
     html {
-        font-size: 60%;
+        font-size: 70%;
+    }
+    .visa-header {
+        font-size: 6rem;
+    }
+    .header-container p {
+        font-size: 1.8rem;
+        text-align: start;
     }
     .section-visa,
     .section-visa p {
@@ -182,22 +196,16 @@ label:active {
     .question-title {
         padding-bottom: 2rem;
     }
-    .visa-header {
-        font-weight: 600;
-        font-size: 4rem;
-    }
     .visa-content {
         max-width: 30rem;
     }
     .visa-question {
         padding: 2rem;
     }
-    .container {
-        width: 425px;
-    }
     .visa-grid {
         padding-left: 1rem;
         padding-right: 1rem;
+        border: 0;
     }
     .button-grid {
         display: grid;
@@ -212,87 +220,39 @@ label:active {
         padding: 2rem;
         width: 30rem;
     }
-}
-
-@media screen and (max-width: 375px) {
-    html {
-        font-size: 50%;
-    }
-    .question-title {
-        padding-bottom: 2rem;
-    }
-    .visa-header {
-        font-weight: 600;
-        font-size: 4rem;
-    }
-    .visa-question {
-        width: 30rem;
-        height: 30rem;
+    .check-btn {
         padding: 2rem;
-    }
-    .container {
-        width: 375px;
-    }
-    .visa-grid {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .button-grid {
-        padding-top: 1rem;
-    }
-    .visa-answer-options {
-        font-size: 1.5rem;
-    }
-    label {
-        padding: 2.8rem;
         width: 15rem;
     }
+    .col-6 {
+        width: 100%;
+    }
+    .check-result {
+        padding: 0;
+    }
+    .print-result {
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 320px) {
+
+/* mobile m */
+
+@media screen and (max-width: 24em) {
     html {
-        font-size: 40%;
+        font-size: 69%;
     }
-    .question-title {
-        padding-bottom: 2rem;
+    .header-container p {
+        font-size: 1.8rem;
+        text-align: center;
     }
-    .footer img {
-        display: none;
-    }
-    .header img {
-        display: none;
-    }
-    .visa-header {
-        font-weight: 600;
-        font-size: 4rem;
-    }
-    .visa-question {
-        width: 30rem;
-        height: 30rem;
-        padding: 2rem;
-    }
-    .container {
-        width: 320px;
-    }
-    .visa-grid {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .button-grid {
-        padding-top: 1rem;
-    }
-    .visa-answer-options {
-        font-size: 1.7rem;
-        padding-right: 1rem;
-    }
-    label {
-        padding: 3rem 2rem;
-        width: 17rem;
-    }
-    .check-btn {
-        padding: 3rem 2rem;
-        max-width: 20rem;
-        max-height: 20rem;
-        font-size: 2.2rem;
+}
+
+
+/* mobile s */
+
+@media screen and (max-width: 20em) {
+    html {
+        font-size: 59%;
     }
 }

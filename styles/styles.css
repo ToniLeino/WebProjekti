@@ -384,6 +384,7 @@ address p {
     padding: 0 5rem 10rem 5rem;
     text-align: center;
     font-size: 2.2rem;
+    justify-content: center;
 }
 
 .about-us-header {
@@ -454,6 +455,12 @@ address p {
     .footer {
         grid-template-columns: repeat(3, 1fr);
     }
+    .about-us-text{
+        padding: 0 0 60px 0;
+    }
+    .about-us-header h2 {
+        padding-bottom: 20px;
+    }
 }
 @media (max-width: 900px) {
     .toggle-icon {
@@ -511,28 +518,29 @@ address p {
     }
     .hero-img {
         display: none;
+        
     }
     .about-us-text{
-        font-size: 1.8em;
-        padding: 0;
-        position: left;
+        font-size: 1.2em;
+        padding: 0 0 40px 0;
         margin-bottom:0px;
     }
     .about-us-container{
         margin-bottom:20px;
         text-align: center;
-    }
-    .section-about-us{
-        grid-template-columns: repeat(2, 2fr);
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        align-items: justify;
+        
         
     }
     .about-you-title{
-        font-size: 2em;
+        font-size: 1em;
     }
     .about-you-title2{
-        font-size: 2em;
+        font-size: 1em;
     }
-    
+
 }
 
 @media (max-width:432px) {
@@ -586,3 +594,20 @@ address p {
         font-size: 2em;
     }
 }
+
+@media (max-width: 1440px){
+    .about-us-text{
+        padding-bottom: 40px;
+        justify-content: center;
+
+    }
+    .about-us-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .about-us-header h2{
+        padding-bottom: 20px;
+    }
+    
+}
+

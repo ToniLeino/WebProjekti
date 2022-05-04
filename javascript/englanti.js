@@ -1,4 +1,5 @@
 let points = 0;
+let answered = 5;
 const RIGHT_ANSWER = "Vastauksesi on oikein!" + "<br>" + "Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!" + "<br>";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
@@ -36,6 +37,7 @@ function question1() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn1").disabled = true;
+        answered--;
         document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -73,6 +75,7 @@ function question2() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
+        answered--;
         document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -110,6 +113,7 @@ function question3() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
+        answered--;
         document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -147,6 +151,7 @@ function question4() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
+        answered--;
         document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -184,6 +189,7 @@ function question5() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
+        answered--;
         document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
@@ -242,6 +248,7 @@ function checkResult() {
         document.getElementById("final-check-btn").disabled = true;
         document.getElementById("final-check-btn").style.backgroundColor = "#e9a452";
     } else {
-        finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
+        finalInput.innerHTML =
+            "Vastaa ensin kaikkiin kysymyksiin!" + " Sinulla on vielä " + answered + " kysymystä jäljellä.";
     }
 }

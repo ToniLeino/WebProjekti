@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,19 @@
     <title>Lippuvisa</title>
     <!-- Bootstrap starter template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../styles/styles.css"/>
-    <link rel="stylesheet" href="../styles/Lippu.css"/>
-    <link rel="stylesheet" href="../styles/dividers.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/Lippu.css" />
+    <link rel="stylesheet" href="../styles/dividers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
     <!-- NAVIGAATIO -->
 
-    <header>
+    <header id="header">
         <nav class="navbar">
             <a href="#footer" id="header">
                 <img src="../images/projektilogo.png" alt="headerimg" />
@@ -43,13 +45,14 @@
     <div class="shapedividers_com-8551">
         <svg></svg>
     </div>
-    
+
     <!-- VISA -->
     <!-- container -->
     <section class="section-visa container">
         <div class="header-container">
             <h1 class="visa-header heading-primary">Lippuvisa</h1>
             <p>Tässä harjoituksessa sinun tulee tunnistaa kuvassa oleva lippu.</p>
+            <p>Kysymyksiä on kaikkiaan 5.</p>
         </div>
 
         <div class="visa-grid">
@@ -59,7 +62,7 @@
                         <u>Kysymys 1</u>
                     </div>
                     <div class="question-img-container">
-                        <img src="../images/Visalippu.png"/>
+                        <img src="../images/Visalippu.png" />
                         <!--https://www.flaticon.com/free-icon/spain_330557?term=spain&page=1&position=4&page=1&position=4&related_id=330557&origin=search-->
                     </div>
                     <div>
@@ -72,220 +75,220 @@
                 <div id="answer-buttons" class="button-grid">
                     <div class="row">
                         <div class="radio-selection col-6">
-                        <input type="radio" id="select1.1" name="first-select" value="vastaus-1"/>
-                        <label class="first-labels" for="select1.1">a) Portugali</label>
+                            <input type="radio" id="select1.1" name="first-select" value="vastaus-1" />
+                            <label class="first-labels" for="select1.1">a) Portugali</label>
+                        </div>
+
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.2" name="first-select" value="vastaus-2" />
+                            <label class="first-labels" for="select1.2">b) Italia</label>
+                        </div>
+
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.3" name="first-select" value="vastaus-3" />
+                            <label class="first-labels" for="select1.3">c) Andorra</label>
+                        </div>
+
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.4" name="first-select" value="vastaus-4" />
+                            <label id="correct-first-label" for="select1.4">d) Espanja</label>
+                        </div>
                     </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select1.2" name="first-select" value="vastaus-2"/>
-                        <label class="first-labels" for="select1.2">b) Italia</label>
-                    </div>
-
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select1.3" name="first-select" value="vastaus-3"/>
-                        <label class="first-labels" for="select1.3">c) Andorra</label>
-                    </div>
-
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select1.4" name="first-select" value="vastaus-4"/>
-                        <label id="correct-first-label" for="select1.4">d) Espanja</label>
-                    </div>
-                </div>
-
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn1" class="check-btn" onclick="question1()">
+                    <div class="answer-result">
+                        <div class="check-div">
+                            <button id="check-btn1" class="check-btn" onclick="question1()">
                 Tarkista
               </button>
-                        <div class="id-answer" id="answer-result1"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 2</u>
-                    </div>
-                    <div class="question-img-container">
-                        <img src="../images/Visalippu2.png" />
-                        <!--https://www.flaticon.com/free-icon/sweden_330501?term=sweden&page=1&position=2&page=1&position=2&related_id=330501&origin=search-->   
-                    </div>
-                    <div>
-                        <strong>Mikä lippu on kuvassa?</strong>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-                    <div class="row">
-                        <div class="radio-selection col-6">
-                        <input type="radio" id="select2.1" name="second-select" value="vastaus-1"/>
-                        <label class="second-labels" for="select2.1">a) Tanska</label>
-                    </div>
-
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select2.2" name="second-select" value="vastaus-2"/>
-                        <label id="correct-second-label" for="select2.2">b) Ruotsi</label>
-                    </div>
-
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select2.3" name="second-select" value="vastaus-3"/>
-                        <label class="second-labels" for="select2.3">c) Islanti</label>
-                    </div>
-
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select2.4" name="second-select" value="vastaus-4"/>
-                        <label class="second-labels" for="select2.4">d) Norja</label>
+                            <div class="id-answer" id="answer-result1"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn2" class="check-btn" onclick="question2()">
+                <div class="visa-content">
+                    <div class="visa-question">
+                        <div class="question-title">
+                            <u>Kysymys 2</u>
+                        </div>
+                        <div class="question-img-container">
+                            <img src="../images/Visalippu2.png" />
+                            <!--https://www.flaticon.com/free-icon/sweden_330501?term=sweden&page=1&position=2&page=1&position=2&related_id=330501&origin=search-->
+                        </div>
+                        <div>
+                            <strong>Mikä lippu on kuvassa?</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visa-answer-options">
+                    <div id="answer-buttons" class="button-grid">
+                        <div class="row">
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.1" name="second-select" value="vastaus-1" />
+                                <label class="second-labels" for="select2.1">a) Tanska</label>
+                            </div>
+
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.2" name="second-select" value="vastaus-2" />
+                                <label id="correct-second-label" for="select2.2">b) Ruotsi</label>
+                            </div>
+
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.3" name="second-select" value="vastaus-3" />
+                                <label class="second-labels" for="select2.3">c) Islanti</label>
+                            </div>
+
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.4" name="second-select" value="vastaus-4" />
+                                <label class="second-labels" for="select2.4">d) Norja</label>
+                            </div>
+                        </div>
+
+                        <div class="answer-result">
+                            <div class="check-div">
+                                <button id="check-btn2" class="check-btn" onclick="question2()">
                 Tarkista
               </button>
-                        <div class="id-answer" id="answer-result2"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 3</u>
-                    </div>
-                    <div class="question-img-container">
-                        <img src="../images/Visalippu3.png"/>
-                        <!--https://www.flaticon.com/free-icon/ukraine_330540?term=ukraine&page=1&position=2&page=1&position=2&related_id=330540&origin=search-->
-                    </div>
-                    <div>
-                        <strong>Mikä lippu on kuvassa?</strong>
-                    </div>
-                </div>
-            </div>
-
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-                    <div class="row">
-                        <div class="radio-selection col-6">
-                        <input type="radio" id="select3.1" name="third-select" value="vastaus-1"/>
-                        <label class="third-labels" for="select3.1">a) Venäjä</label>
+                                <div class="id-answer" id="answer-result2"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select3.2" name="third-select" value="vastaus-2"/>
-                        <label class="third-labels" for="select3.2">b) Romania</label>
+                    <div class="visa-content">
+                        <div class="visa-question">
+                            <div class="question-title">
+                                <u>Kysymys 3</u>
+                            </div>
+                            <div class="question-img-container">
+                                <img src="../images/Visalippu3.png" />
+                                <!--https://www.flaticon.com/free-icon/ukraine_330540?term=ukraine&page=1&position=2&page=1&position=2&related_id=330540&origin=search-->
+                            </div>
+                            <div>
+                                <strong>Mikä lippu on kuvassa?</strong>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select3.3" name="third-select" value="vastaus-3"/>
-                        <label id="correct-third-label" for="select3.3">c) Ukraina</label>
-                    </div>
+                    <div class="visa-answer-options">
+                        <div id="answer-buttons" class="button-grid">
+                            <div class="row">
+                                <div class="radio-selection col-6">
+                                    <input type="radio" id="select3.1" name="third-select" value="vastaus-1" />
+                                    <label class="third-labels" for="select3.1">a) Venäjä</label>
+                                </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select3.4" name="third-select" value="vastaus-4"/>
-                        <label class="third-labels" for="select3.4">d) Unkari</label>
-                    </div>
-                </div>
+                                <div class="radio-selection col-6">
+                                    <input type="radio" id="select3.2" name="third-select" value="vastaus-2" />
+                                    <label class="third-labels" for="select3.2">b) Romania</label>
+                                </div>
 
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn3" class="check-btn" onclick="question3()">
+                                <div class="radio-selection col-6">
+                                    <input type="radio" id="select3.3" name="third-select" value="vastaus-3" />
+                                    <label id="correct-third-label" for="select3.3">c) Ukraina</label>
+                                </div>
+
+                                <div class="radio-selection col-6">
+                                    <input type="radio" id="select3.4" name="third-select" value="vastaus-4" />
+                                    <label class="third-labels" for="select3.4">d) Unkari</label>
+                                </div>
+                            </div>
+
+                            <div class="answer-result">
+                                <div class="check-div">
+                                    <button id="check-btn3" class="check-btn" onclick="question3()">
                 Tarkista
               </button>
-                        <div class="id-answer" id="answer-result3"></div>
-                    </div>
-                </div>
-            </div>
+                                    <div class="id-answer" id="answer-result3"></div>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 4</u>
-                    </div>
-                    <div class="question-img-container">
-                        <img src="../images/Visalippu4.png" />
-                        <!--https://www.flaticon.com/free-icon/france_330490?term=france&page=1&position=6&page=1&position=6&related_id=330490&origin=search-->
-                    </div>
-                    <div>
-                        <strong>Mikä lippu on kuvassa?</strong>
-                    </div>
-                </div>
-            </div>
+                        <div class="visa-content">
+                            <div class="visa-question">
+                                <div class="question-title">
+                                    <u>Kysymys 4</u>
+                                </div>
+                                <div class="question-img-container">
+                                    <img src="../images/Visalippu4.png" />
+                                    <!--https://www.flaticon.com/free-icon/france_330490?term=france&page=1&position=6&page=1&position=6&related_id=330490&origin=search-->
+                                </div>
+                                <div>
+                                    <strong>Mikä lippu on kuvassa?</strong>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-                    <div class="row">
-                        <div class="radio-selection col-6">
-                        <input type="radio" id="select4.1" name="third-select" value="vastaus-1"/>
-                        <label id="correct-fourth-label" for="select4.1">a) Ranska</label>
-                    </div>
+                        <div class="visa-answer-options">
+                            <div id="answer-buttons" class="button-grid">
+                                <div class="row">
+                                    <div class="radio-selection col-6">
+                                        <input type="radio" id="select4.1" name="third-select" value="vastaus-1" />
+                                        <label id="correct-fourth-label" for="select4.1">a) Ranska</label>
+                                    </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select4.2" name="third-select" value="vastaus-2"/>
-                        <label class="fourth-labels" for="select4.2">b) Alankomaat </label>
-                    </div>
+                                    <div class="radio-selection col-6">
+                                        <input type="radio" id="select4.2" name="third-select" value="vastaus-2" />
+                                        <label class="fourth-labels" for="select4.2">b) Alankomaat </label>
+                                    </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select4.3" name="third-select" value="vastaus-3"/>
-                        <label class="fourth-labels" for="select4.3">c) Belgia</label>
-                    </div>
+                                    <div class="radio-selection col-6">
+                                        <input type="radio" id="select4.3" name="third-select" value="vastaus-3" />
+                                        <label class="fourth-labels" for="select4.3">c) Belgia</label>
+                                    </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select4.4" name="third-select" value="vastaus-4"/>
-                        <label class="fourth-labels" for="select4.4">d) Sveitsi</label>
-                    </div>
-                </div>
+                                    <div class="radio-selection col-6">
+                                        <input type="radio" id="select4.4" name="third-select" value="vastaus-4" />
+                                        <label class="fourth-labels" for="select4.4">d) Sveitsi</label>
+                                    </div>
+                                </div>
 
-                <div class="answer-result">
-                    <div class="check-div">
-                        <button id="check-btn4" class="check-btn" onclick="question4()">
+                                <div class="answer-result">
+                                    <div class="check-div">
+                                        <button id="check-btn4" class="check-btn" onclick="question4()">
                 Tarkista
               </button>
-                        <div class="id-answer" id="answer-result4"></div>
-                    </div>
-                </div>
-            </div>
+                                        <div class="id-answer" id="answer-result4"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="visa-content">
-                <div class="visa-question">
-                    <div class="question-title">
-                        <u>Kysymys 5</u>
-                    </div>
+                            <div class="visa-content">
+                                <div class="visa-question">
+                                    <div class="question-title">
+                                        <u>Kysymys 5</u>
+                                    </div>
 
-                    <div class="question-img-container">
-                        <img src="../images/Visalippu5.png" />
-                     <!--https://www.flaticon.com/free-icon/united-kingdom_330425?term=great%20britain&page=1&position=4&page=1&position=4&related_id=330425&origin=search-->
-                    </div>
-                    <div class="question">
-                        <strong>Mikä lippu on kuvassa?</strong>
-                    </div>
-                </div>
-            </div>
+                                    <div class="question-img-container">
+                                        <img src="../images/Visalippu5.png" />
+                                        <!--https://www.flaticon.com/free-icon/united-kingdom_330425?term=great%20britain&page=1&position=4&page=1&position=4&related_id=330425&origin=search-->
+                                    </div>
+                                    <div class="question">
+                                        <strong>Mikä lippu on kuvassa?</strong>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="visa-answer-options">
-                <div id="answer-buttons" class="button-grid">
-                    <div class="row">
-                        <div class="radio-selection col-6">
-                        <input type="radio" id="select5.1" name="fifth-select" value="vastaus-1"/>
-                        <label class="fifth-labels" for="select5.1">a) Englanti</label>
-                    </div>
+                            <div class="visa-answer-options">
+                                <div id="answer-buttons" class="button-grid">
+                                    <div class="row">
+                                        <div class="radio-selection col-6">
+                                            <input type="radio" id="select5.1" name="fifth-select" value="vastaus-1" />
+                                            <label class="fifth-labels" for="select5.1">a) Englanti</label>
+                                        </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select5.2" name="fifth-select" value="vastaus-2"/>
-                        <label class="fifth-labels" for="select5.2">b) Skotlanti</label>
-                    </div>
+                                        <div class="radio-selection col-6">
+                                            <input type="radio" id="select5.2" name="fifth-select" value="vastaus-2" />
+                                            <label class="fifth-labels" for="select5.2">b) Skotlanti</label>
+                                        </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select5.3" name="fifth-select" value="vastaus-3"/>
-                        <label id="correct-fifth-label" for="select5.3">c) Iso-Britannia</label>
-                    </div>
+                                        <div class="radio-selection col-6">
+                                            <input type="radio" id="select5.3" name="fifth-select" value="vastaus-3" />
+                                            <label id="correct-fifth-label" for="select5.3">c) Iso-Britannia</label>
+                                        </div>
 
-                    <div class="radio-selection col-6">
-                        <input type="radio" id="select5.4" name="fifth-select" value="vastaus-4"/>
-                        <label class="fifth-labels" for="select5.4">d) Irlanti</label
+                                        <div class="radio-selection col-6">
+                                            <input type="radio" id="select5.4" name="fifth-select" value="vastaus-4" />
+                                            <label class="fifth-labels" for="select5.4">d) Irlanti</label
               >
             </div>
           </div>
@@ -409,7 +412,7 @@
             </div>
         </div>
     </footer>
-    <script src="../javascript/Lippuscript.js"></script>
+    <script src="../javascript/Maantieto.js"></script>
     <script src="../javascript/confetti.js"></script>
     <script
       type="module"

@@ -1,4 +1,5 @@
 let points = 0;
+let answered = 5;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
@@ -25,20 +26,23 @@ function question1() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Espanja";
+            
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
-        //correctLabel.style.border = "solid 2px yellow";
+    }    
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn1").disabled = true;
+        answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -66,19 +70,23 @@ function question2() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ruotsi";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
+        answered--;
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -106,19 +114,23 @@ function question3() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ukraina";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }  
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
+        answered--;
+        document.getElementById("check-btn3").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -146,19 +158,25 @@ function question4() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ranska";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
+            
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
+       
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
+        answered--;
+        document.getElementById("check-btn4").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -186,19 +204,23 @@ function question5() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Iso-Britannia";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
+        answered--;
+        document.getElementById("check-btn5").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -231,13 +253,13 @@ function checkResult() {
         }
         if (points > 2) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + " Hyvää työtä!";
             finalInput.innerHTML = finalResult;
         }
         //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
         if (points == 5) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + " Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
 
             // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
@@ -264,9 +286,15 @@ function checkResult() {
         }
 
         document.getElementById("final-check-btn").disabled = true;
-    } else {
-        finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
+        document.getElementById("final-check-btn").style.backgroundColor = "#e9a452";
+    }else {
+        finalInput.innerHTML =
+            "Vastaa ensin kaikkiin kysymyksiin!" +
+            " Sinulla on vielä " +
+            answered +
+            " kysymystä jäljellä.";
     }
+    
 }   
 //header toggle buttoni
     const toggleButton = document.getElementsByClassName('toggle-button')[0]

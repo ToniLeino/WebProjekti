@@ -448,9 +448,10 @@ address p {
 .about-you-title2 {
     padding-bottom: 5rem;
 }
+
 @media (max-width: 1082px) {
     .navbar {
-        gap: 10rem
+        gap: 10rem;
     }
     .footer {
         grid-template-columns: repeat(3, 1fr);
@@ -462,6 +463,7 @@ address p {
         padding-bottom: 20px;
     }
 }
+
 @media (max-width: 900px) {
     .toggle-icon {
         color: white;
@@ -487,7 +489,7 @@ address p {
         text-align: center;
     }
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
     .navbar-links.active {
         display: flex;
@@ -543,8 +545,7 @@ address p {
 
 }
 
-@media (max-width:432px) {
-    
+@media (max-width: 432px) {
     .footer-logo {
         display: none;
     }
@@ -556,7 +557,6 @@ address p {
     }
     .address-col {
         margin-top: 25px;
-        
     }
     .quiz-content {
         grid-column: 2/2;

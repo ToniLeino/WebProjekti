@@ -26,14 +26,14 @@ function question1() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + "Oikea vastaus on Espanja.";
         }
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
-        //correctLabel.style.border = "solid 2px yellow";
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -41,6 +41,7 @@ function question1() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn1").disabled = true;
         answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -68,8 +69,9 @@ function question2() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ruotsi.";
         }
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
@@ -82,6 +84,7 @@ function question2() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
         answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -109,8 +112,9 @@ function question3() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ukraina.";
         }
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
@@ -123,6 +127,7 @@ function question3() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
         answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -150,8 +155,9 @@ function question4() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ranska.";
         }
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
@@ -164,6 +170,7 @@ function question4() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
         answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -191,8 +198,9 @@ function question5() {
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + "Oikea vastaus on Iso-Britannia.";
         }
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
@@ -205,6 +213,7 @@ function question5() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
         answered--;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }

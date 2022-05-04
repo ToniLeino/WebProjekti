@@ -5,13 +5,14 @@
     let answered = 5;
     const RIGHT_ANSWER = "Vastauksesi on oikein. Hyvää työtä!";
     const WRONG_ANSWER = "Vastauksesi on väärin.";
+    const ANSWER_ERROR = "Vastaa ensin kysymykseen.";
     const pisteet1_2 = "Ensi kerralla paremmin!"
     const pisteet3_5 = "Hienoa työtä"
 
     //Satunnais lukuja
 
     let min = 1;
-    let max = 25;
+    let max = 10;
     let int1 = Math.floor(Math.random() * (max - min + 1)) + min;
     let int2 = Math.floor(Math.random() * (max - min + 1)) + min;
     let int3 = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -26,15 +27,21 @@
 
     function question1() {
         let uanswer = document.getElementById("vastaus1").value;
-            if (uanswer == plusanswer) {
+         if (uanswer == 0) {
+            tarkistus1.innerHTML = ANSWER_ERROR
+            document.getElementById("check-btn1").disable = false;
+            return
+         }     if (uanswer == plusanswer) {
             tarkistus1.innerHTML = RIGHT_ANSWER;
             points++;
-            answered-- 
+            answered--; 
+            document.getElementById("check-btn1").disabled = true;
          } else {
             tarkistus1.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer;  
             answered-- 
+            document.getElementById("check-btn1").disabled = true;
         }
-        document.getElementById("check-btn1").disabled = true;
+      
     }
 
     //tehtävä kaksi
@@ -44,15 +51,20 @@
 
     function question2() {
         let uanswer = document.getElementById("vastaus2").value;
-            if (uanswer == plusanswer2) {
-            tarkistus2.innerHTML = RIGHT_ANSWER;
-            points++;
-            answered-- 
-         } else {
+          if (uanswer == 0) {
+            tarkistus2.innerHTML = ANSWER_ERROR
+            document.getElementById("check-btn2").disable = false;
+            return 
+           } if (uanswer == plusanswer2) {
+                tarkistus2.innerHTML = RIGHT_ANSWER;
+                points++;
+                answered-- 
+                document.getElementById("check-btn2").disabled = true;
+            } else {
             tarkistus2.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer2;;   
             answered--
+            document.getElementById("check-btn2").disabled = true;
         }
-        document.getElementById("check-btn2").disabled = true;
     }
 
     //tehtävä kolme
@@ -62,15 +74,21 @@
 
     function question3() {
         let uanswer = document.getElementById("vastaus3").value;
-            if (uanswer == plusanswer3) {
+            if (uanswer == 0) {
+            tarkistus3.innerHTML = ANSWER_ERROR
+            document.getElementById("check-btn3").disable = false;
+            return
+         } if (uanswer == plusanswer3) {
             tarkistus3.innerHTML = RIGHT_ANSWER;
             points++;
             answered-- 
+            document.getElementById("check-btn3").disabled = true;
          } else {
             tarkistus3.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer3; 
             answered--
+            document.getElementById("check-btn3").disabled = true;
         }
-        document.getElementById("check-btn3").disabled = true;  
+          
     }
 
     //tehtävä neljä
@@ -80,15 +98,21 @@
 
     function question4() {
         let uanswer = document.getElementById("vastaus4").value;
-            if (uanswer == plusanswer4) {
+            if (uanswer == 0) {
+            tarkistus4.innerHTML = ANSWER_ERROR
+            document.getElementById("check-btn4").disable = false;
+            return
+         }  if (uanswer == plusanswer4) {
             tarkistus4.innerHTML = RIGHT_ANSWER;
             points++;
             answered-- 
-         } else{
+            document.getElementById("check-btn4").disabled = true;
+         } else {
             tarkistus4.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer4;
-            answered--  
+            answered-- 
+            document.getElementById("check-btn4").disabled = true; 
          }
-        document.getElementById("check-btn4").disabled = true;
+        
     }
 
     //tehtvä viisi
@@ -98,60 +122,66 @@
 
     function question5() {
         let uanswer = document.getElementById("vastaus5").value;
-            if (uanswer == plusanswer5) {
+           if (uanswer == 0) {
+            tarkistus5.innerHTML = ANSWER_ERROR
+            document.getElementById("check-btn5").disable = false;
+            return
+         } if (uanswer == plusanswer5) {
             tarkistus5.innerHTML = RIGHT_ANSWER;
             points++;
             answered-- 
+            document.getElementById("check-btn5").disabled = true;  
          } else {
             tarkistus5.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer5;
             answered--
-        }
-        document.getElementById("check-btn5").disabled = true;    
+            document.getElementById("check-btn5").disabled = true;  
+        } 
     }
 
     //tarkista tulokset 
 
     function checkResult() {
-
+        
+     
         let finalResult = points + " / 5 ";
-    let check1 = document.getElementById("check-btn1");
-    let check2 = document.getElementById("check-btn2");
-    let check3 = document.getElementById("check-btn3");
-    let check4 = document.getElementById("check-btn4");
-    let check5 = document.getElementById("check-btn5");
-    if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
-        if(points < 3){
-            document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+        let check1 = document.getElementById("check-btn1");
+        let check2 = document.getElementById("check-btn2");
+        let check3 = document.getElementById("check-btn3");
+        let check4 = document.getElementById("check-btn4");
+        let check5 = document.getElementById("check-btn5");
+        if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
+            if(points < 3){
+                document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
+            }
+            else if (points == 5){
+                document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
+                
+                // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+                // for starting the confetti
+                const start = () => {
+                    setTimeout(function() {
+                        confetti.start();
+                    }, 1000);
+                    // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+                };
+        
+                //  for stopping the confetti
+        
+                const stop = () => {
+                    setTimeout(function() {
+                        confetti.stop();
+                    }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+                };
+                // after this here we are calling both the function so it works
+                start();
+                stop();
+            }
         }
-        else{
-            document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
-            
-            // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
-            // for starting the confetti
-            const start = () => {
-                setTimeout(function() {
-                    confetti.start();
-                }, 1000);
-                // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-            };
-
-            //  for stopping the confetti
-
-            const stop = () => {
-                setTimeout(function() {
-                    confetti.stop();
-                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-            };
-            // after this here we are calling both the function so it works
-            start();
-            stop();
+        else {
+            document.getElementById("printFinalResult").innerHTML =
+                    "Vastaa ensin kaikkiin kysymyksiin!" +
+                    " Sinulla on vielä " +
+                    answered +
+                    " kysymystä jäljellä.";;
         }
-    }
-    else {
-        document.getElementById("printFinalResult").innerHTML =
-            "Vastaa ensin kaikkiin kysymyksiin!" +
-            " Sinulla on vielä " +
-            answered +
-            " kysymystä jäljellä.";;
-    }
     }

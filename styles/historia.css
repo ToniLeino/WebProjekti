@@ -92,7 +92,7 @@ img {
 }
 
 .visa-answer-options input[type="radio"]:checked+label {
-    background-color: #bdb2ff;
+    background-color: #aaa0e6;
 }
 
 .button-grid {
@@ -161,12 +161,8 @@ label:active {
     .container {
         width: 800px;
     }
-    .navbar {
-        display: block;
-        padding: 7rem;
-    }
     .navbar img {
-        float: right
+        float: left
     }
 }
 

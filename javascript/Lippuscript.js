@@ -237,7 +237,7 @@ function checkResult() {
         }
         if (points > 2) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Hyvää työtä!";
             finalInput.innerHTML = finalResult;
         }
         //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet

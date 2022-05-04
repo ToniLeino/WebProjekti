@@ -447,13 +447,67 @@ address p {
 .about-you-title2 {
     padding-bottom: 5rem;
 }
+@media (max-width: 1440px) {
+    .about-us-text {
+        grid-column: 1/4;
+        padding: 0;
+        text-align: justify;
+    }
+    .section-about-us {
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .about-you-name {
+        padding-top: 2rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    
+    .about-you-title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .about-you-title2 {
+        padding-bottom: 5rem;
+        font-size: 2.5rem;
+    }
+}
 
-@media (max-width: 1082px) {
+@media (max-width: 1024px) {
     .navbar {
         gap: 10rem;
     }
     .footer {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .about-us-text {
+        grid-column: 1/4;
+        text-align: justify;
+        padding: 0
+    }
+    .section-about-us {
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .about-you-name {
+        padding-top: 2rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    
+    .about-you-title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .about-you-title2 {
+        padding-bottom: 5rem;
+        font-size: 2rem;
     }
 }
 
@@ -514,11 +568,12 @@ address p {
     .hero-img {
         display: none;
     }
-    .about-us-text{
-        font-size: 1.8em;
+    .about-us-text {
+        grid-column: 1/4;
+        text-align: justify;
         padding: 0;
-        position: left;
-        margin-bottom:0px;
+        font-size: 2.5rem;
+        
     }
     .about-us-container{
         margin-bottom:20px;
@@ -534,7 +589,9 @@ address p {
     .about-you-title2{
         font-size: 2em;
     }
-    
+    .working-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 432px) {
@@ -576,6 +633,7 @@ address p {
         text-align: center;
         padding: 0;
     }
+
     .section-about-us{
         grid-template-columns: repeat(2, 2fr);
     }

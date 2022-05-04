@@ -11,7 +11,7 @@ function question1() {
     let secondAnswer = document.getElementById("select1.2");
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
-    let correctAnswer = document.getElementById("select1.4").checked;
+    let correctAnswer = document.getElementById("select1.3").checked;
     let wrongLabels = document.getElementsByClassName("first-labels");
     let correctLabel = document.getElementById("correct-first-label");
     result.innerHTML = "";
@@ -55,7 +55,7 @@ function question2() {
     let secondAnswer = document.getElementById("select2.2");
     let thirdAnswer = document.getElementById("select2.3");
     let fourthAnswer = document.getElementById("select2.4");
-    let correctAnswer = document.getElementById("select2.2").checked;
+    let correctAnswer = document.getElementById("select2.3").checked;
     let wrongLabels = document.getElementsByClassName("second-labels");
     let correctLabel = document.getElementById("correct-second-label");
     result.innerHTML = "";
@@ -109,7 +109,7 @@ function question3() {
         secondAnswer.checked ||
         thirdAnswer.checked ||
         fourthAnswer.checked
-    ) {
+    ){
         //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
@@ -119,10 +119,10 @@ function question3() {
             result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ukraina";
         
         for (let i = 0; i < wrongLabels.length; i++) {
-            wrongLabels[i].style.backgroundColor = "red";
+            wrongLabels[i].style.backgroundColor = "red";  
         }
         correctLabel.style.backgroundColor = "lightgreen";
-    }  
+    }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -143,7 +143,7 @@ function question4() {
     let secondAnswer = document.getElementById("select4.2");
     let thirdAnswer = document.getElementById("select4.3");
     let fourthAnswer = document.getElementById("select4.4");
-    let correctAnswer = document.getElementById("select4.1").checked;
+    let correctAnswer = document.getElementById("select4.3").checked;
     let wrongLabels = document.getElementsByClassName("fourth-labels");
     let correctLabel = document.getElementById("correct-fourth-label");
     result.innerHTML = "";
@@ -296,10 +296,10 @@ function checkResult() {
     }
     
 }   
-//header toggle buttoni
+    //header toggle buttoni
     const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
 })

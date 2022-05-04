@@ -28,12 +28,13 @@ function question1() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER + "Oikea vastaus on Espanja.";
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Espanja";
+            
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }    
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -71,12 +72,13 @@ function question2() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ruotsi.";
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ruotsi";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -114,12 +116,13 @@ function question3() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ukraina.";
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ukraina";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }  
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -157,12 +160,15 @@ function question4() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on Ranska.";
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Ranska";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
+            
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
+       
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -200,12 +206,13 @@ function question5() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER + "Oikea vastaus on Iso-Britannia.";
-        }
+            result.innerHTML = WRONG_ANSWER + "<br>" + " Oikea vastaus on " + "Iso-Britannia";
+        
         for (let i = 0; i < wrongLabels.length; i++) {
             wrongLabels[i].style.backgroundColor = "red";
         }
         correctLabel.style.backgroundColor = "lightgreen";
+    }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
         secondAnswer.disabled = true;
@@ -246,13 +253,13 @@ function checkResult() {
         }
         if (points > 2) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Hyvää työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + " Hyvää työtä!";
             finalInput.innerHTML = finalResult;
         }
         //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
         if (points == 5) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + " Erinomaista työtä!";
             finalInput.innerHTML = finalResult;
 
             // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3

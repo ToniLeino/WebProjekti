@@ -508,7 +508,7 @@ address p {
         position: left;
     }
     .hero-text {
-        font-size: 1.8em;
+        font-size: 1.8rem;
         padding: auto;
         position: left;
     }
@@ -516,7 +516,7 @@ address p {
         display: inline;
     }
     .heading-primary {
-        font-size: 3em;
+        font-size: 6rem;
     }
     .hero-img {
         display: none;
@@ -527,8 +527,8 @@ address p {
         padding: 0 0 40px 0;
         margin-bottom:0px;
     }
-    .about-us-container{
-        margin-bottom:20px;
+    .about-us-container {
+        margin-bottom: 20px;
         text-align: center;
         display: grid;
         grid-template-columns: repeat(3, 3fr);
@@ -574,23 +574,23 @@ address p {
         flex-direction: column;
         padding-left: 1rem;
     }
-    .about-us-text{
+    .about-us-text {
         font-size: 1em;
         padding: 0;
         position: left;
         margin-bottom: 0;
     }
-    .about-us-container{
+    .about-us-container {
         text-align: center;
         padding: 0;
     }
-    .section-about-us{
+    .section-about-us {
         grid-template-columns: repeat(2, 2fr);
     }
-    .about-you-title{
+    .about-you-title {
         font-size: 2em;
     }
-    .about-you-title2{
+    .about-you-title2 {
         font-size: 2em;
     }
 }

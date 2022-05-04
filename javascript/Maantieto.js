@@ -84,7 +84,7 @@ function question2() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
         answered--;
-        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -127,7 +127,7 @@ function question3() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
         answered--;
-        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
+        document.getElementById("check-btn3").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -170,7 +170,7 @@ function question4() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
         answered--;
-        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
+        document.getElementById("check-btn4").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -213,7 +213,7 @@ function question5() {
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
         answered--;
-        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
+        document.getElementById("check-btn5").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -279,6 +279,7 @@ function checkResult() {
         }
 
         document.getElementById("final-check-btn").disabled = true;
+        document.getElementById("final-check-btn").style.backgroundColor = "#e9a452";
     }else {
         finalInput.innerHTML =
             "Vastaa ensin kaikkiin kysymyksiin!" +

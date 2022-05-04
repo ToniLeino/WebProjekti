@@ -197,7 +197,7 @@ label:active {
         margin-bottom: 0,5rem;
     }
 }
-
+/* mobile L */
 @media screen and (max-width: 425px) {
     html {
         font-size: 60%;
@@ -237,7 +237,7 @@ label:active {
         width: 15rem;
     }
 }
-
+/* mobile M*/
 @media screen and (max-width: 375px) {
     html {
         font-size: 50%;
@@ -277,7 +277,7 @@ label:active {
         width: 15rem;
     }
 }
-
+/* mobile S */
 @media screen and (max-width: 320px) {
     html {
         font-size: 40%;

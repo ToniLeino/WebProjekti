@@ -396,10 +396,14 @@ address p {
 
 .about-us-text {
     grid-column: 1/4;
-    padding: 5rem 50rem 10rem 50rem;
+    padding: 5rem 25rem 25rem 25rem;
     text-align: justify;
 }
-
+.section-about-us {
+    display: inline-block;
+    text-align: center;
+    
+}
 .working-group img {
     max-width: 30%;
 }
@@ -443,10 +447,12 @@ address p {
 .about-you-title {
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .about-you-title2 {
     padding-bottom: 5rem;
+    font-size: 2rem;
 }
 @media (max-width: 1440px) {
     .about-us-text {
@@ -587,10 +593,10 @@ address p {
         
     }
     .about-you-title{
-        font-size: 1em;
+        font-size: 2em;
     }
     .about-you-title2{
-        font-size: 1em;
+        font-size: 2em;
     }
     .working-group {
         grid-template-columns: repeat(2, 1fr);

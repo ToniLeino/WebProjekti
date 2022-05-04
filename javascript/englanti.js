@@ -1,6 +1,6 @@
 let points = 0;
-const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
-const WRONG_ANSWER = "Vastauksesi on väärin!";
+const RIGHT_ANSWER = "Vastauksesi on oikein!" + "<br>" + "Hyvää työtä!";
+const WRONG_ANSWER = "Vastauksesi on väärin!" + "<br>";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
 
 function question1() {
@@ -11,20 +11,24 @@ function question1() {
     let thirdAnswer = document.getElementById("select1.3");
     let fourthAnswer = document.getElementById("select1.4");
     let correctAnswer = document.getElementById("select1.1").checked;
+    let wrongLabels = document.getElementsByClassName("first-labels");
+    let correctLabel = document.getElementById("correct-first-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
     if (
-        firstAnswer.checked ||
-        secondAnswer.checked ||
-        thirdAnswer.checked ||
-        fourthAnswer.checked
-    ) {
+        firstAnswer.checked || secondAnswer.checked || thirdAnswer.checked ||
+        fourthAnswer.checked) {
         //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on 'chose'.";
+            for (let i = 0; i < wrongLabels.length; i++) {
+                wrongLabels[i].style.backgroundColor = "red";
+            }
+            correctLabel.style.backgroundColor = "lightgreen";
         }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
@@ -32,6 +36,7 @@ function question1() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn1").disabled = true;
+        document.getElementById("check-btn1").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -45,20 +50,22 @@ function question2() {
     let thirdAnswer = document.getElementById("select2.3");
     let fourthAnswer = document.getElementById("select2.4");
     let correctAnswer = document.getElementById("select2.2").checked;
+    let wrongLabels = document.getElementsByClassName("second-labels");
+    let correctLabel = document.getElementById("correct-second-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
-    if (
-        firstAnswer.checked ||
-        secondAnswer.checked ||
-        thirdAnswer.checked ||
-        fourthAnswer.checked
-    ) {
+    if (firstAnswer.checked || secondAnswer.checked || thirdAnswer.checked || fourthAnswer.checked) {
         //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on 'began'.";
+            for (let i = 0; i < wrongLabels.length; i++) {
+                wrongLabels[i].style.backgroundColor = "red";
+            }
+            correctLabel.style.backgroundColor = "lightgreen";
         }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
@@ -66,6 +73,7 @@ function question2() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn2").disabled = true;
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -79,20 +87,22 @@ function question3() {
     let thirdAnswer = document.getElementById("select3.3");
     let fourthAnswer = document.getElementById("select3.4");
     let correctAnswer = document.getElementById("select3.3").checked;
+    let wrongLabels = document.getElementsByClassName("third-labels");
+    let correctLabel = document.getElementById("correct-third-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
-    if (
-        firstAnswer.checked ||
-        secondAnswer.checked ||
-        thirdAnswer.checked ||
-        fourthAnswer.checked
-    ) {
+    if (firstAnswer.checked || secondAnswer.checked || thirdAnswer.checked || fourthAnswer.checked) {
         //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on 'flown'.";
+            for (let i = 0; i < wrongLabels.length; i++) {
+                wrongLabels[i].style.backgroundColor = "red";
+            }
+            correctLabel.style.backgroundColor = "lightgreen";
         }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
@@ -100,6 +110,7 @@ function question3() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn3").disabled = true;
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -113,20 +124,22 @@ function question4() {
     let thirdAnswer = document.getElementById("select4.3");
     let fourthAnswer = document.getElementById("select4.4");
     let correctAnswer = document.getElementById("select4.4").checked;
+    let wrongLabels = document.getElementsByClassName("fourth-labels");
+    let correctLabel = document.getElementById("correct-fourth-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu
-    if (
-        firstAnswer.checked ||
-        secondAnswer.checked ||
-        thirdAnswer.checked ||
-        fourthAnswer.checked
-    ) {
+    if (firstAnswer.checked || secondAnswer.checked || thirdAnswer.checked || fourthAnswer.checked) {
         //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on 'are'.";
+            for (let i = 0; i < wrongLabels.length; i++) {
+                wrongLabels[i].style.backgroundColor = "red";
+            }
+            correctLabel.style.backgroundColor = "lightgreen";
         }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
@@ -134,6 +147,7 @@ function question4() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn4").disabled = true;
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -147,20 +161,22 @@ function question5() {
     let thirdAnswer = document.getElementById("select5.3");
     let fourthAnswer = document.getElementById("select5.4");
     let correctAnswer = document.getElementById("select5.2").checked;
+    let wrongLabels = document.getElementsByClassName("fifth-labels");
+    let correctLabel = document.getElementById("correct-fifth-label");
     result.innerHTML = "";
     //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
-    if (
-        firstAnswer.checked ||
-        secondAnswer.checked ||
-        thirdAnswer.checked ||
-        fourthAnswer.checked
-    ) {
-        // Tarkistaa onko valinta oikein ja lisätään sen mukainen teksti sekä mahdollinen piste
+    if (firstAnswer.checked || secondAnswer.checked || thirdAnswer.checked || fourthAnswer.checked) {
+        //Tarkistetaan onko jokin vastaus valittu, mikäli on, ajetaan funktiota eteenpäin, muuten virheviesti
         if (correctAnswer) {
             result.innerHTML = RIGHT_ANSWER;
             points++;
+            correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on 'does'.";
+            for (let i = 0; i < wrongLabels.length; i++) {
+                wrongLabels[i].style.backgroundColor = "red";
+            }
+            correctLabel.style.backgroundColor = "lightgreen";
         }
         //Deaktivoidaan painikkeet kun vastaus on tarkistettu
         firstAnswer.disabled = true;
@@ -168,6 +184,7 @@ function question5() {
         thirdAnswer.disabled = true;
         fourthAnswer.disabled = true;
         document.getElementById("check-btn5").disabled = true;
+        document.getElementById("check-btn2").style.backgroundColor = "#e9a452";
     } else {
         result.innerHTML = ANSWER_ERROR;
     }
@@ -182,27 +199,18 @@ function checkResult() {
     let check5 = document.getElementById("check-btn5");
     let finalInput = document.getElementById("printFinalResult");
     //Tarkistetaan onko kaikki kysymykset tarkistettu, mikäli on, annetaan lopullinen palaute, muuten virheviesti
-    if (
-        check1.disabled &&
-        check2.disabled &&
-        check3.disabled &&
-        check4.disabled &&
-        check5.disabled
-    ) {
+    if (check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled) {
         if (points < 3) {
-            let finalResult =
-                "Sait " +
-                points +
-                " / 5 pistettä" +
-                "<br>" +
-                "Parempi onni ensi kerralla!";
+            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Parempi onni ensi kerralla!";
             finalInput.innerHTML = finalResult;
-        } else {
+        }
+        if (points > 2) {
             let finalResult =
-                "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+                "Sait " + points + " / 5 pistettä" + "<br>" + "Hyvää työtä!";
             finalInput.innerHTML = finalResult;
         }
 
+        //Jos visasta saa täydet pisteet niin kutsutaan konfettifunktio
         if (points == 5) {
             let finalResult =
                 "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
@@ -232,6 +240,7 @@ function checkResult() {
         }
 
         document.getElementById("final-check-btn").disabled = true;
+        document.getElementById("final-check-btn").style.backgroundColor = "#e9a452";
     } else {
         finalInput.innerHTML = "Vastaa ensin kaikkiin kysymyksiin!";
     }

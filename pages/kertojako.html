@@ -10,30 +10,30 @@
     <link rel="stylesheet" href="../styles/dividers.css" />
     <link rel="stylesheet" href="../styles/math.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
 </head>
-
+<header id="header">
 <body>
     <!-- NAVIGAATIO -->
-
-    <nav class="navbar">
-        <img src="../images/projektilogo.png" alt="headerimg" />
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-     <div class="navbar-links">
-        <ul>
-            <li><a href="../index.html">etusivu</a></li>
-            <li><a href="../index.html#harjoitukset">harjoitukset</a></li>
-            <li><a href="#">opettajat</a></li>
-            <li><a href="../pages/about.html">tietoja</a></li>
-        </ul>
-     </div>
-    </nav>
-
+    <header id="header">
+        <nav class="navbar">
+            <a href="#footer"><img src="../images/projektilogo.png" alt="headerimg" /></a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../index.html">etusivu</a></li>
+                    <li><a href="../index.html#harjoitukset">harjoitukset</a></li>
+                    <li><a href="#">opettajat</a></li>
+                    <li><a href="../pages/about.html">tietoja</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="shapedividers_com-8551">
         <svg></svg>
     </div>
@@ -47,9 +47,7 @@
             </div>
 
             <div class="visa-text-box">
-                <p class="visa-text">
-                    Tässä tehtävässä sinun tulee täydentää vastaus kokonaisluvuilla.
-                </p>
+                <p class="visa-text">Tässä tehtävässä sinun tulee täydentää vastaus kokonaisluvuilla.</p>
             </div>
 
             <!--//Section header-->
@@ -65,9 +63,7 @@
 
             <div class="answer-result" style="margin-top: 10px">
                 <div class="check-div">
-                    <button id="check-btn11" class="check-btn" onclick="question11()">
-              Tarkista
-            </button>
+                    <button id="check-btn11" class="check-btn" onclick="question11()">Tarkista</button>
                     <div class="id-answer" id="tarkistus11"></div>
                     <div class="id-answer" id="oikeavastaus11" id="tokaid1" id="tokaid2" id="tokaid3"></div>
                 </div>
@@ -85,9 +81,7 @@
 
             <div class="answer-result" style="margin-top: 10px">
                 <div class="check-div">
-                    <button id="check-btn12" class="check-btn" onclick="question22()">
-              Tarkista
-            </button>
+                    <button id="check-btn12" class="check-btn" onclick="question22()">Tarkista</button>
                     <div class="id-answer" id="tarkistus22"></div>
                     <div class="id-answer" id="oikeavastaus12"></div>
                 </div>
@@ -105,9 +99,7 @@
             </div>
             <div class="answer-result" style="margin-top: 10px">
                 <div class="check-div">
-                    <button id="check-btn13" class="check-btn" onclick="question33()">
-              Tarkista
-            </button>
+                    <button id="check-btn13" class="check-btn" onclick="question33()">Tarkista</button>
                     <div class="id-answer" id="tarkistus33"></div>
                     <div class="id-answer" id="oikeavastaus13"></div>
                 </div>
@@ -125,9 +117,7 @@
             </div>
             <div class="answer-result" style="margin-top: 10px">
                 <div class="check-div">
-                    <button id="check-btn14" class="check-btn" onclick="question44()">
-              Tarkista
-            </button>
+                    <button id="check-btn14" class="check-btn" onclick="question44()">Tarkista</button>
                     <div class="id-answer" id="tarkistus44"></div>
                     <div class="id-answer" id="oikeavastaus14"></div>
                 </div>
@@ -145,9 +135,7 @@
             </div>
             <div class="answer-result" style="margin-top: 10px">
                 <div class="check-div">
-                    <button id="check-btn15" class="check-btn" onclick="question55()">
-              Tarkista
-            </button>
+                    <button id="check-btn15" class="check-btn" onclick="question55()">Tarkista</button>
                     <div class="id-answer" id="tarkistus55"></div>
                     <div class="id-answer" id="oikeavastaus15"></div>
                 </div>
@@ -159,9 +147,7 @@
 
             <div class="final-result">
                 <div class="check-result">
-                    <button id="" class="check-btn" onclick="checkResult2()">
-              Tarkista lopputulos!
-            </button>
+                    <button id="" class="check-btn" onclick="checkResult2()">Tarkista lopputulos!</button>
                 </div>
                 <div class="print-result">
                     <div class="id-answer" id="finalResult"></div>
@@ -175,13 +161,12 @@
     </div>
 
     <!-- FOOTER -->
-    
-    <footer id="footer">
 
+    <footer id="footer">
         <div class="footer">
             <div class="logo-col">
                 <a href="#header" class="footer-logo">
-                    <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png">
+                    <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png" />
                 </a>
 
                 <ul class="social-links">
@@ -217,16 +202,20 @@
                         <a class="footer-link" href="#">Saavutettavuus</a>
                     </li>
                     <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
-                    <li><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></li>
-                </ul>
-            </nav>
-
-            <nav class="nav-col">
-                <p class="footer-heading">
-                    <ion-icon class="footer-icon" name="person-outline"></ion-icon> Tili</p>
-                <ul class="footer-nav">
                     <li>
-                        <a class="footer-link" href="#">Kirjaudu sisään</a>
+                        <a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">
+            <ion-icon class="footer-icon" name="person-outline"></ion-icon> Tili
+          </p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">Kirjaudu sisään</a>
                     </li>
                     <li>
                         <a class="footer-link" href="#">Luo tili</a>
@@ -239,30 +228,36 @@
 
             <div class="address-col">
                 <p class="footer-heading">
-                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä</p>
+                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä
+                </p>
                 <address class="contacts">
-                    <p class="address">Kiisselikuja, 90140 OULU</p>
-                    <p>
-                        <a class="footer-link" href="tel:123-456-7890">040-123-4567</a>
-                    </p>
-                    <p> 
-                        <a class="footer-link" href="mailto:kidslearncom@gmail.com">Kidslearncom@gmail.com</a>
-                    </p>
-                </address>
+            <p class="address">Kiisselikuja, 90140 OULU</p>
+            <p>
+              <a class="footer-link" href="tel:123-456-7890">040-123-4567</a>
+            </p>
+            <p>
+              <a class="footer-link" href="mailto:kidslearncom@gmail.com">Kidslearncom@gmail.com</a>
+            </p>
+          </address>
             </div>
         </div>
         <div class="credits">
             <div class="krediitit">
-                <p><a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a></p>
-            </div>
+                <p>
+                    <a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a
+            >
+          </p>
         </div>
+      </div>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../javascript/kertojako.js"></script>
     <script src="../javascript/confetti.js"></script>
     <script src="../javascript/script.js"></script>
-</body>
-
+  </body>
 </html>

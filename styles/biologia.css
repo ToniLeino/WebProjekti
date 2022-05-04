@@ -4,6 +4,12 @@ body {
 
 .container-fluid {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container {
+    width: 100%;
 }
 
 .header-container {
@@ -81,6 +87,7 @@ img {
 
 .visa-answer-options input[type="radio"]:checked+label {
     background-color: #b6e6ac;
+    text-decoration: underline;
 }
 
 .button-grid {
@@ -260,9 +267,6 @@ label:active {
 @media screen and (max-width: 320px) {
     html {
         font-size: 40%;
-    }
-    .container {
-        padding: 9.6rem 0;
     }
     .question-title {
         padding-bottom: 2rem;

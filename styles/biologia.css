@@ -6,14 +6,6 @@ body {
     width: 100%;
 }
 
-.container {
-    /*standard width 1200px / 1140px*/
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    /*"centering" the container*/
-    margin: 0 auto;
-}
-
 .header-container {
     font-size: 2.2rem;
     text-align: center;
@@ -89,7 +81,6 @@ img {
 
 .visa-answer-options input[type="radio"]:checked+label {
     background-color: #b6e6ac;
-    border: 3px solid #b6e6ac;
 }
 
 .button-grid {

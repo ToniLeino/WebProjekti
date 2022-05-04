@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Ilona Latvalehto" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,30 +19,38 @@
 <body>
     <!-- NAVIGAATIO -->
 
-    <nav class="navbar">
-        <img src="../images/projektilogo.png" alt="headerimg" />
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-     <div class="navbar-links">
-        <ul>
-            <li><a href="../index.html">etusivu</a></li>
-            <li><a href="../index.html#harjoitukset">harjoitukset</a></li>
-            <li><a href="#">opettajat</a></li>
-            <li><a href="../pages/about.html">tietoja</a></li>
-        </ul>
-     </div>
-    </nav>
+    <header id="header">
+
+        <nav class="navbar">
+            <a href="#footer"><img src="../images/projektilogo.png" alt="headerimg"/></a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../index.html">Etusivu</a></li>
+                    <li><a href="../index.html">Harjoitukset</a></li>
+                    <li><a href="#">Opettajat</a></li>
+                    <li><a href="../pages/about.html">Tietoja</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    
     <div class="shapedividers_com-8551">
         <svg></svg>
     </div>
-
+    
     <div class="shapedividers_com-8976">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
     </div>
+
     <!--Historiavisa-->
+    <!--container-->
 
     <section class="section-visa container">
         <div class="header-container">
@@ -67,25 +76,26 @@
 
             <div class="visa-answer-options">
                 <div id="answer-buttons" class="button-grid">
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.1" name="first-select" value="vastaus 1"/>
-                        <label class="first-labels" for="select1.1">a) Martti Luther  </label>
-                    </div>
+                    <div class="row">
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.1" name="first-select" value="vastaus 1"/>
+                            <label class="first-labels" for="select1.1">Martti Luther  </label>
+                        </div>
 
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.2" name="first-select" value="vastaus 2"/>
-                        <label id="correct-first-label" for="select1.2">b) Mikael Agricola </label>
-                    </div>
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.2" name="first-select" value="vastaus 2"/>
+                            <label id="correct-first-label" for="select1.2">Mikael Agricola </label>
+                        </div>
 
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.3" name="first-select" value="vastaus 3"/>
-                        <label class="first-labels"for="select1.3">c) Aleksis Kivi</label>
-                    </div>
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.3" name="first-select" value="vastaus 3"/>
+                            <label class="first-labels"for="select1.3">Aleksis Kivi</label>
+                        </div>
 
-                    <div class="radio-selection">
-                        <input type="radio" id="select1.4" name="first-select" value="vastaus 4"/>
-                        <label class="first-labels" for="select1.4">d) Martti Skytte</label>
-                    </div>
+                        <div class="radio-selection col-6">
+                            <input type="radio" id="select1.4" name="first-select" value="vastaus 4"/>
+                            <label class="first-labels" for="select1.4">Martti Skytte</label>
+                        </div>
                 </div>
 
                 <div class="answer-result">
@@ -113,24 +123,26 @@
 
                 <div class="visa-answer-options">
                     <div id="answer-buttons" class="button-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.1" name="second-select" value="vastaus 1"/>
-                            <label class="second-labels" for="select2.1">a) 1500</label>
-                        </div>
+                        <div class="row">
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.1" name="second-select" value="vastaus 1"/>
+                                <label class="second-labels" for="select2.1">1500</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.2" name="second-select" value="vastaus 2"/>
-                            <label class="second-labels" for="select2.2">b) 1570 </label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.2" name="second-select" value="vastaus 2"/>
+                                <label class="second-labels" for="select2.2">1570 </label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.3" name="second-select" value="vastaus 3"/>
-                            <label class="second-labels" for="select2.3">c) 1520 </label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.3" name="second-select" value="vastaus 3"/>
+                                <label class="second-labels" for="select2.3">1520 </label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select2.4" name="second-select" value="vastaus 4"/>
-                            <label id="correct-second-label" for="select2.4">d) 1550</label>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select2.4" name="second-select" value="vastaus 4"/>
+                                <label id="correct-second-label" for="select2.4">1550</label>
+                            </div>
                         </div>
                     </div>
 
@@ -155,31 +167,32 @@
                             <img src="../images/Suuriruhtinaskunta.jpg">
                         </div>
                         <div>
-                            <strong>Milloin Suomesta tuli Venäjän suuriruhtinaskunta?</strong>
+                            <strong>Milloin Suomi liitettiin osaksi Venäjää?</strong>
                         </div>
                     </div>
                 </div>
 
                 <div class="visa-answer-options">
                     <div id="answer-buttons" class="button-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select3.1" name="third-select" value="vastaus 1"/>
-                            <label id="correct-third-label" for="select3.1">a) 1809</label>
-                        </div>
+                        <div class="row">
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select3.1" name="third-select" value="vastaus 1"/>
+                                <label id="correct-third-label" for="select3.1">1809</label>
+                            </div>
 
-                        <div class="radio-selection">
+                        <div class="radio-selection col-6">
                             <input type="radio" id="select3.2" name="third-select" value="vastaus 2"/>
-                            <label class="third-labels" for="select3.2">b) 1789 </label>
+                            <label class="third-labels" for="select3.2">1789 </label>
                         </div>
 
-                        <div class="radio-selection">
+                        <div class="radio-selection col-6">
                             <input type="radio" id="select3.3" name="third-select" value="vastaus 3"/>
-                            <label class="third-labels" for="select3.3">c) 1818</label>
+                            <label class="third-labels" for="select3.3">1818</label>
                         </div>
 
-                        <div class="radio-selection">
+                        <div class="radio-selection col-6">
                             <input type="radio" id="select3.4" name="third-select" value="vastaus 4"/>
-                            <label class="third-labels" for="select3.4">d) 1801</label>
+                            <label class="third-labels" for="select3.4">1801</label>
                         </div>
                     </div>
 
@@ -209,25 +222,28 @@
 
                 <div class="visa-answer-options">
                     <div id="answer-buttons" class="button-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.1" value="vastaus 1"/>
-                            <label class="fourth-labels" for="select4.1">a) Sananvapaus </label>
-                        </div>
+                        <div class="row">
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select4.1" value="vastaus 1"/>
+                                <label class="fourth-labels" for="select4.1">Sananvapaus kehittyi</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.2" value="vastaus 2"/>
-                            <label id="correct-fourth-label" for="select4.2">b) Suomen senaatti perustettiin</label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select4.2" value="vastaus 2"/>
+                                <label id="correct-fourth-label" for="select4.2">Suomen senaatti perustettiin</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.3" value="vastaus 3"/>
-                            <label class="fourth-labels" for="select4.3">c) Vapaa lehdistö kehittyi</label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select4.3" value="vastaus 3"/>
+                                <label class="fourth-labels" for="select4.3">Vapaa lehdistö kehittyi</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select4.4" value="vastaus 4"/>
-                            <label class="fourth-labels" for="select4.4">d) Demokratia muodostui </label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select4.4" value="vastaus 4"/>
+                                <label class="fourth-labels" for="select4.4">Demokratia muodostui </label>
+                            </div>
+                        </div>    
+                    </div>
 
                     </div>
 
@@ -251,33 +267,36 @@
     
                         <div class="question-img-container">
                             <img src="../images/Ensimmäinen presidentti.jpg">
-                            <strong>Kuka oli Suomen ensimmäinen presidentti?</strong>
+                            <strong>Kuka valittiin Suomen 1. presidentiksi?</strong>
                         </div>
                     </div>
                 </div>
 
                 <div class="visa-answer-options">
                     <div id="answer-buttons" class="button-grid">
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.1" value="vastaus 1"/>
-                            <label class="fifth-labels" for="select5.1">a) Lauri Relander </label>
-                        </div>
+                        <div class="row">
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select5.1" value="vastaus 1"/>
+                                <label class="fifth-labels" for="select5.1">Lauri Relander </label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.2" value="vastaus 2"/>
-                            <label class="fifth-labels" for="select5.2">b) Kyösti Kallio</label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select5.2" value="vastaus 2"/>
+                                <label class="fifth-labels" for="select5.2">Kyösti Kallio</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.3" value="vastaus 3"/>
-                            <label id="correct-fifth-label" for="select5.3">c) K. J. Ståhlberg</label>
-                        </div>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select5.3" value="vastaus 3"/>
+                                <label id="correct-fifth-label" for="select5.3">K. J. Ståhlberg</label>
+                            </div>
 
-                        <div class="radio-selection">
-                            <input type="radio" id="select5.4" value="vastaus 4"/>
-                            <label class="fifth-labels" for="select5.4">d) P. E. Svinhufvud </label>
+                            <div class="radio-selection col-6">
+                                <input type="radio" id="select5.4" value="vastaus 4"/>
+                                <label class="fifth-labels" for="select5.4">P. E. Svinhufvud </label>
+                            </div>
                         </div>
                     </div>
+
                     <div class="answer-result">
                         <div class="check-div">
                           <button id="check-btn5" class="check-btn" onclick="question5()">
@@ -290,7 +309,10 @@
                     
                     <div class="final-result">
                         <div class="check-result">
-                            <button id="final-check-btn" class="check-btn" onclick="checkResult()">
+                            <button 
+                            id="final-check-btn" 
+                            class="check-btn" 
+                            onclick="checkResult()">
                       Tarkista lopputulos!
                     </button>
                         </div>
@@ -310,22 +332,26 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer id="footer">
         <div class="footer">
+            <div class="logo-col">
+                <a href="#header" class="footer-logo">
+                    <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png">
+                </a>
 
-            <div class="footer-box">
-                <a href="#header"><img src="../images/projektilogo.png" class="footer-img"></a>
                 <ul class="social-links">
                     <li>
                         <a class="footer-link" href="#">
                             <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
                         </a>
                     </li>
+
                     <li>
                         <a class="footer-link" href="#">
                             <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
                         </a>
                     </li>
+
                     <li>
                         <a class="footer-link" href="#">
                             <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
@@ -334,44 +360,52 @@
                 </ul>
             </div>
 
-            <div class="footer-box">
-                <div class="footer-header">
-                    <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon><strong>Meistä</strong>
+            <nav class="nav-col">
+                <div class="footer-heading">
+                    <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon> Meistä
                 </div>
-                <ul>
-                    <li><a class="footer-link" href="../WebProjekti/pages/about.html">Tietoja</a></li>
-                    <li><a class="footer-link" href="#">Saavutettavuus</a></li>
+                <ul class="footer-nav">
+                    <li>
+                        <a class="footer-link" href="pages/about.html">Tietoja</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">Saavutettavuus</a>
+                    </li>
                     <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
                     <li><a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <div class="footer-box">
-                <div class="footer-header">
-                    <ion-icon class="footer-icon" name="person-outline"></ion-icon><strong>Tili</strong>
-                </div>
-                <ul>
-                    <li><a class="footer-link" href="#">Kirjaudu sisään</a></li>
-                    <li><a class="footer-link" href="#">Luo tili</a></li>
-                    <li><a class="footer-link" href="#">Yksityisyys</a></li>
+            <nav class="nav-col">
+                <p class="footer-heading">
+                    <ion-icon class="footer-icon" name="person-outline"></ion-icon> Tili</p>
+                <ul class="footer-nav">
+                    <li>
+                        <a class="footer-link" href="#">Kirjaudu sisään</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">Luo tili</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">Yksityisyydensuoja</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
 
-            <div class="footer-box">
-                <div class="footer-header">
-                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon><strong>Ota yhteyttä</strong>
-                </div>
-                <address class="contact-info">
-                    <ul>
-                        <li class="address">Kiisselikuja, 90140 OULU</li>
-                        <li class="footer-link"> <a href="tel:040-123-4567">040 123 4567</a></li>
-                        <li class="footer-link"> <a href="mailto:Kidslearncom@luukku.com">Kidslearncom@luukku.com</a>
-                        </li>
-                    </ul>
+            <div class="address-col">
+                <p class="footer-heading">
+                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä</p>
+                <address class="contacts">
+                    <p class="address">Kiisselikuja, 90140 OULU</p>
+                    <p>
+                        <a class="footer-link" href="tel:123-456-7890">040-123-4567</a>
+                    </p>
+                    <p> 
+                        <a class="footer-link" href="mailto:kidslearncom@gmail.com">Kidslearncom@gmail.com</a>
+                    </p>
                 </address>
             </div>
         </div>
-
         <div class="credits">
             <div class="krediitit">
                 <p><a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a></p>

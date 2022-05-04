@@ -447,14 +447,16 @@ address p {
 .about-you-title2 {
     padding-bottom: 5rem;
 }
+
 @media (max-width: 1082px) {
     .navbar {
-        gap: 10rem
+        gap: 10rem;
     }
     .footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (max-width: 900px) {
     .toggle-icon {
         color: white;
@@ -480,7 +482,7 @@ address p {
         text-align: center;
     }
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
     .navbar-links.active {
         display: flex;
@@ -512,10 +514,30 @@ address p {
     .hero-img {
         display: none;
     }
+    .about-us-text{
+        font-size: 1.8em;
+        padding: 0;
+        position: left;
+        margin-bottom:0px;
+    }
+    .about-us-container{
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .section-about-us{
+        grid-template-columns: repeat(2, 2fr);
+        
+    }
+    .about-you-title{
+        font-size: 2em;
+    }
+    .about-you-title2{
+        font-size: 2em;
+    }
+    
 }
 
-@media (max-width:432px) {
-    
+@media (max-width: 432px) {
     .footer-logo {
         display: none;
     }
@@ -527,7 +549,6 @@ address p {
     }
     .address-col {
         margin-top: 25px;
-        
     }
     .quiz-content {
         grid-column: 2/2;
@@ -544,5 +565,24 @@ address p {
         width: 100%;
         flex-direction: column;
         padding-left: 1rem;
+    }
+    .about-us-text{
+        font-size: 1em;
+        padding: 0;
+        position: left;
+        margin-bottom: 0;
+    }
+    .about-us-container{
+        text-align: center;
+        padding: 0;
+    }
+    .section-about-us{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .about-you-title{
+        font-size: 2em;
+    }
+    .about-you-title2{
+        font-size: 2em;
     }
 }

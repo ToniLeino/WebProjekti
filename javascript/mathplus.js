@@ -142,40 +142,49 @@
 
     function checkResult() {
         
-     
-        let finalResult = points + " / 5 ";
-        let check1 = document.getElementById("check-btn1");
-        let check2 = document.getElementById("check-btn2");
-        let check3 = document.getElementById("check-btn3");
-        let check4 = document.getElementById("check-btn4");
-        let check5 = document.getElementById("check-btn5");
-        if ( check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled ){
-            if(points < 3){
-                document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet1_2
-            }
-            else if (points == 5){
-                document.getElementById("printFinalResult").innerHTML = finalResult + "<br>" + pisteet3_5
-                
-                // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
-                // for starting the confetti
-                const start = () => {
-                    setTimeout(function() {
-                        confetti.start();
-                    }, 1000);
-                    // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-                };
-        
-                //  for stopping the confetti
-        
-                const stop = () => {
-                    setTimeout(function() {
-                        confetti.stop();
-                    }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-                };
-                // after this here we are calling both the function so it works
-                start();
-                stop();
-            }
+      //Määritetään kysymysten tarkistus painikkeet sekä lopputuloksen tulostuskenttä
+    let check1 = document.getElementById("check-btn1");
+    let check2 = document.getElementById("check-btn2");
+    let check3 = document.getElementById("check-btn3");
+    let check4 = document.getElementById("check-btn4");
+    let check5 = document.getElementById("check-btn5");
+    let finalInput = document.getElementById("printFinalResult");
+    //Tarkistetaan onko kaikki kysymykset tarkistettu, mikäli on, annetaan lopullinen palaute, muuten virheviesti
+    if (check1.disabled && check2.disabled && check3.disabled && check4.disabled && check5.disabled) {
+        if (points < 3) {
+            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Parempi onni ensi kerralla!";
+            finalInput.innerHTML = finalResult;
+        }
+        if (points > 2) {
+            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Hyvää työtä!";
+            finalInput.innerHTML = finalResult;
+        }
+        //Kutsutaan confetti funktio, mikäli tietovisasta saa täydet pisteet
+        if (points == 5) {
+            let finalResult = "Sait " + points + " / 5 pistettä" + "<br>" + "Erinomaista työtä!";
+            finalInput.innerHTML = finalResult;
+
+            // Seuraava koodi on otettu netistä lähde: https://dev.to/official_fire/creating-a-confetti-effect-in-5-minutes-16h3
+            // for starting the confetti
+            const start = () => {
+                setTimeout(function() {
+                    confetti.start();
+                }, 1000);
+                // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            //  for stopping the confetti
+
+            const stop = () => {
+                setTimeout(function() {
+                    confetti.stop();
+                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+        }
+            // if you dont want to make it stop and make it infinite you can just remove the stop function
         }
         else {
             document.getElementById("printFinalResult").innerHTML =

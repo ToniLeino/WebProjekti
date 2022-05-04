@@ -87,6 +87,11 @@ img {
     font-size: 1.6rem;
 }
 
+.visa-answer-options input[type="radio"]:checked+label {
+    background-color: #b6e6ac;
+    border: 3px solid #b6e6ac;
+}
+
 .button-grid {
     padding: 3.6rem 3.6rem 0 3.6rem;
     line-height: 1.5rem;

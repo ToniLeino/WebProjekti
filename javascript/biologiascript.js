@@ -2,16 +2,7 @@ let points = 0;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";
 const ANSWER_ERROR = "Valitse vastaus ennen tarkistusta!";
-/*let testiAnswer = document.getElementById("select1.1");
-testiAnswer.addEventListener("click", doSome);
 
-function doSome() {
-    testiAnswer.classList.toggle("testi");
-}
-if (document.getElementById("select1.3").checked) {
-    document.getElementById("correct-first-label").style.backgroundColor = "black";
-}
-*/
 function question1() {
     // Kysymyksen vaihtoehdot ja oikea vastaus
     let result = document.getElementById("answer-result1");
@@ -32,7 +23,7 @@ function question1() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on metso.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -69,7 +60,7 @@ function question2() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on lapinpöllö.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -106,7 +97,7 @@ function question3() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on joutsen.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -143,7 +134,7 @@ function question4() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on varis.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }
@@ -181,7 +172,7 @@ function question5() {
             points++;
             correctLabel.style.backgroundColor = "lightgreen";
         } else {
-            result.innerHTML = WRONG_ANSWER;
+            result.innerHTML = WRONG_ANSWER + " Oikea vastaus on naurulokki.";
             for (let i = 0; i < wrongLabels.length; i++) {
                 wrongLabels[i].style.backgroundColor = "red";
             }

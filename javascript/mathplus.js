@@ -2,6 +2,7 @@
     
     
     let points = 0;
+    let answered = 5;
     const RIGHT_ANSWER = "Vastauksesi on oikein. Hyvää työtä!";
     const WRONG_ANSWER = "Vastauksesi on väärin.";
     const pisteet1_2 = "Ensi kerralla paremmin!"
@@ -28,8 +29,10 @@
             if (uanswer == plusanswer) {
             tarkistus1.innerHTML = RIGHT_ANSWER;
             points++;
+            answered-- 
          } else {
-            tarkistus1.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer;   
+            tarkistus1.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer;  
+            answered-- 
         }
         document.getElementById("check-btn1").disabled = true;
     }
@@ -44,8 +47,10 @@
             if (uanswer == plusanswer2) {
             tarkistus2.innerHTML = RIGHT_ANSWER;
             points++;
+            answered-- 
          } else {
             tarkistus2.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer2;;   
+            answered--
         }
         document.getElementById("check-btn2").disabled = true;
     }
@@ -60,8 +65,10 @@
             if (uanswer == plusanswer3) {
             tarkistus3.innerHTML = RIGHT_ANSWER;
             points++;
+            answered-- 
          } else {
-            tarkistus3.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer3;  
+            tarkistus3.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer3; 
+            answered--
         }
         document.getElementById("check-btn3").disabled = true;  
     }
@@ -76,8 +83,10 @@
             if (uanswer == plusanswer4) {
             tarkistus4.innerHTML = RIGHT_ANSWER;
             points++;
+            answered-- 
          } else{
-            tarkistus4.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer4;  
+            tarkistus4.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer4;
+            answered--  
          }
         document.getElementById("check-btn4").disabled = true;
     }
@@ -92,8 +101,10 @@
             if (uanswer == plusanswer5) {
             tarkistus5.innerHTML = RIGHT_ANSWER;
             points++;
+            answered-- 
          } else {
             tarkistus5.innerHTML = WRONG_ANSWER + " Oikea vastaus on " + plusanswer5;
+            answered--
         }
         document.getElementById("check-btn5").disabled = true;    
     }
@@ -138,6 +149,9 @@
     }
     else {
         document.getElementById("printFinalResult").innerHTML =
-            "Vastaa ensin kaikkiin kysymyksiin!";
+            "Vastaa ensin kaikkiin kysymyksiin!" +
+            " Sinulla on vielä " +
+            answered +
+            " kysymystä jäljellä.";;
     }
     }

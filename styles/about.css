@@ -1,0 +1,121 @@
+/* ABOUT US */
+
+.section-about-us {
+    padding: 0 10rem 10rem 10rem;
+}
+
+.about-us-header {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+}
+
+.about-us-text {
+    text-align: justify;
+    padding: 10rem 40rem;
+    font-size: 2.2rem;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    text-align: center;
+    font-size: 2.2rem;
+    justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.section-about-us {
+    display: inline-block;
+    text-align: center;
+}
+
+.working-group img {
+    max-width: 30%;
+}
+
+.your-picture {
+    border-radius: 50%;
+    box-shadow: 1.5rem 1.5rem 1.5rem #b6711f;
+    border: solid 0.5rem;
+}
+
+.first {
+    border-color: #fdffb6;
+}
+
+.second {
+    border-color: #caffbf;
+}
+
+.third {
+    border-color: #fdffb6;
+}
+
+.fourth {
+    border-color: #bdb2ff;
+}
+
+.fifth {
+    border-color: #9bf6ff;
+}
+
+.sixth {
+    border-color: #ffadad;
+}
+
+.about-you-name {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.about-you-title {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-you-title2 {
+    padding-bottom: 5rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 1440px) {
+    .about-us-text {
+        padding: 10rem 20rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-us-text {
+        padding: 10rem 10rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-us-text {
+        padding: 5rem 5rem;
+    }
+    .about-us-container {
+        grid-template-columns: repeat(2, 3fr);
+    }
+}
+
+@media (max-width: 432px) {
+    .about-us-header {
+        font-size: 3rem;
+    }
+    .about-us-text {
+        padding: 3rem 1rem;
+        font-size: 1.8rem;
+    }
+    .section-about-us {
+        padding: 1rem;
+    }
+    .about-us-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem;
+    }
+}

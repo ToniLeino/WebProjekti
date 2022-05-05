@@ -1,3 +1,4 @@
+// Author : Leevi Helttunen
 let points = 0;
 let answered = 5;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";

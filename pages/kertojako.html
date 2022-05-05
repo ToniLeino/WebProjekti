@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="Riku Björn" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,196 +15,197 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet" />
 </head>
 <header id="header">
-<body>
-    <!-- NAVIGAATIO -->
-    <header id="header">
-        <nav class="navbar">
-            <a href="#footer"><img src="../images/projektilogo.png" alt="headerimg" /></a>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="../index.html">Etusivu</a></li>
-                    <li><a href="../index.html#harjoitukset">Harjoitukset</a></li>
-                    <li><a href="#">Opettajat</a></li>
-                    <li><a href="../pages/about.html">Tietoja</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="shapedividers_com-8551">
-        <svg></svg>
-    </div>
 
-    <!-- Math container -->
-    <section class="math-container">
-        <!--Section header-->
-        <div class="math-questions">
-            <div class="visa-header heading-secondary">
-                <h2>Matematiikan kerto- ja jakolaskut</h2>
-            </div>
-
-            <div class="visa-text-box">
-                <p class="visa-text">Tässä tehtävässä sinun tulee täydentää vastaus kokonaisluvuilla.</p>
-            </div>
-
-            <!--//Section header-->
-
-            <!--Kymysys 1 container-->
-
-            <div class="question-title">Kysymys 1</div>
-
-            <div class="question-container">
-                <div id="kysymysYksi"></div>
-                <input type="text" id="vastaus11" value="" />
-            </div>
-
-            <div class="answer-result" style="margin-top: 10px">
-                <div class="check-div">
-                    <button id="check-btn11" class="check-btn" onclick="question11()">Tarkista</button>
-                    <div class="id-answer" id="tarkistus11"></div>
-                    <div class="id-answer" id="oikeavastaus11" id="tokaid1" id="tokaid2" id="tokaid3"></div>
-                </div>
-            </div>
-
-            <!--//Kysymys 1 container-->
-
-            <!--Kymysys 2 container-->
-            <div class="question-title">Kysymys 2</div>
-
-            <div class="question-container">
-                <div id="kysymysKaksi"></div>
-                <input type="text" id="vastaus12" value="" />
-            </div>
-
-            <div class="answer-result" style="margin-top: 10px">
-                <div class="check-div">
-                    <button id="check-btn12" class="check-btn" onclick="question22()">Tarkista</button>
-                    <div class="id-answer" id="tarkistus22"></div>
-                    <div class="id-answer" id="oikeavastaus12"></div>
-                </div>
-            </div>
-
-            <!--//kysymys 2 container-->
-
-            <!--Kysymys 3 container-->
-
-            <div class="question-title">Kysymys 3</div>
-
-            <div class="question-container">
-                <div id="kysymysKolme"></div>
-                <input type="text" id="vastaus13" value="" />
-            </div>
-            <div class="answer-result" style="margin-top: 10px">
-                <div class="check-div">
-                    <button id="check-btn13" class="check-btn" onclick="question33()">Tarkista</button>
-                    <div class="id-answer" id="tarkistus33"></div>
-                    <div class="id-answer" id="oikeavastaus13"></div>
-                </div>
-            </div>
-
-            <!--//kysymys 3 container-->
-
-            <!--Kysymys 4 container-->
-
-            <div class="question-title">Kysymys 4</div>
-
-            <div class="question-container">
-                <div id="kysymysNelja"></div>
-                <input type="text" id="vastaus14" value="" />
-            </div>
-            <div class="answer-result" style="margin-top: 10px">
-                <div class="check-div">
-                    <button id="check-btn14" class="check-btn" onclick="question44()">Tarkista</button>
-                    <div class="id-answer" id="tarkistus44"></div>
-                    <div class="id-answer" id="oikeavastaus14"></div>
-                </div>
-            </div>
-
-            <!--//kysymys 4 container-->
-
-            <!--Kysymys 5 container-->
-
-            <div class="question-title">Kysymys 5</div>
-
-            <div class="question-container">
-                <div id="kysymysViisi"></div>
-                <input type="text" id="vastaus15" value="" />
-            </div>
-            <div class="answer-result" style="margin-top: 10px">
-                <div class="check-div">
-                    <button id="check-btn15" class="check-btn" onclick="question55()">Tarkista</button>
-                    <div class="id-answer" id="tarkistus55"></div>
-                    <div class="id-answer" id="oikeavastaus15"></div>
-                </div>
-            </div>
-
-            <!--//kysymys 5 container-->
-
-            <!-- lopputulos -->
-
-            <div class="final-result">
-                <div class="check-result">
-                    <button id="" class="check-btn" onclick="checkResult2()">Tarkista lopputulos!</button>
-                </div>
-                <div class="print-result">
-                    <div class="id-answer" id="finalResult"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="shapedividers_com-109">
-        <svg></svg>
-    </div>
-
-    <!-- FOOTER -->
-
-    <footer id="footer">
-        <div class="footer">
-            <div class="logo-col">
-                <a href="#header" class="footer-logo">
-                    <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png" />
+    <body>
+        <!-- NAVIGAATIO -->
+        <header id="header">
+            <nav class="navbar">
+                <a href="#footer"><img src="../images/projektilogo.png" alt="headerimg" /></a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </a>
-
-                <ul class="social-links">
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="footer-link" href="#">
-                            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <nav class="nav-col">
-                <div class="footer-heading">
-                    <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon> Meistä
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="../index.html">Etusivu</a></li>
+                        <li><a href="../index.html#harjoitukset">Harjoitukset</a></li>
+                        <li><a href="#">Opettajat</a></li>
+                        <li><a href="../pages/about.html">Tietoja</a></li>
+                    </ul>
                 </div>
-                <ul class="footer-nav">
-                    <li>
-                        <a class="footer-link" href="pages/about.html">Tietoja</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">Saavutettavuus</a>
-                    </li>
-                    <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
-                    <li>
-                        <a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a
+            </nav>
+        </header>
+        <div class="shapedividers_com-8551">
+            <svg></svg>
+        </div>
+
+        <!-- Math container -->
+        <section class="math-container">
+            <!--Section header-->
+            <div class="math-questions">
+                <div class="visa-header heading-secondary">
+                    <h2>Matematiikan kerto- ja jakolaskut</h2>
+                </div>
+
+                <div class="visa-text-box">
+                    <p class="visa-text">Tässä tehtävässä sinun tulee täydentää vastaus kokonaisluvuilla.</p>
+                </div>
+
+                <!--//Section header-->
+
+                <!--Kymysys 1 container-->
+
+                <div class="question-title">Kysymys 1</div>
+
+                <div class="question-container">
+                    <div id="kysymysYksi"></div>
+                    <input type="text" id="vastaus11" value="" />
+                </div>
+
+                <div class="answer-result" style="margin-top: 10px">
+                    <div class="check-div">
+                        <button id="check-btn11" class="check-btn" onclick="question11()">Tarkista</button>
+                        <div class="id-answer" id="tarkistus11"></div>
+                        <div class="id-answer" id="oikeavastaus11" id="tokaid1" id="tokaid2" id="tokaid3"></div>
+                    </div>
+                </div>
+
+                <!--//Kysymys 1 container-->
+
+                <!--Kymysys 2 container-->
+                <div class="question-title">Kysymys 2</div>
+
+                <div class="question-container">
+                    <div id="kysymysKaksi"></div>
+                    <input type="text" id="vastaus12" value="" />
+                </div>
+
+                <div class="answer-result" style="margin-top: 10px">
+                    <div class="check-div">
+                        <button id="check-btn12" class="check-btn" onclick="question22()">Tarkista</button>
+                        <div class="id-answer" id="tarkistus22"></div>
+                        <div class="id-answer" id="oikeavastaus12"></div>
+                    </div>
+                </div>
+
+                <!--//kysymys 2 container-->
+
+                <!--Kysymys 3 container-->
+
+                <div class="question-title">Kysymys 3</div>
+
+                <div class="question-container">
+                    <div id="kysymysKolme"></div>
+                    <input type="text" id="vastaus13" value="" />
+                </div>
+                <div class="answer-result" style="margin-top: 10px">
+                    <div class="check-div">
+                        <button id="check-btn13" class="check-btn" onclick="question33()">Tarkista</button>
+                        <div class="id-answer" id="tarkistus33"></div>
+                        <div class="id-answer" id="oikeavastaus13"></div>
+                    </div>
+                </div>
+
+                <!--//kysymys 3 container-->
+
+                <!--Kysymys 4 container-->
+
+                <div class="question-title">Kysymys 4</div>
+
+                <div class="question-container">
+                    <div id="kysymysNelja"></div>
+                    <input type="text" id="vastaus14" value="" />
+                </div>
+                <div class="answer-result" style="margin-top: 10px">
+                    <div class="check-div">
+                        <button id="check-btn14" class="check-btn" onclick="question44()">Tarkista</button>
+                        <div class="id-answer" id="tarkistus44"></div>
+                        <div class="id-answer" id="oikeavastaus14"></div>
+                    </div>
+                </div>
+
+                <!--//kysymys 4 container-->
+
+                <!--Kysymys 5 container-->
+
+                <div class="question-title">Kysymys 5</div>
+
+                <div class="question-container">
+                    <div id="kysymysViisi"></div>
+                    <input type="text" id="vastaus15" value="" />
+                </div>
+                <div class="answer-result" style="margin-top: 10px">
+                    <div class="check-div">
+                        <button id="check-btn15" class="check-btn" onclick="question55()">Tarkista</button>
+                        <div class="id-answer" id="tarkistus55"></div>
+                        <div class="id-answer" id="oikeavastaus15"></div>
+                    </div>
+                </div>
+
+                <!--//kysymys 5 container-->
+
+                <!-- lopputulos -->
+
+                <div class="final-result">
+                    <div class="check-result">
+                        <button id="" class="check-btn" onclick="checkResult2()">Tarkista lopputulos!</button>
+                    </div>
+                    <div class="print-result">
+                        <div class="id-answer" id="finalResult"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="shapedividers_com-109">
+            <svg></svg>
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer id="footer">
+            <div class="footer">
+                <div class="logo-col">
+                    <a href="#header" class="footer-logo">
+                        <img class="footer-logo" alt="KidsLearn.com logo" src="../images/projektilogo.png" />
+                    </a>
+
+                    <ul class="social-links">
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="nav-col">
+                    <div class="footer-heading">
+                        <ion-icon class="footer-icon" name="information-circle-outline"></ion-icon> Meistä
+                    </div>
+                    <ul class="footer-nav">
+                        <li>
+                            <a class="footer-link" href="pages/about.html">Tietoja</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Saavutettavuus</a>
+                        </li>
+                        <!-- rel:in tarkoitus on estää uudelta tabilta informaation kerääminen edellistä sivulta (kyberturvallisuus) -->
+                        <li>
+                            <a class="footer-link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer noopener">Käyttöluvat</a
               >
             </li>
           </ul>
@@ -216,21 +218,21 @@
           <ul class="footer-nav">
             <li>
               <a class="footer-link" href="#">Kirjaudu sisään</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">Luo tili</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="#">Yksityisyydensuoja</a>
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Luo tili</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Yksityisyydensuoja</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="address-col">
-                <p class="footer-heading">
-                    <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä
-                </p>
-                <address class="contacts">
+                <div class="address-col">
+                    <p class="footer-heading">
+                        <ion-icon class="footer-icon" name="chatbubbles-outline"></ion-icon> Ota yhteyttä
+                    </p>
+                    <address class="contacts">
             <p class="address">Kiisselikuja, 90140 OULU</p>
             <p>
               <a class="footer-link" href="tel:123-456-7890">040-123-4567</a>
@@ -239,25 +241,23 @@
               <a class="footer-link" href="mailto:kidslearncom@gmail.com">Kidslearncom@gmail.com</a>
             </p>
           </address>
+                </div>
             </div>
-        </div>
-        <div class="credits">
-            <div class="krediitit">
-                <p>
-                    <a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a
-            >
-          </p>
-        </div>
-      </div>
-    </footer>
+            <div class="credits">
+                <div class="krediitit">
+                    <p>
+                        <a href="https://www.flaticon.com/authors/freepik" title="icons" target="_blank" rel="noreferrer noopener">Harjoitusvalikon ikonit by Freepik - Flaticon</a>
+                    </p>
+                    <p>Sivun tekijä: Riku Björn</p>
+                </div>
+            </div>
+        </footer>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../javascript/kertojako.js"></script>
-    <script src="../javascript/confetti.js"></script>
-    <script src="../javascript/script.js"></script>
-  </body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../javascript/kertojako.js"></script>
+        <script src="../javascript/confetti.js"></script>
+        <script src="../javascript/script.js"></script>
+    </body>
+
 </html>

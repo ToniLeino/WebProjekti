@@ -1,3 +1,4 @@
+// Author : Ilona Latvalehto 
 let points = 0;
 const RIGHT_ANSWER = "Vastauksesi on oikein! Hyvää työtä!";
 const WRONG_ANSWER = "Vastauksesi on väärin!";

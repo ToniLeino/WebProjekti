@@ -1,4 +1,4 @@
-    //mathplus.js tekijä Eetu Huttula
+    // Author: Eetu Huttula
     
     
     let points = 0;

@@ -371,147 +371,12 @@ address p {
     justify-self: center;
     font-weight: 600;
 }
-
-
-/* ABOUT US */
-
-.section-about-us {
-    padding: 0 10rem 10rem 10rem;
-}
-
-.about-us-container {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    padding: 0 5rem 10rem 5rem;
-    text-align: center;
-    font-size: 2.2rem;
-    justify-content: center;
-}
-
-.about-us-header {
-    grid-column: 1/4;
-    text-align: center;
-    font-size: 4rem;
-    letter-spacing: 0.15rem;
-}
-
-.about-us-text {
-    grid-column: 1/4;
-    padding: 5rem 25rem 25rem 25rem;
-    text-align: justify;
-}
-
-.section-about-us {
-    display: inline-block;
-    text-align: center;
-}
-
-.working-group img {
-    max-width: 30%;
-}
-
-.your-picture {
-    border-radius: 50%;
-    box-shadow: 1.5rem 1.5rem 1.5rem #b6711f;
-    border: solid 0.5rem;
-}
-
-.first {
-    border-color: #fdffb6;
-}
-
-.second {
-    border-color: #caffbf;
-}
-
-.third {
-    border-color: #fdffb6;
-}
-
-.fourth {
-    border-color: #bdb2ff;
-}
-
-.fifth {
-    border-color: #9bf6ff;
-}
-
-.sixth {
-    border-color: #ffadad;
-}
-
-.about-you-name {
-    padding-top: 2rem;
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-
-.about-you-title {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.about-you-title2 {
-    padding-bottom: 5rem;
-    font-size: 2rem;
-}
-
-@media (max-width: 1440px) {
-    .about-us-text {
-        grid-column: 1/4;
-        padding: 0;
-        text-align: justify;
-    }
-    .section-about-us {
-        display: inline-block;
-        text-align: center;
-    }
-    .about-you-name {
-        padding-top: 2rem;
-        font-size: 2.4rem;
-        font-weight: 600;
-    }
-    .about-you-title {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-size: 2.5rem;
-    }
-    .about-you-title2 {
-        padding-bottom: 5rem;
-        font-size: 2.5rem;
-    }
-}
-
 @media (max-width: 1024px) {
     .navbar {
         gap: 10rem;
     }
     .footer {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .about-us-text {
-        grid-column: 1/4;
-        text-align: justify;
-        padding: 0
-    }
-    .section-about-us {
-        display: inline-block;
-        text-align: center;
-    }
-    .about-you-name {
-        padding-top: 2rem;
-        font-size: 2.4rem;
-        font-weight: 600;
-    }
-    .about-you-title {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-size: 2rem;
-    }
-    .about-you-title2 {
-        padding-bottom: 5rem;
-        font-size: 2rem;
     }
 }
 
@@ -573,28 +438,6 @@ address p {
     .hero-img {
         display: none;
     }
-    .about-us-text {
-        grid-column: 1/4;
-        text-align: justify;
-        padding: 0;
-        font-size: 2.5rem;
-    }
-    .about-us-container {
-        margin-bottom: 20px;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 3fr);
-        align-items: justify;
-    }
-    .about-you-title {
-        font-size: 2em;
-    }
-    .about-you-title2 {
-        font-size: 2em;
-    }
-    .working-group {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 432px) {
@@ -626,41 +469,8 @@ address p {
         flex-direction: column;
         padding-left: 1rem;
     }
-    .about-us-text {
-        font-size: 1em;
-        padding: 0;
-        position: left;
-        margin-bottom: 0;
-    }
-    .about-us-container {
-        text-align: center;
-        padding: 0;
-    }
-    .section-about-us {
-        grid-template-columns: repeat(2, 2fr);
-    }
-    .about-you-title {
-        font-size: 2em;
-    }
-    .about-you-title2 {
-        font-size: 2em;
-    }
     img[alt*="headerimg"] {
         padding-left: 0;
         width: 15rem;
-    }
-}
-
-@media (max-width: 1440px) {
-    .about-us-text {
-        padding-bottom: 40px;
-        justify-content: center;
-    }
-    .about-us-container {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-    }
-    .about-us-header h2 {
-        padding-bottom: 20px;
     }
 }

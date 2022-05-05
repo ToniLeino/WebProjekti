@@ -264,7 +264,7 @@ rem might have bugs in some browsers so we use em instead of rem, since they wor
 /* FOOTER SECTION */
 
 footer {
-    padding: 9.6rem 3.2rem;
+    padding: 9.6rem 3.2rem 6rem 3.2rem;
     background-color: #e38d27;
 }
 
@@ -353,7 +353,7 @@ address p {
 .credits {
     display: flex;
     background-color: #e38d27;
-    padding: 10rem;
+    padding: 5rem 0;
     justify-content: center;
 }
 
@@ -364,13 +364,20 @@ address p {
     justify-items: center;
 }
 
-.krediitit a {
+.krediitit a,
+.krediitit p {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
     justify-self: center;
     font-weight: 600;
+    text-align: center;
 }
+
+.krediitit p {
+    padding-bottom: 1rem;
+}
+
 @media (max-width: 1024px) {
     .navbar {
         gap: 10rem;
